@@ -19,15 +19,17 @@ def remove_duplicates(df):
     return df
 
 def add_gross_column(df):
-    if 'gross_x' not in df.columns:
-        if 'gross_y' in df.columns:
-            df['gross'] = df['gross_y']
+    if 'gross_x' in df.columns:
+        df['gross'] = df['gross_x']
+    elif 'gross_y' in df.columns:
+        df['gross'] = df['gross_y']
     return df
 
 def add_budget_column(df):
-    if 'budget_y' not in df.columns:
-        if 'budget_x' in df.columns:
-            df['budget'] = df['budget_x']
+    if 'budget_y' in df.columns:
+        df['budget'] = df['budget_y']
+    elif 'gross_x' in df.columns:
+        df['budget'] = df['budget_x']
     return df
 
 def write_to_csv(df, filename):
