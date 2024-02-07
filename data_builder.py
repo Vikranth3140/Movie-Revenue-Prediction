@@ -32,6 +32,11 @@ def add_budget_column(df):
         df['budget'] = df['budget_x']
     return df
 
+def remove_incomplete_rows(df):
+    cols_to_check = ['name', 'genre', 'score', 'director', 'actor_2_name', 'actor_1_name', 'gross', 'budget']
+    df.dropna(subset=cols_to_check, how='any', inplace=True)
+    return df
+
 def write_to_csv(df, filename):
     df.to_csv(filename, index=False)
 
@@ -39,7 +44,8 @@ def main():
     merged_df = merge_datasets()
     cleaned_df = remove_duplicates(merged_df)
     compared_df = add_gross_column(cleaned_df)
-    final_df = add_budget_column(compared_df)
+    dropped_df = add_budget_column(compared_df)
+    final_df = remove_incomplete_rows(dropped_df)
     write_to_csv(final_df, 'final_dataset.csv')
 
 if __name__ == "__main__":
