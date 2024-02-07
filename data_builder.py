@@ -27,7 +27,7 @@ def add_gross_column(df):
 def add_budget_column(df):
     if 'budget_y' not in df.columns:
         if 'budget_x' in df.columns:
-            df['budget'] = df['gross_x']
+            df['budget'] = df['budget_x']
     return df
 
 def write_to_csv(df, filename):
