@@ -38,7 +38,8 @@ def remove_incomplete_rows(df):
     return df
 
 def remove_columns(df, cols):
-    df.drop(cols, axis=1, inplace=True)
+    existing_cols = [col for col in cols if col in df.columns]
+    df.drop(existing_cols, axis=1, inplace=True)
     return df
 
 def write_to_csv(df, filename):
@@ -49,7 +50,8 @@ def main():
     cleaned_df = remove_duplicates(merged_df)
     compared_df = add_gross_column(cleaned_df)
     dropped_df = add_budget_column(compared_df)
-    dropped_df = remove_columns(dropped_df, ['gross_x', 'gross_y', 'budget_x', 'budget_y'])
+    columns_to_remove = ['budget_x', 'gross_x', 'budget_y', 'gross_y']
+    dropped_df = remove_columns(dropped_df, columns_to_remove)
     final_df = remove_incomplete_rows(dropped_df)
     write_to_csv(final_df, 'final_dataset.csv')
 
