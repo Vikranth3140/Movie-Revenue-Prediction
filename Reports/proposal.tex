@@ -13,6 +13,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{url}
+\usepackage{hyperref}
 
 \begin{document}
 
@@ -43,7 +44,6 @@
 
 \IEEEpeerreviewmaketitle
 
-\section{Introduction}
     \subsection{Motivation}
         Imagine you are a filmmaker or head of a movie production house and you have a big question: what makes a movie a blockbuster hit or a flop?
         
@@ -53,6 +53,7 @@
         But the answer is not straightforward or easy.
         
         There are many factors that influence the earnings of a movie, and the true combination of these factors has not been mastered yet.
+        
         That’s why we have developed a machine learning model that reveals the most important factors for box office success by analyzing real data from a wide variety of movies produced around the world.
         With our model, filmmakers can make more informed decisions and optimize their movie production for maximum profit and popularity.
 
@@ -64,42 +65,35 @@
         These insights underscore the complex interplay between film attributes and audience preferences, prompting us to assign greater importance to factors like directorial history and genre classification within our predictive framework.
 
     \subsection{Overview}
-        In this project, we follow a structured methodology to build and evaluate our predictive model.
         
-        We first collect a large dataset of movies and their features from various sources and custom tailor the datasets to suit our needs.
-        
-        We then pre-process the data to handle missing values, outliers, and categorical variables. We perform data analysis to explore the data and understand its characteristics and relationships.
-        
-        We use descriptive statistics, inferential statistics, and data visualization techniques to gain insights into the data like using a graph to compare the accuracy of our model's performance of training and test data.
-        
-        We then select several machine learning algorithms that are suitable for regression tasks, such as decision trees and random forests.
-        We train and test our models using cross-validation and compare their performance using metrics such as R-squared mean error.
-        
-        We also apply model improvement strategies such as hyper-parameter tuning, feature selection and regularization to enhance the accuracy and generalization of our models.
-        
-        The resulting model offers promising results and can be used to predict the revenue of any movie based on its features.
+    We followed a structured approach to build and evaluate a movie revenue prediction model.
+    
+    Initially, we collected and tailored a large movie dataset. Next, we preprocessed the data to handle missing values, outliers, and categorical variables.
+    
+    Data analysis using descriptive statistics, inferential statistics, and data visualization helped us understand the data and relationships between features.
+    
+    We then selected and tested suitable regression algorithms like decision trees and random forests using cross-validation and evaluation metrics like R-squared mean error.
+    
+    Finally, we employed model improvement strategies like hyperparameter tuning, feature selection, and regularization to enhance accuracy and generalization.
+    
+    The resulting model offers promising results for predicting movie revenue based on its features.
 
-\section{Data Analysis}
+    \subsection{Data Analysis}
     In the data analysis phase, we will thoroughly examine the collected movie dataset to gain insights into its structure, distribution, and relationships between features and the target variable (movie earnings). We dropped the unnecessary extra parameters and have come down to 5 parameters, which are the director's name, actor 1's name, actor 2's name, genre and budget.
 
 \begin{thebibliography}{1}
-    \bibitem{scikit-learn} scikit-learn Models
-        \begin{enumerate}
-            \item \underline{\url{https://scikit-learn.org/stable/}}
-        \end{enumerate}
-\\
-    \bibitem{kaggle} Kaggle Datasets
-        \begin{enumerate}
-            \item Movie Industry Dataset, \\
-            \underline{\url{https://www.kaggle.com/datasets/danielgrijalvas/movies}}
-\\
-            \item IMDB 5000 Movies Multiple Genres Dataset, \\
-            \underline{\url{https://www.kaggle.com/datasets/rakkesharv/imdb-5000-movies-multiple-genres-dataset}} \\
-            \underline{\url{https://www.kaggle.com/datasets/carolzhangdc/imdb-5000-movie-dataset}}
-\\
-            \item Top 500 Movies Budget, \\
-            \underline{\url{https://www.kaggle.com/datasets/mitchellharrison/top-500-movies-budget}}
-        \end{enumerate}
+    \bibitem{scikit-learn} scikit-learn Models 
+    \begin{enumerate}
+        \item \href{https://scikit-learn.org/stable/supervised_learning.html#supervised-learning}{\textbf{Models}}
+    \end{enumerate}
+
+    \bibitem{kaggle} Kaggle Datasets 
+    \begin{enumerate}
+        \item \href{https://www.kaggle.com/datasets/danielgrijalvas/movies}{\textbf{Movie Industry Dataset}}
+        \item \href{https://www.kaggle.com/datasets/rakkesharv/imdb-5000-movies-multiple-genres-dataset}{\textbf{IMDb 5000 Movies Multiple Genres Dataset}}
+        \item \href{https://www.kaggle.com/datasets/carolzhangdc/imdb-5000-movie-dataset}{\textbf{IMDb 5000 Movies Dataset}}
+        \item \href{https://www.kaggle.com/datasets/mitchellharrison/top-500-movies-budget}{\textbf{Top 500 Movies Budget}}
+    \end{enumerate}
 \end{thebibliography}
 
 \end{document}
