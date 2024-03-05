@@ -1,6 +1,6 @@
 ## Building a Custom Movie Dataset: A Journey from Raw Data to Insights
 
-Our team embarked on a data-driven odyssey to create a robust and tailored movie dataset. Let's delve into the steps we took to curate this treasure trove of cinematic information.
+We have embarked on a data-driven odyssey to create a robust and tailored movie dataset. Let's delve into the steps we took to curate this treasure trove of cinematic information.
 
 ### 1. **Initial Exploration and Cleaning**
 
