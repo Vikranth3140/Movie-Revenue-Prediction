@@ -1,0 +1,433 @@
+title,production_cost,domestic_gross,worldwide_gross,opening_weekend,genre,Movie_Title,Director,Actors,Total_Gross,main_genre
+Avengers: Endgame,400000000,858373000,2797800564,357115007.0,Action,Avengers: Endgame,"Directors:Anthony Russo, Joe Russo","Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",$858.37M,Action
+Pirates of the Caribbean: On Stranger Tides,379000000,241071802,1045713802,90151958.0,Adventure,Pirates of the Caribbean: On Stranger Tides,Rob Marshall,"Johnny Depp, Penélope Cruz, Ian McShane, Geoffrey Rush",$241.06M,Action
+Avengers: Age of Ultron,365000000,459005868,1395316979,191271109.0,Action,Avengers: Age of Ultron,Joss Whedon,"Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",$459.01M,Action
+Avengers: Infinity War,300000000,678815482,2048359754,257698183.0,Action,Avengers: Infinity War,"Directors:Anthony Russo, Joe Russo","Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans",$678.82M,Action
+Justice League,300000000,229024295,655945209,93842239.0,Action,Justice League,Zack Snyder,"Ben Affleck, Gal Gadot, Jason Momoa, Ezra Miller",$229.02M,Action
+Spectre,300000000,200074175,879500760,70403148.0,Action,Spectre,Sam Mendes,"Daniel Craig, Christoph Waltz, Léa Seydoux, Ralph Fiennes",$200.07M,Action
+Solo: A Star Wars Story,275000000,213767512,393151347,84420489.0,Adventure,Solo: A Star Wars Story,Ron Howard,"Alden Ehrenreich, Woody Harrelson, Emilia Clarke, Donald Glover",$213.77M,Action
+John Carter,263700000,73058679,282778100,30180188.0,Adventure,John Carter,Andrew Stanton,"Taylor Kitsch, Lynn Collins, Willem Dafoe, Samantha Morton",$73.08M,Action
+Batman v Superman: Dawn of Justice,263000000,330360194,872395091,166007347.0,Action,Batman v Superman: Dawn of Justice,Zack Snyder,"Ben Affleck, Henry Cavill, Amy Adams, Jesse Eisenberg",$330.36M,Action
+The Lion King,260000000,543638043,1647778651,191770759.0,Adventure,The Lion King,"Directors:Roger Allers, Rob Minkoff","Matthew Broderick, Jeremy Irons, James Earl Jones, Whoopi Goldberg",$422.78M,Animation
+The Lion King,260000000,543638043,1647778651,191770759.0,Adventure,The Lion King,Jon Favreau,"Donald Glover, Beyoncé, Seth Rogen, Chiwetel Ejiofor",$543.64M,Animation
+Tangled,260000000,200821936,583777242,48767052.0,Musical,Tangled,"Directors:Nathan Greno, Byron Howard","Mandy Moore, Zachary Levi, Donna Murphy, Ron Perlman",$200.82M,Animation
+Spider-Man 3,258000000,336530303,894860230,151116516.0,Adventure,Spider-Man 3,Sam Raimi,"Tobey Maguire, Kirsten Dunst, Topher Grace, Thomas Haden Church",$336.53M,Action
+Captain America: Civil War,250000000,408084349,1151918521,179139142.0,Action,Captain America: Civil War,"Directors:Anthony Russo, Joe Russo","Chris Evans, Robert Downey Jr., Scarlett Johansson, Sebastian Stan",$408.08M,Action
+Thor: Love and Thunder,250000000,343256830,745453552,144165107.0,Action,Thor: Love and Thunder,Taika Waititi,"Chris Hemsworth, Natalie Portman, Christian Bale, Tessa Thompson",Gross Unkown,Action
+Harry Potter and the Half-Blood Prince,250000000,302089278,929411069,77835727.0,Adventure,Harry Potter and the Half-Blood Prince,David Yates,"Daniel Radcliffe, Emma Watson, Rupert Grint, Michael Gambon",$301.96M,Action
+The Fate of the Furious,250000000,225764765,1236703796,98786705.0,Action,The Fate of the Furious,F. Gary Gray,"Vin Diesel, Jason Statham, Dwayne Johnson, Michelle Rodriguez",$226.01M,Action
+No Time to Die,250000000,160891007,760008036,55225007.0,Action,No Time to Die,Cary Joji Fukunaga,"Daniel Craig, Ana de Armas, Rami Malek, Léa Seydoux",$160.87M,Action
+Avatar,237000000,785221649,2910370905,77025481.0,Action,Avatar,James Cameron,"Sam Worthington, Zoe Saldana, Sigourney Weaver, Michelle Rodriguez",$760.51M,Action
+Superman Returns,232000000,200120000,391081192,52535096.0,Adventure,Superman Returns,Bryan Singer,"Brandon Routh, Kevin Spacey, Kate Bosworth, James Marsden",$200.08M,Action
+The Dark Knight Rises,230000000,448139099,1082228107,160887295.0,Action,The Dark Knight Rises,Christopher Nolan,"Christian Bale, Tom Hardy, Anne Hathaway, Gary Oldman",$448.14M,Action
+Pirates of the Caribbean: Dead Men Tell No Tales,230000000,172558876,794861794,62983253.0,Adventure,Pirates of the Caribbean: Dead Men Tell No Tales,"Directors:Joachim Rønning, Espen Sandberg","Johnny Depp, Geoffrey Rush, Javier Bardem, Orlando Bloom",$172.56M,Action
+Quantum of Solace,230000000,169368427,591692078,67528882.0,Action,Quantum of Solace,Marc Forster,"Daniel Craig, Olga Kurylenko, Mathieu Amalric, Judi Dench",$168.37M,Action
+The Avengers,225000000,623357910,1515100211,207438708.0,Action,The Avengers,Joss Whedon,"Robert Downey Jr., Chris Evans, Scarlett Johansson, Jeremy Renner",$623.28M,Action
+Man of Steel,225000000,291045518,667999518,116619362.0,Action,Man of Steel,Zack Snyder,"Henry Cavill, Amy Adams, Michael Shannon, Diane Lane",$291.05M,Action
+The Chronicles of Narnia: Prince Caspian,225000000,141621490,417341288,55034805.0,Adventure,The Chronicles of Narnia: Prince Caspian,Andrew Adamson,"Ben Barnes, Skandar Keynes, Georgie Henley, William Moseley",$141.62M,Action
+The Lone Ranger,225000000,89302115,260002115,29210849.0,Western,The Lone Ranger,Gore Verbinski,"Johnny Depp, Armie Hammer, William Fichtner, Tom Wilkinson",$89.30M,Action
+The Amazing Spider-Man,220000000,262030663,757890267,62004688.0,Adventure,The Amazing Spider-Man,Marc Webb,"Andrew Garfield, Emma Stone, Rhys Ifans, Irrfan Khan",$262.03M,Action
+Battleship,220000000,65233400,313477717,25534825.0,Action,Battleship,Peter Berg,"Alexander Skarsgård, Brooklyn Decker, Liam Neeson, Rihanna",$65.42M,Action
+Transformers: The Last Knight,217000000,130168683,602893340,44680073.0,Action,Transformers: The Last Knight,Michael Bay,"Mark Wahlberg, Anthony Hopkins, Josh Duhamel, Laura Haddock",$130.17M,Action
+Jurassic World,215000000,652306625,1669979967,208806270.0,Action,Jurassic World,Colin Trevorrow,"Chris Pratt, Bryce Dallas Howard, Ty Simpkins, Judy Greer",$652.27M,Action
+Men in Black 3,215000000,179020854,654213485,54592779.0,Adventure,Men in Black 3,Barry Sonnenfeld,"Will Smith, Tommy Lee Jones, Josh Brolin, Jemaine Clement",$179.02M,Action
+Transformers: Revenge of the Fallen,210000000,402111870,836519699,108966307.0,Action,Transformers: Revenge of the Fallen,Michael Bay,"Shia LaBeouf, Megan Fox, Josh Duhamel, Tyrese Gibson",$402.11M,Action
+Transformers: Age of Extinction,210000000,245439076,1104054072,100038390.0,Action,Transformers: Age of Extinction,Michael Bay,"Mark Wahlberg, Nicola Peltz Beckham, Jack Reynor, Stanley Tucci",$245.44M,Action
+X-Men: The Last Stand,210000000,234362462,459260946,102750665.0,Action,X-Men: The Last Stand,Brett Ratner,"Patrick Stewart, Hugh Jackman, Halle Berry, Famke Janssen",$234.36M,Action
+Robin Hood,210000000,105487148,322459006,36063385.0,Action,Robin Hood,Ridley Scott,"Russell Crowe, Cate Blanchett, Matthew Macfadyen, Max von Sydow",$105.27M,Action
+Robin Hood,210000000,105487148,322459006,36063385.0,Action,Robin Hood,Otto Bathurst,"Taron Egerton, Jamie Foxx, Ben Mendelsohn, Eve Hewson",$30.82M,Action
+Robin Hood,210000000,105487148,322459006,36063385.0,Action,Robin Hood,"Directors:Wolfgang Reitherman, David Hand","Brian Bedford, Phil Harris, Roger Miller, Peter Ustinov",$32.06M,Animation
+Robin Hood,99000000,30824628,85210012,36063385.0,Action,Robin Hood,Ridley Scott,"Russell Crowe, Cate Blanchett, Matthew Macfadyen, Max von Sydow",$105.27M,Action
+Robin Hood,99000000,30824628,85210012,36063385.0,Action,Robin Hood,Otto Bathurst,"Taron Egerton, Jamie Foxx, Ben Mendelsohn, Eve Hewson",$30.82M,Action
+Robin Hood,99000000,30824628,85210012,36063385.0,Action,Robin Hood,"Directors:Wolfgang Reitherman, David Hand","Brian Bedford, Phil Harris, Roger Miller, Peter Ustinov",$32.06M,Animation
+King Kong,207000000,218080025,550517357,50130145.0,Adventure,King Kong,Peter Jackson,"Naomi Watts, Jack Black, Adrien Brody, Thomas Kretschmann",$218.08M,Action
+Tenet,205000000,58504105,362450957,20001852.0,Action,Tenet,Christopher Nolan,"John David Washington, Robert Pattinson, Elizabeth Debicki, Juhan Ulfsak",$58.46M,Action
+Spider-Man: No Way Home,200000000,814108407,1912775610,260138569.0,Action,Spider-Man: No Way Home,Jon Watts,"Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon",$804.75M,Action
+Black Panther,200000000,700059566,1336494321,202003951.0,Action,Black Panther,Ryan Coogler,"Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o, Danai Gurira",$700.06M,Action
+Titanic,200000000,659363944,2207986545,28638131.0,Drama,Titanic,James Cameron,"Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates",$659.33M,Drama
+Incredibles 2,200000000,608581744,1242805359,182687905.0,Adventure,Incredibles 2,Brad Bird,"Craig T. Nelson, Holly Hunter, Sarah Vowell, Huck Milner",$608.58M,Animation
+Finding Dory,200000000,486295561,1025006125,135060273.0,Adventure,Finding Dory,"Directors:Andrew Stanton, Angus MacLane","Ellen DeGeneres, Albert Brooks, Ed O'Neill, Kaitlin Olson",$486.30M,Animation
+Toy Story 4,200000000,434038008,1073080329,120908065.0,Adventure,Toy Story 4,Josh Cooley,"Tom Hanks, Tim Allen, Annie Potts, Tony Hale",$434.04M,Animation
+Toy Story 3,200000000,415004880,1068879522,110307189.0,Adventure,Toy Story 3,Lee Unkrich,"Tom Hanks, Tim Allen, Joan Cusack, Ned Beatty",$415.00M,Animation
+Doctor Strange in the Multiverse of Madness,200000000,411331607,952224986,187420998.0,Action,Doctor Strange in the Multiverse of Madness,Sam Raimi,"Benedict Cumberbatch, Elizabeth Olsen, Chiwetel Ejiofor, Benedict Wong",Gross Unkown,Action
+Spider-Man 2,200000000,373524485,794697557,88156227.0,Adventure,Spider-Man 2,Sam Raimi,"Tobey Maguire, Kirsten Dunst, Alfred Molina, James Franco",$373.59M,Action
+The Batman,200000000,369345583,767820302,134008624.0,Action,The Batman,Matt Reeves,"Robert Pattinson, Zoë Kravitz, Jeffrey Wright, Colin Farrell",Gross Unkown,Action
+Alice in Wonderland,200000000,334191110,1025491110,116101023.0,Adventure,Alice in Wonderland,"Directors:Clyde Geronimi, Wilfred Jackson, Hamilton Luske, Jack Kinney","Kathryn Beaumont, Ed Wynn, Richard Haydn, Sterling Holloway",$1.07M,Animation
+Alice in Wonderland,200000000,334191110,1025491110,116101023.0,Adventure,Alice in Wonderland,Tim Burton,"Mia Wasikowska, Johnny Depp, Helena Bonham Carter, Anne Hathaway",$334.19M,Adventure
+Skyfall,200000000,304360277,1110526981,88364714.0,Action,Skyfall,Sam Mendes,"Daniel Craig, Javier Bardem, Naomie Harris, Judi Dench",$304.36M,Action
+Monsters University,200000000,268488329,743455810,82429469.0,Adventure,Monsters University,Dan Scanlon,"Billy Crystal, John Goodman, Steve Buscemi, Helen Mirren",$268.49M,Animation
+X-Men: Days of Future Past,200000000,233921534,747862775,90823660.0,Action,X-Men: Days of Future Past,Bryan Singer,"Patrick Stewart, Ian McKellen, Hugh Jackman, James McAvoy",$233.92M,Action
+The Amazing Spider-Man 2,200000000,202853933,708996336,91608337.0,Action,The Amazing Spider-Man 2,Marc Webb,"Andrew Garfield, Emma Stone, Jamie Foxx, Paul Giamatti",$202.85M,Action
+Cars 2,200000000,191450875,560155383,66135507.0,Adventure,Cars 2,"Directors:John Lasseter, Bradford Lewis","Owen Wilson, Larry the Cable Guy, Michael Caine, Emily Mortimer",$191.45M,Animation
+Black Widow,200000000,183651655,379751655,80366312.0,Action,Black Widow,Cate Shortland,"Scarlett Johansson, Florence Pugh, David Harbour, Rachel Weisz",$183.65M,Action
+Fast & Furious Presents: Hobbs & Shaw,200000000,173956935,760381706,60038950.0,Action,Fast & Furious Presents: Hobbs & Shaw,David Leitch,"Dwayne Johnson, Jason Statham, Idris Elba, Vanessa Kirby",$173.96M,Action
+2012,200000000,166112167,757677748,65237614.0,Action,2012,Roland Emmerich,"John Cusack, Thandiwe Newton, Chiwetel Ejiofor, Amanda Peet",$166.11M,Action
+Eternals,200000000,164870264,402064929,71297219.0,Action,Eternals,Chloé Zhao,"Gemma Chan, Richard Madden, Angelina Jolie, Salma Hayek",$164.87M,Action
+Terminator Salvation,200000000,125322469,365491792,42558390.0,Action,Terminator Salvation,McG,"Christian Bale, Sam Worthington, Anton Yelchin, Moon Bloodgood",$125.32M,Action
+Lightyear,200000000,118307188,218571346,50577961.0,Adventure,Lightyear,Angus MacLane,"Chris Evans, Keke Palmer, Peter Sohn, Taika Waititi",Gross Unkown,Animation
+Jungle Cruise,200000000,116987516,210384144,35018731.0,Adventure,Jungle Cruise,Jaume Collet-Serra,"Dwayne Johnson, Emily Blunt, Edgar Ramírez, Jack Whitehall",$116.99M,Action
+Green Lantern,200000000,116601172,219535492,53174303.0,Action,Green Lantern,Martin Campbell,"Ryan Reynolds, Blake Lively, Peter Sarsgaard, Mark Strong",$116.60M,Action
+Dark Phoenix,200000000,65845974,246356895,32828348.0,Action,Dark Phoenix,Simon Kinberg,"James McAvoy, Michael Fassbender, Jennifer Lawrence, Nicholas Hoult",$65.85M,Action
+Onward,200000000,61555145,133317030,39119861.0,Adventure,Onward,Dan Scanlon,"Tom Holland, Chris Pratt, Julia Louis-Dreyfus, Octavia Spencer",$61.56M,Animation
+Wonder Woman 1984,200000000,46801036,166360232,16701957.0,Action,Wonder Woman 1984,Patty Jenkins,"Gal Gadot, Chris Pine, Kristen Wiig, Pedro Pascal",$46.37M,Action
+Mulan,200000000,0,69965374,,Adventure,Mulan,Niki Caro,"Liu Yifei, Donnie Yen, Gong Li, Jet Li",Gross Unkown,Action
+Mulan,200000000,0,69965374,,Adventure,Mulan,"Directors:Tony Bancroft, Barry Cook","Ming-Na Wen, Eddie Murphy, BD Wong, Miguel Ferrer",$120.62M,Animation
+The Tomorrow War,200000000,0,19220000,,Action,The Tomorrow War,Chris McKay,"Chris Pratt, Yvonne Strahovski, J.K. Simmons, Betty Gilpin",Gross Unkown,Action
+The Gray Man,200000000,0,451178,,Thriller/Suspense,The Gray Man,"Directors:Anthony Russo, Joe Russo","Ryan Gosling, Chris Evans, Ana de Armas, Billy Bob Thornton",Gross Unkown,Action
+Transformers: Dark of the Moon,195000000,352390543,1123794079,97852865.0,Action,Transformers: Dark of the Moon,Michael Bay,"Shia LaBeouf, Rosie Huntington-Whiteley, Tyrese Gibson, Josh Duhamel",$352.39M,Action
+The Mummy,195000000,80101125,409953905,31668375.0,Adventure,The Mummy,Stephen Sommers,"Brendan Fraser, Rachel Weisz, John Hannah, Arnold Vosloo",$155.25M,Action
+The Mummy,195000000,80101125,409953905,31668375.0,Adventure,The Mummy,Alex Kurtzman,"Tom Cruise, Sofia Boutella, Annabelle Wallis, Russell Crowe",$80.10M,Action
+Jack the Giant Slayer,195000000,65187603,197687603,27202226.0,Adventure,Jack the Giant Slayer,Bryan Singer,"Nicholas Hoult, Stanley Tucci, Ewan McGregor, Bill Nighy",$65.19M,Action
+Star Trek Into Darkness,190000000,228778661,467381584,70165559.0,Adventure,Star Trek Into Darkness,J.J. Abrams,"Chris Pine, Zachary Quinto, Zoe Saldana, Benedict Cumberbatch",$228.78M,Action
+World War Z,190000000,202706711,531861650,66411834.0,Action,World War Z,Marc Forster,"Brad Pitt, Mireille Enos, Daniella Kertesz, James Badge Dale",$202.36M,Action
+The Great Gatsby,190000000,144840419,353640419,50085184.0,Drama,The Great Gatsby,Baz Luhrmann,"Leonardo DiCaprio, Carey Mulligan, Joel Edgerton, Tobey Maguire",$144.84M,Drama
+The Great Gatsby,190000000,144840419,353640419,50085184.0,Drama,The Great Gatsby,Jack Clayton,"Robert Redford, Mia Farrow, Bruce Dern, Karen Black",$6.74M,Drama
+Pacific Rim,190000000,101802906,411002906,37285325.0,Action,Pacific Rim,Guillermo del Toro,"Idris Elba, Charlie Hunnam, Rinko Kikuchi, Charlie Day",$101.80M,Action
+The Matrix Resurrections,190000000,37686805,156467817,10749011.0,Action,The Matrix Resurrections,Lana Wachowski,"Keanu Reeves, Carrie-Anne Moss, Yahya Abdul-Mateen II, Jonathan Groff",Gross Unkown,Action
+The Good Dinosaur,187500000,123087120,333771037,39155217.0,Adventure,The Good Dinosaur,Peter Sohn,"Jeffrey Wright, Frances McDormand, Maleah Nipay-Padilla, Ryan Teeple",$123.09M,Animation
+Iron Man,186000000,318604126,585171547,102118668.0,Adventure,Iron Man,Jon Favreau,"Robert Downey Jr., Gwyneth Paltrow, Terrence Howard, Jeff Bridges",$318.41M,Action
+The Dark Knight,185000000,533720947,998615789,158411483.0,Action,The Dark Knight,Christopher Nolan,"Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine",$534.86M,Action
+Indiana Jones and the Kingdom of the Crystal Skull,185000000,317101119,786635413,100137835.0,Adventure,Indiana Jones and the Kingdom of the Crystal Skull,Steven Spielberg,"Harrison Ford, Cate Blanchett, Shia LaBeouf, Karen Allen",$317.10M,Action
+Brave,185000000,237282182,554606532,66323594.0,Adventure,Brave,"Directors:Mark Andrews, Brenda Chapman, Steve Purcell","Kelly Macdonald, Billy Connolly, Emma Thompson, Julie Walters",$237.28M,Animation
+Kong: Skull Island,185000000,168052812,561072059,61025472.0,Adventure,Kong: Skull Island,Jordan Vogt-Roberts,"Tom Hiddleston, Samuel L. Jackson, Brie Larson, John C. Reilly",$168.05M,Action
+Star Trek Beyond,185000000,158848340,335673708,59253211.0,Adventure,Star Trek Beyond,Justin Lin,"Chris Pine, Zachary Quinto, Karl Urban, Zoe Saldana",$158.85M,Action
+Blade Runner 2049,185000000,92054159,258829058,32753122.0,Thriller/Suspense,Blade Runner 2049,Denis Villeneuve,"Harrison Ford, Ryan Gosling, Ana de Armas, Dave Bautista",$92.05M,Action
+Terminator: Dark Fate,185000000,62253077,250372367,29033832.0,Action,Terminator: Dark Fate,Tim Miller,"Linda Hamilton, Arnold Schwarzenegger, Mackenzie Davis, Natalia Reyes",$62.25M,Action
+The Suicide Squad,185000000,55817425,167120232,26205415.0,Action,The Suicide Squad,James Gunn,"Margot Robbie, Idris Elba, John Cena, Joel Kinnaman",Gross Unkown,Action
+The Suicide Squad,185000000,55817425,167120232,26205415.0,Action,The Suicide Squad,James Gunn,"Margot Robbie, Idris Elba, John Cena, Joel Kinnaman",$55.82M,Action
+Aladdin,182000000,355559216,1046649706,91500929.0,Adventure,Aladdin,"Directors:Ron Clements, John Musker","Scott Weinger, Robin Williams, Linda Larkin, Jonathan Freeman",$217.35M,Animation
+Aladdin,182000000,355559216,1046649706,91500929.0,Adventure,Aladdin,Guy Ritchie,"Will Smith, Mena Massoud, Naomi Scott, Marwan Kenzari",$355.56M,Adventure
+Thor: Ragnarok,180000000,315058289,850482778,122744989.0,Action,Thor: Ragnarok,Taika Waititi,"Chris Hemsworth, Tom Hiddleston, Cate Blanchett, Mark Ruffalo",$315.06M,Action
+Rush Hour 3,180000000,140125968,256585882,49100158.0,Action,Rush Hour 3,Brett Ratner,"Jackie Chan, Chris Tucker, Max von Sydow, Hiroyuki Sanada",$140.13M,Action
+The Legend of Tarzan,180000000,126643061,348902025,38527856.0,Adventure,The Legend of Tarzan,David Yates,"Alexander Skarsgård, Rory J. Saper, Christian Stevens, Christoph Waltz",$126.64M,Action
+Hugo,180000000,73864507,180047784,11364505.0,Adventure,Hugo,Martin Scorsese,"Asa Butterfield, Chloë Grace Moretz, Christopher Lee, Ben Kingsley",$73.86M,Adventure
+Valerian and the City of a Thousand Planets,180000000,40479370,215098356,17007624.0,Adventure,Valerian and the City of a Thousand Planets,Luc Besson,"Dane DeHaan, Cara Delevingne, Clive Owen, Rihanna",$41.19M,Action
+Jupiter Ascending,179000000,47482519,181982519,18372372.0,Action,Jupiter Ascending,"Directors:Lana Wachowski, Lilly Wachowski","Channing Tatum, Mila Kunis, Eddie Redmayne, Sean Bean",$47.39M,Action
+X-Men: Apocalypse,178000000,155442489,542537546,65769562.0,Action,X-Men: Apocalypse,Bryan Singer,"James McAvoy, Michael Fassbender, Jennifer Lawrence, Nicholas Hoult",$155.44M,Action
+The Meg,178000000,145443742,527370715,45402195.0,Action,The Meg,Jon Turteltaub,"Jason Statham, Bingbing Li, Rainn Wilson, Cliff Curtis",$143.01M,Action
+Edge of Tomorrow,178000000,100206256,367028980,28760246.0,Action,Edge of Tomorrow,Doug Liman,"Tom Cruise, Emily Blunt, Bill Paxton, Brendan Gleeson",$100.21M,Action
+Captain Marvel,175000000,426829839,1129727388,153433423.0,Action,Captain Marvel,"Directors:Anna Boden, Ryan Fleck","Brie Larson, Samuel L. Jackson, Ben Mendelsohn, Jude Law",$426.83M,Action
+The Jungle Book,175000000,364001123,953554418,103261464.0,Adventure,The Jungle Book,Wolfgang Reitherman,"Phil Harris, Sebastian Cabot, Louis Prima, Bruce Reitherman",$141.84M,Animation
+The Jungle Book,175000000,364001123,953554418,103261464.0,Adventure,The Jungle Book,Jon Favreau,"Neel Sethi, Bill Murray, Ben Kingsley, Idris Elba",$364.00M,Adventure
+Inside Out,175000000,356461711,853003563,90440272.0,Adventure,Inside Out,"Directors:Pete Docter, Ronnie Del Carmen","Amy Poehler, Bill Hader, Lewis Black, Mindy Kaling",$356.46M,Animation
+Spider-Man: Homecoming,175000000,334201140,878346440,117027503.0,Action,Spider-Man: Homecoming,Jon Watts,"Tom Holland, Michael Keaton, Robert Downey Jr., Marisa Tomei",$334.20M,Action
+Suicide Squad,175000000,325100054,745744980,133682248.0,Action,Suicide Squad,David Ayer,"Will Smith, Jared Leto, Margot Robbie, Viola Davis",$325.10M,Action
+Up,175000000,293004164,731463377,68108790.0,Adventure,Up,"Directors:Pete Docter, Bob Peterson","Edward Asner, Jordan Nagai, John Ratzenberger, Christopher Plummer",$293.00M,Animation
+Coco,175000000,210460015,797666425,50802605.0,Musical,Coco,"Directors:Lee Unkrich, Adrian Molina","Anthony Gonzalez, Gael García Bernal, Benjamin Bratt, Alanna Ubach",$209.73M,Animation
+Monsters vs. Aliens,175000000,198351526,381687380,59321095.0,Adventure,Monsters vs. Aliens,"Directors:Rob Letterman, Conrad Vernon","Reese Witherspoon, Rainn Wilson, Stephen Colbert, Seth Rogen",$198.35M,Animation
+Cars 3,175000000,152901115,383541369,53688680.0,Adventure,Cars 3,Brian Fee,"Owen Wilson, Cristela Alonzo, Chris Cooper, Nathan Fillion",$152.90M,Animation
+G.I. Joe: The Rise of Cobra,175000000,150201498,302469017,54713046.0,Action,G.I. Joe: The Rise of Cobra,Stephen Sommers,"Dennis Quaid, Channing Tatum, Marlon Wayans, Adewale Akinnuoye-Agbaje",$152.27M,Action
+Wild Wild West,175000000,113805681,221229335,27687484.0,Adventure,Wild Wild West,Barry Sonnenfeld,"Will Smith, Kevin Kline, Kenneth Branagh, Salma Hayek",$113.81M,Action
+Evan Almighty,175000000,100289690,174131329,31192615.0,Comedy,Evan Almighty,Tom Shadyac,"Steve Carell, Morgan Freeman, Lauren Graham, Johnny Simmons",$100.46M,Comedy
+Waterworld,175000000,88246220,264246220,21171780.0,Action,Waterworld,Kevin Reynolds,"Kevin Costner, Jeanne Tripplehorn, Dennis Hopper, Tina Majorino",$88.25M,Action
+Dolittle,175000000,77047065,251410631,21844045.0,Adventure,Dolittle,Stephen Gaghan,"Robert Downey Jr., Antonio Banderas, Michael Sheen, Jim Broadbent",$77.05M,Adventure
+King Arthur: Legend of the Sword,175000000,39175066,139630336,15371270.0,Adventure,King Arthur: Legend of the Sword,Guy Ritchie,"Charlie Hunnam, Astrid Bergès-Frisbey, Jude Law, Djimon Hounsou",$39.18M,Action
+47 Ronin,175000000,38362475,151716815,9910310.0,Action,47 Ronin,Carl Rinsch,"Keanu Reeves, Hiroyuki Sanada, Ko Shibasaki, Tadanobu Asano",$38.36M,Action
+Turning Red,175000000,0,10965045,,Adventure,Turning Red,Domee Shi,"Rosalie Chiang, Sandra Oh, Ava Morse, Hyein Park",Gross Unkown,Animation
+Top Gun: Maverick,170000000,715270567,1478823595,126707459.0,Action,Top Gun: Maverick,Joseph Kosinski,"Tom Cruise, Jennifer Connelly, Miles Teller, Val Kilmer",Gross Unkown,Action
+Jurassic World: Fallen Kingdom,170000000,417719760,1308334005,148024610.0,Action,Jurassic World: Fallen Kingdom,J.A. Bayona,"Chris Pratt, Bryce Dallas Howard, Rafe Spall, Justice Smith",$417.72M,Action
+Guardians of the Galaxy,170000000,333714112,770882395,94320883.0,Action,Guardians of the Galaxy,James Gunn,"Chris Pratt, Vin Diesel, Bradley Cooper, Zoe Saldana",$333.18M,Action
+Iron Man 2,170000000,312433331,621156389,128122480.0,Action,Iron Man 2,Jon Favreau,"Robert Downey Jr., Mickey Rourke, Gwyneth Paltrow, Don Cheadle",$312.43M,Action
+Captain America: The Winter Soldier,170000000,259746958,714401889,95023721.0,Action,Captain America: The Winter Soldier,"Directors:Anthony Russo, Joe Russo","Chris Evans, Samuel L. Jackson, Scarlett Johansson, Robert Redford",$259.77M,Action
+Dawn of the Planet of the Apes,170000000,208545589,710644566,72611427.0,Adventure,Dawn of the Planet of the Apes,Matt Reeves,"Gary Oldman, Keri Russell, Andy Serkis, Kodi Smit-McPhee",$208.55M,Action
+The Polar Express,170000000,188578855,312719437,23325035.0,Adventure,The Polar Express,Robert Zemeckis,"Tom Hanks, Chris Coppola, Michael Jeter, Leslie Zemeckis",$183.37M,Animation
+Snow White and the Huntsman,170000000,155136755,401021746,56217700.0,Adventure,Snow White and the Huntsman,Rupert Sanders,"Kristen Stewart, Chris Hemsworth, Charlize Theron, Sam Claflin",$155.33M,Action
+Terminator 3: Rise of the Machines,170000000,150358296,433058296,44041440.0,Action,Terminator 3: Rise of the Machines,Jonathan Mostow,"Arnold Schwarzenegger, Nick Stahl, Kristanna Loken, Claire Danes",$150.37M,Action
+Van Helsing,170000000,120150546,300150546,51748040.0,Action,Van Helsing,Stephen Sommers,"Hugh Jackman, Kate Beckinsale, Richard Roxburgh, Shuler Hensley",$120.18M,Action
+Dumbo,170000000,114766307,353166307,45990748.0,Adventure,Dumbo,"Directors:Samuel Armstrong, Norman Ferguson, Wilfred Jackson, Jack Kinney, Bill Roberts, Ben Sharpsteen, John Elliotte","Sterling Holloway, Edward Brophy, Herman Bing, Billy Bletcher",$1.60M,Animation
+Godzilla: King of the Monsters,170000000,110500138,383299915,47776293.0,Action,Godzilla: King of the Monsters,Michael Dougherty,"Kyle Chandler, Vera Farmiga, Millie Bobby Brown, Ken Watanabe",$110.50M,Action
+Tomorrowland,170000000,93436322,206627518,33028165.0,Adventure,Tomorrowland,Brad Bird,"George Clooney, Britt Robertson, Hugh Laurie, Raffey Cassidy",$93.44M,Action
+Alita: Battle Angel,170000000,85838210,401900040,28525613.0,Action,Alita: Battle Angel,Robert Rodriguez,"Rosa Salazar, Christoph Waltz, Jennifer Connelly, Mahershala Ali",$85.71M,Action
+Alice Through the Looking Glass,170000000,77042381,276928112,26858726.0,Adventure,Alice Through the Looking Glass,James Bobin,"Mia Wasikowska, Johnny Depp, Helena Bonham Carter, Anne Hathaway",$77.04M,Adventure
+Shrek Forever After,165000000,238736787,756244673,70838207.0,Adventure,Shrek Forever After,Mike Mitchell,"Mike Myers, Cameron Diaz, Eddie Murphy, Antonio Banderas",$238.37M,Animation
+Doctor Strange,165000000,232641920,676354481,85058311.0,Action,Doctor Strange,Scott Derrickson,"Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams, Benedict Wong",$232.64M,Action
+Big Hero 6,165000000,222527828,648415024,56215889.0,Adventure,Big Hero 6,"Directors:Don Hall, Chris Williams","Ryan Potter, Scott Adsit, Jamie Chung, T.J. Miller",$222.53M,Animation
+How to Train Your Dragon,165000000,217581232,494870992,43732319.0,Adventure,How to Train Your Dragon,"Directors:Dean DeBlois, Chris Sanders","Jay Baruchel, Gerard Butler, Christopher Mintz-Plasse, Craig Ferguson",$217.58M,Animation
+Wreck-It Ralph,165000000,189412677,496511521,49038712.0,Adventure,Wreck-It Ralph,Rich Moore,"John C. Reilly, Jack McBrayer, Jane Lynch, Sarah Silverman",$189.42M,Animation
+Interstellar,165000000,188017894,649133873,47510360.0,Adventure,Interstellar,Christopher Nolan,"Matthew McConaughey, Anne Hathaway, Jessica Chastain, Mackenzie Foy",$188.02M,Adventure
+Dune,165000000,108327830,397720527,41011174.0,Action,Dune,David Lynch,"Kyle MacLachlan, Virginia Madsen, Francesca Annis, Leonardo Cimino",$30.93M,Action
+Independence Day: Resurgence,165000000,103144286,384169424,41039944.0,Action,Independence Day: Resurgence,Roland Emmerich,"Liam Hemsworth, Jeff Goldblum, Bill Pullman, Maika Monroe",$103.14M,Action
+Beauty and the Beast,160000000,504014165,1270042058,174750616.0,Musical,Beauty and the Beast,"Directors:Gary Trousdale, Kirk Wise","Paige O'Hara, Robby Benson, Jesse Corti, Rex Everhart",$218.97M,Animation
+Aquaman,160000000,335061807,1143758700,67873522.0,Action,Aquaman,James Wan,"Jason Momoa, Amber Heard, Willem Dafoe, Patrick Wilson",$335.06M,Action
+Shrek the Third,160000000,322719944,807330936,121629270.0,Adventure,Shrek the Third,"Directors:Chris Miller, Raman Hui","Mike Myers, Cameron Diaz, Eddie Murphy, Antonio Banderas",$320.71M,Animation
+Inception,160000000,292576195,728582465,62785337.0,Thriller/Suspense,Inception,Christopher Nolan,"Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page, Ken Watanabe",$292.58M,Action
+The Hunger Games: Mockingjay - Part 2,160000000,281723902,648986787,102665981.0,Thriller/Suspense,The Hunger Games: Mockingjay - Part 2,Francis Lawrence,"Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth, Woody Harrelson",$281.72M,Action
+Godzilla,160000000,200676069,529076069,93188384.0,Action,Godzilla,Gareth Edwards,"Aaron Taylor-Johnson, Elizabeth Olsen, Bryan Cranston, Ken Watanabe",$200.68M,Action
+Godzilla,160000000,200676069,529076069,93188384.0,Action,Godzilla,Roland Emmerich,"Matthew Broderick, Jean Reno, Maria Pitillo, Hank Azaria",$136.31M,Action
+Godzilla,125000000,136314294,376000000,93188384.0,Action,Godzilla,Gareth Edwards,"Aaron Taylor-Johnson, Elizabeth Olsen, Bryan Cranston, Ken Watanabe",$200.68M,Action
+Godzilla,125000000,136314294,376000000,93188384.0,Action,Godzilla,Roland Emmerich,"Matthew Broderick, Jean Reno, Maria Pitillo, Hank Azaria",$136.31M,Action
+The Curious Case of Benjamin Button,160000000,127509326,329631958,26853816.0,Drama,The Curious Case of Benjamin Button,David Fincher,"Brad Pitt, Cate Blanchett, Tilda Swinton, Julia Ormond",$127.51M,Drama
+The Sorcerer's Apprentice,160000000,63150991,217986320,17619622.0,Adventure,The Sorcerer's Apprentice,Jon Turteltaub,"Nicolas Cage, Jay Baruchel, Alfred Molina, Teresa Palmer",$63.15M,Action
+Poseidon,160000000,60674817,181674817,22155410.0,Adventure,Poseidon,Wolfgang Petersen,"Richard Dreyfuss, Kurt Russell, Emmy Rossum, Josh Lucas",$60.67M,Action
+Warcraft,160000000,47365290,438899824,24166110.0,Action,Warcraft,Duncan Jones,"Travis Fimmel, Paula Patton, Ben Foster, Dominic Cooper",$47.37M,Action
+The Irishman,159000000,0,910234,,Drama,The Irishman,Martin Scorsese,"Robert De Niro, Al Pacino, Joe Pesci, Harvey Keitel",$7.00M,Biography
+Deepwater Horizon,156000000,61433527,122359309,20223544.0,Thriller/Suspense,Deepwater Horizon,Peter Berg,"Mark Wahlberg, Kurt Russell, Douglas M. Griffin, James DuMont",$61.43M,Action
+Godzilla vs. Kong,155000000,100916094,468064628,32200000.0,Action,Godzilla vs. Kong,Adam Wingard,"Alexander Skarsgård, Millie Bobby Brown, Rebecca Hall, Brian Tyree Henry",$100.92M,Action
+Pacific Rim: Uprising,155000000,59874525,290930148,28116535.0,Action,Pacific Rim: Uprising,Steven S. DeKnight,"John Boyega, Scott Eastwood, Cailee Spaeny, Burn Gorman",$59.87M,Action
+Alexander,155000000,34297191,167297191,13687087.0,Action,Alexander,Oliver Stone,"Colin Farrell, Anthony Hopkins, Rosario Dawson, Angelina Jolie",$34.30M,Action
+War for the Planet of the Apes,152000000,146880162,489592267,56262929.0,Action,War for the Planet of the Apes,Matt Reeves,"Andy Serkis, Woody Harrelson, Steve Zahn, Karin Konoval",$146.88M,Action
+Pearl Harbor,151500000,198539855,449239853,59078912.0,Action,Pearl Harbor,Michael Bay,"Ben Affleck, Kate Beckinsale, Josh Hartnett, William Lee Scott",$198.54M,Action
+Transformers,151000000,319246193,708272592,70502384.0,Action,Transformers,Michael Bay,"Shia LaBeouf, Megan Fox, Josh Duhamel, Tyrese Gibson",$319.25M,Action
+Frozen II,150000000,477373578,1445182280,130263358.0,Adventure,Frozen II,"Directors:Chris Buck, Jennifer Lee","Kristen Bell, Idina Menzel, Josh Gad, Jonathan Groff",$477.37M,Animation
+Wonder Woman,150000000,412563408,818058221,103251471.0,Action,Wonder Woman,Patty Jenkins,"Gal Gadot, Chris Pine, Robin Wright, Lucy Davis",$412.56M,Action
+Frozen,150000000,400953009,1261788407,243390.0,Musical,Frozen,"Directors:Chris Buck, Jennifer Lee","Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad",$400.74M,Animation
+Frozen,150000000,400953009,1261788407,243390.0,Musical,Frozen,Adam Green,"Shawn Ashmore, Emma Bell, Kevin Zegers, Ed Ackerman",$0.24M,Adventure
+Zootopia,150000000,341268248,1004629935,75063401.0,Adventure,Zootopia,"Directors:Byron Howard, Rich Moore, Jared Bush","Ginnifer Goodwin, Jason Bateman, Idris Elba, Jenny Slate",$341.27M,Animation
+Harry Potter and the Order of the Phoenix,150000000,292137260,939619849,77108414.0,Adventure,Harry Potter and the Order of the Phoenix,David Yates,"Daniel Radcliffe, Emma Watson, Rupert Grint, Brendan Gleeson",$292.00M,Action
+Harry Potter and the Goblet of Fire,150000000,290201752,886746240,102685961.0,Adventure,Harry Potter and the Goblet of Fire,Mike Newell,"Daniel Radcliffe, Emma Watson, Rupert Grint, Eric Sykes",$290.01M,Adventure
+The Matrix Reloaded,150000000,281553689,738576929,91774413.0,Action,The Matrix Reloaded,"Directors:Lana Wachowski, Lilly Wachowski","Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving",$281.49M,Action
+Moana,150000000,248757044,631617146,56631401.0,Musical,Moana,"Directors:Ron Clements, John Musker, Don Hall, Chris Williams","Auli'i Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison",$248.76M,Animation
+Hancock,150000000,227946274,624234272,62603879.0,Action,Hancock,Peter Berg,"Will Smith, Charlize Theron, Jason Bateman, Jae Head",$227.95M,Action
+Shang-Chi and the Legend of the Ten Rings,150000000,224543292,432243292,75388688.0,Action,Shang-Chi and the Legend of the Ten Rings,Destin Daniel Cretton,"Simu Liu, Awkwafina, Tony Chiu-Wai Leung, Ben Kingsley",$224.54M,Action
+Charlie and the Chocolate Factory,150000000,206459076,475825484,56178450.0,Adventure,Charlie and the Chocolate Factory,Tim Burton,"Johnny Depp, Freddie Highmore, David Kelly, Helena Bonham Carter",$206.46M,Adventure
+Ratatouille,150000000,206445654,626549695,47027395.0,Adventure,Ratatouille,"Directors:Brad Bird, Jan Pinkava","Brad Garrett, Lou Romano, Patton Oswalt, Ian Holm",$206.45M,Animation
+Thor: The Dark World,150000000,206362140,644602516,85737841.0,Action,Thor: The Dark World,Alan Taylor,"Chris Hemsworth, Natalie Portman, Tom Hiddleston, Stellan Skarsgård",$206.36M,Action
+Batman Begins,150000000,205343774,358858124,48745440.0,Action,Batman Begins,Christopher Nolan,"Christian Bale, Michael Caine, Ken Watanabe, Liam Neeson",$206.85M,Action
+Dunkirk,150000000,190068280,518058826,50513488.0,Action,Dunkirk,Christopher Nolan,"Fionn Whitehead, Barry Keoghan, Mark Rylance, Tom Hardy",$188.37M,Action
+Thor,150000000,181030624,449326618,65723338.0,Action,Thor,Kenneth Branagh,"Chris Hemsworth, Anthony Hopkins, Natalie Portman, Tom Hiddleston",$181.03M,Action
+Madagascar: Escape 2 Africa,150000000,180174880,599680774,63106589.0,Adventure,Madagascar: Escape 2 Africa,"Directors:Eric Darnell, Tom McGrath","Ben Stiller, Chris Rock, David Schwimmer, Jada Pinkett Smith",$180.01M,Animation
+X-Men Origins: Wolverine,150000000,179883157,374825760,85058003.0,Action,X-Men Origins: Wolverine,Gavin Hood,"Hugh Jackman, Liev Schreiber, Ryan Reynolds, Danny Huston",$179.88M,Action
+Night at the Museum: Battle of the Smithsonian,150000000,177243721,402231063,54173286.0,Adventure,Night at the Museum: Battle of the Smithsonian,Shawn Levy,"Ben Stiller, Owen Wilson, Amy Adams, Hank Azaria",$177.24M,Adventure
+Kung Fu Panda 2,150000000,165249063,664837547,47656302.0,Adventure,Kung Fu Panda 2,Jennifer Yuh Nelson,"Jack Black, Angelina Jolie, Jackie Chan, Dustin Hoffman",$165.25M,Animation
+Mad Max: Fury Road,150000000,153636354,367457874,45428128.0,Action,Mad Max: Fury Road,George Miller,"Tom Hardy, Charlize Theron, Nicholas Hoult, Zoë Kravitz",$154.06M,Action
+Pokémon: Detective Pikachu,150000000,144105346,431344168,54365242.0,Adventure,Pokémon: Detective Pikachu,Rob Letterman,"Ryan Reynolds, Justice Smith, Kathryn Newton, Bill Nighy",$144.11M,Action
+The Matrix Revolutions,150000000,139270910,427300260,48475154.0,Action,The Matrix Revolutions,"Directors:Lana Wachowski, Lilly Wachowski","Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving",$139.31M,Action
+Ready Player One,150000000,137690172,579055653,41769050.0,Adventure,Ready Player One,Steven Spielberg,"Tye Sheridan, Olivia Cooke, Ben Mendelsohn, Lena Waithe",$137.69M,Action
+Chicken Little,150000000,135386665,310043823,40049778.0,Adventure,Chicken Little,Mark Dindal,"Zach Braff, Joan Cusack, Garry Marshall, Don Knotts",$135.39M,Animation
+Mission: Impossible III,150000000,133501348,399387745,47743273.0,Action,Mission: Impossible III,J.J. Abrams,"Tom Cruise, Michelle Monaghan, Ving Rhames, Philip Seymour Hoffman",$134.03M,Action
+Angels & Demons,150000000,133375846,490875846,46204168.0,Thriller/Suspense,Angels & Demons,Ron Howard,"Tom Hanks, Ewan McGregor, Ayelet Zurer, Stellan Skarsgård",$133.38M,Action
+Troy,150000000,133298577,483152040,46865412.0,Action,Troy,Wolfgang Petersen,"Brad Pitt, Eric Bana, Orlando Bloom, Julian Glover",$133.38M,Drama
+Bee Movie,150000000,126631277,287594577,38021044.0,Adventure,Bee Movie,"Directors:Simon J. Smith, Steve Hickner","Jerry Seinfeld, Renée Zellweger, Matthew Broderick, Patrick Warburton",$126.63M,Animation
+G-Force,150000000,119436770,292817841,31706934.0,Adventure,G-Force,Hoyt Yeatman,"Will Arnett, Penélope Cruz, Zach Galifianakis, Bill Nighy",$119.44M,Animation
+Bolt,150000000,114053579,328015029,26223128.0,Adventure,Bolt,"Directors:Byron Howard, Chris Williams","John Travolta, Miley Cyrus, Susie Essman, Mark Walton",$114.05M,Animation
+Encanto,150000000,96093622,230873149,27206494.0,Adventure,Encanto,"Directors:Jared Bush, Byron Howard, Charise Castro Smith","Stephanie Beatriz, María Cecilia Botero, John Leguizamo, Mauro Castillo",$96.09M,Animation
+Wrath of the Titans,150000000,83670083,305270083,33457188.0,Adventure,Wrath of the Titans,Jonathan Liebesman,"Sam Worthington, Liam Neeson, Rosamund Pike, Ralph Fiennes",$83.67M,Action
+Beowulf,150000000,82280579,195080579,27515871.0,Adventure,Beowulf,Robert Zemeckis,"Ray Winstone, Crispin Glover, Angelina Jolie, Robin Wright",$82.16M,Animation
+Dark Shadows,150000000,79727149,238202668,29685274.0,Black Comedy,Dark Shadows,Tim Burton,"Johnny Depp, Michelle Pfeiffer, Eva Green, Helena Bonham Carter",$79.73M,Comedy
+White House Down,150000000,73103784,205440387,24852258.0,Thriller/Suspense,White House Down,Roland Emmerich,"Channing Tatum, Jamie Foxx, Maggie Gyllenhaal, Jason Clarke",$73.10M,Action
+Space Jam: A New Legacy,150000000,70592228,144003749,31053362.0,Comedy,Space Jam: A New Legacy,Malcolm D. Lee,"LeBron James, Don Cheadle, Cedric Joe, Khris Davis",Gross Unkown,Animation
+The Wolfman,150000000,62189884,142634358,31479235.0,Horror,The Wolfman,Joe Johnston,"Benicio Del Toro, Anthony Hopkins, Emily Blunt, Simon Merrells",$61.98M,Drama
+The Great Wall,150000000,45157105,334486852,18469620.0,Action,The Great Wall,Yimou Zhang,"Matt Damon, Tian Jing, Willem Dafoe, Andy Lau",$45.54M,Action
+Pan,150000000,35088320,151525973,15315435.0,Adventure,Pan,Joe Wright,"Levi Miller, Hugh Jackman, Garrett Hedlund, Rooney Mara",$35.09M,Action
+Red Notice,150000000,0,173638,,Action,Red Notice,Rawson Marshall Thurber,"Dwayne Johnson, Ryan Reynolds, Gal Gadot, Ritu Arya",Gross Unkown,Action
+6 Underground,150000000,0,0,,Action,6 Underground,Michael Bay,"Ryan Reynolds, Mélanie Laurent, Manuel Garcia-Rulfo, Ben Hardy",Gross Unkown,Action
+Flushed Away,149000000,64665672,179357126,18814323.0,Adventure,Flushed Away,"Directors:David Bowers, Sam Fell","Hugh Jackman, Kate Winslet, Ian McKellen, Jean Reno",$64.67M,Animation
+Madagascar 3: Europe's Most Wanted,145000000,216391482,746921271,60316738.0,Adventure,Madagascar 3: Europe's Most Wanted,"Directors:Eric Darnell, Tom McGrath, Conrad Vernon","Ben Stiller, Jada Pinkett Smith, Chris Rock, David Schwimmer",$216.39M,Animation
+How to Train Your Dragon 2,145000000,177002924,614586270,49451322.0,Adventure,How to Train Your Dragon 2,Dean DeBlois,"Jay Baruchel, Cate Blanchett, Gerard Butler, Craig Ferguson",$177.00M,Animation
+Tarzan,145000000,171091819,448191819,34221968.0,Adventure,Tarzan,"Directors:Chris Buck, Kevin Lima","Tony Goldwyn, Minnie Driver, Brian Blessed, Glenn Close",$171.09M,Animation
+Mr. Peabody & Sherman,145000000,111506430,269806430,32207057.0,Adventure,Mr. Peabody & Sherman,Rob Minkoff,"Ty Burrell, Max Charles, Stephen Colbert, Leslie Mann",$111.51M,Animation
+Rise of the Guardians,145000000,103412758,306900902,23773465.0,Adventure,Rise of the Guardians,Peter Ramsey,"Hugh Jackman, Alec Baldwin, Isla Fisher, Chris Pine",$103.41M,Animation
+Sahara,145000000,68671925,121645390,18068372.0,Adventure,Sahara,Breck Eisner,"Matthew McConaughey, Penélope Cruz, Steve Zahn, Mark Aspinall",$68.67M,Action
+Ghostbusters,144000000,128350574,229008658,46018755.0,Comedy,Ghostbusters,Ivan Reitman,"Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis",$238.63M,Action
+Ghostbusters,144000000,128350574,229008658,46018755.0,Comedy,Ghostbusters,Paul Feig,"Melissa McCarthy, Kristen Wiig, Kate McKinnon, Leslie Jones",$128.34M,Action
+Die Another Day,142000000,160942139,431942139,47072040.0,Action,Die Another Day,Lee Tamahori,"Pierce Brosnan, Halle Berry, Rosamund Pike, Toby Stephens",$160.94M,Action
+Star Trek,140000000,257730019,386839614,79204289.0,Adventure,Star Trek,J.J. Abrams,"Chris Pine, Zachary Quinto, Simon Pegg, Leonard Nimoy",$257.73M,Action
+Armageddon,140000000,201578182,554600000,36089972.0,Adventure,Armageddon,Michael Bay,"Bruce Willis, Billy Bob Thornton, Ben Affleck, Liv Tyler",$201.57M,Action
+Captain America: The First Avenger,140000000,176654505,370569776,65058524.0,Action,Captain America: The First Avenger,Joe Johnston,"Chris Evans, Hugo Weaving, Samuel L. Jackson, Hayley Atwell",$176.65M,Action
+Kung Fu Panda 3,140000000,143528619,521170825,41282042.0,Adventure,Kung Fu Panda 3,"Directors:Alessandro Carloni, Jennifer Yuh Nelson","Jack Black, Bryan Cranston, Dustin Hoffman, Angelina Jolie",$143.53M,Animation
+Lethal Weapon 4,140000000,130444603,285400000,34048124.0,Action,Lethal Weapon 4,Richard Donner,"Mel Gibson, Danny Glover, Joe Pesci, Rene Russo",$130.44M,Action
+G.I. Joe: Retaliation,140000000,122523060,375740705,40501814.0,Action,G.I. Joe: Retaliation,Jon M. Chu,"Dwayne Johnson, Channing Tatum, Adrianne Palicki, Lee Byung-hun",$122.52M,Action
+The Last Samurai,140000000,111110575,456810575,24271354.0,Action,The Last Samurai,Edward Zwick,"Tom Cruise, Ken Watanabe, Billy Connolly, William Atherton",$111.11M,Action
+Exodus: Gods and Kings,140000000,65014513,268314513,24115934.0,Drama,Exodus: Gods and Kings,Ridley Scott,"Christian Bale, Joel Edgerton, Ben Kingsley, Sigourney Weaver",$65.01M,Action
+Gemini Man,140000000,48546770,166623705,20552372.0,Action,Gemini Man,Ang Lee,"Will Smith, Mary Elizabeth Winstead, Clive Owen, Benedict Wong",$48.55M,Action
+Gods of Egypt,140000000,31153464,138836756,14123903.0,Adventure,Gods of Egypt,Alex Proyas,"Brenton Thwaites, Nikolaj Coster-Waldau, Gerard Butler, Chadwick Boseman",$31.15M,Action
+Spider-Man,139000000,403706375,821706375,114844116.0,Adventure,Spider-Man,Sam Raimi,"Tobey Maguire, Kirsten Dunst, Willem Dafoe, James Franco",$403.71M,Action
+Watchmen,138000000,107509799,186976250,55214334.0,Action,Watchmen,Zack Snyder,"Jackie Earle Haley, Patrick Wilson, Carla Gugino, Malin Akerman",$107.51M,Action
+The Incredible Hulk,137500000,134806913,265573859,55414050.0,Adventure,The Incredible Hulk,Louis Leterrier,"Edward Norton, Liv Tyler, Tim Roth, William Hurt",$134.52M,Action
+Hulk,137000000,132177234,245031679,62128420.0,Action,Hulk,Ang Lee,"Eric Bana, Jennifer Connelly, Sam Elliott, Josh Lucas",$132.18M,Action
+Final Fantasy: The Spirits Within,137000000,32131830,85131830,11408853.0,Adventure,Final Fantasy: The Spirits Within,"Directors:Hironobu Sakaguchi, Motonori Sakakibara","Alec Baldwin, Steve Buscemi, Ming-Na Wen, Ving Rhames",$32.13M,Animation
+The Croods,135000000,187168425,573068425,43639736.0,Adventure,The Croods,"Directors:Kirk DeMicco, Chris Sanders","Nicolas Cage, Ryan Reynolds, Emma Stone, Catherine Keener",$187.17M,Animation
+The Revenant,135000000,183637894,532938302,474560.0,Adventure,The Revenant,Alejandro G. Iñárritu,"Leonardo DiCaprio, Tom Hardy, Will Poulter, Domhnall Gleeson",$183.64M,Action
+Rango,135000000,123477607,245724600,38079323.0,Adventure,Rango,Gore Verbinski,"Johnny Depp, Isla Fisher, Timothy Olyphant, Abigail Breslin",$123.48M,Animation
+Master and Commander: The Far Side of the World,135000000,93926386,212912137,25105990.0,Adventure,Master and Commander: The Far Side of the World,Peter Weir,"Russell Crowe, Paul Bettany, Billy Boyd, James D'Arcy",$93.93M,Action
+Turbo,135000000,83028130,286896578,21312625.0,Adventure,Turbo,David Soren,"Ryan Reynolds, Paul Giamatti, Maya Rudolph, Samuel L. Jackson",$83.03M,Animation
+Teenage Mutant Ninja Turtles: Out of the Shadows,135000000,82051601,245328374,35316382.0,Adventure,Teenage Mutant Ninja Turtles: Out of the Shadows,Dave Green,"Megan Fox, Will Arnett, Tyler Perry, Laura Linney",$82.05M,Action
+Happy Feet Two,135000000,64006466,157956466,21237068.0,Adventure,Happy Feet Two,"Directors:George Miller, Gary Eck, David Peers","Elijah Wood, Robin Williams, Pink, Carlos Alazraqui",$64.01M,Animation
+Miami Vice,135000000,63478838,164920076,25723815.0,Action,Miami Vice,Michael Mann,"Colin Farrell, Jamie Foxx, Gong Li, Naomie Harris",$63.45M,Action
+War of the Worlds,132000000,234280354,606836535,64878725.0,Action,War of the Worlds,Steven Spielberg,"Tom Cruise, Dakota Fanning, Tim Robbins, Miranda Otto",$234.28M,Action
+Penguins of Madagascar,132000000,83350911,366942531,25447444.0,Adventure,Penguins of Madagascar,"Directors:Eric Darnell, Simon J. Smith","Tom McGrath, Chris Miller, Christopher Knights, Conrad Vernon",$83.35M,Animation
+The Hunger Games: Catching Fire,130000000,424668047,864868047,158074286.0,Adventure,The Hunger Games: Catching Fire,Francis Lawrence,"Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth, Philip Seymour Hoffman",$424.67M,Action
+Harry Potter and the Prisoner of Azkaban,130000000,249757726,789592708,93687367.0,Adventure,Harry Potter and the Prisoner of Azkaban,Alfonso Cuarón,"Daniel Radcliffe, Emma Watson, Rupert Grint, Richard Griffiths",$249.36M,Adventure
+The Bourne Ultimatum,130000000,227471070,444043396,69283690.0,Thriller/Suspense,The Bourne Ultimatum,Paul Greengrass,"Matt Damon, Edgar Ramírez, Joan Allen, Julia Stiles",$227.47M,Action
+Ant-Man and the Wasp,130000000,216648740,623144660,75812205.0,Action,Ant-Man and the Wasp,Peyton Reed,"Paul Rudd, Evangeline Lilly, Michael Peña, Walton Goggins",$216.65M,Action
+Kung Fu Panda,130000000,215434591,631910531,60239130.0,Adventure,Kung Fu Panda,"Directors:Mark Osborne, John Stevenson","Jack Black, Ian McShane, Angelina Jolie, Dustin Hoffman",$215.43M,Animation
+Ant-Man,130000000,180202163,518858449,57225526.0,Action,Ant-Man,Peyton Reed,"Paul Rudd, Michael Douglas, Corey Stoll, Evangeline Lilly",$180.20M,Action
+Home,130000000,177397510,385997896,52107731.0,Adventure,Home,Tim Johnson,"Jim Parsons, Rihanna, Steve Martin, Jennifer Lopez",$177.40M,Animation
+Mary Poppins Returns,130000000,171958438,348901032,23523121.0,Musical,Mary Poppins Returns,Rob Marshall,"Emily Blunt, Lin-Manuel Miranda, Ben Whishaw, Emily Mortimer",$171.96M,Animation
+Puss in Boots,130000000,149260504,554987477,34077439.0,Adventure,Puss in Boots,Chris Miller,"Antonio Banderas, Salma Hayek, Zach Galifianakis, Billy Bob Thornton",$149.26M,Animation
+Megamind,130000000,148415853,321887208,46016833.0,Adventure,Megamind,Tom McGrath,"Will Ferrell, Jonah Hill, Brad Pitt, Tina Fey",$148.42M,Animation
+Bad Boys II,130000000,138540870,273271982,46522560.0,Action,Bad Boys II,Michael Bay,"Will Smith, Martin Lawrence, Gabrielle Union, Jordi Mollà",$138.61M,Action
+Rio 2,130000000,131538435,492846291,39327869.0,Adventure,Rio 2,Carlos Saldanha,"Jesse Eisenberg, Anne Hathaway, Jemaine Clement, Andy Garcia",$131.54M,Animation
+Salt,130000000,118311368,290650494,36011243.0,Thriller/Suspense,Salt,Phillip Noyce,"Angelina Jolie, Liev Schreiber, Chiwetel Ejiofor, Daniel Olbrychski",$118.31M,Action
+Noah,130000000,101200044,352831065,43720472.0,Drama,Noah,Darren Aronofsky,"Russell Crowe, Jennifer Connelly, Anthony Hopkins, Emma Watson",$101.20M,Action
+The Adventures of Tintin,130000000,77591831,373993951,9720993.0,Adventure,The Adventures of Tintin,Steven Spielberg,"Jamie Bell, Andy Serkis, Daniel Craig, Simon Pegg",$77.59M,Animation
+Australia,130000000,49554002,215080810,14800723.0,Drama,Australia,Baz Luhrmann,"Nicole Kidman, Hugh Jackman, Shea Adams, Eddie Baroo",$49.55M,Adventure
+R.I.P.D.,130000000,33618855,79076678,12691415.0,Action,R.I.P.D.,Robert Schwentke,"Ryan Reynolds, Jeff Bridges, Mary-Louise Parker, Kevin Bacon",$33.62M,Action
+How to Train Your Dragon: The Hidden World,129000000,160799505,521214533,55022245.0,Adventure,How to Train Your Dragon: The Hidden World,Dean DeBlois,"Jay Baruchel, America Ferrera, F. Murray Abraham, Cate Blanchett",$160.80M,Animation
+Dinosaur,127500000,137748063,356148063,38854851.0,Adventure,Dinosaur,"Directors:Eric Leighton, Ralph Zondag","D.B. Sweeney, Julianna Margulies, Samuel E. Wright, Alfre Woodard",$137.75M,Animation
+Logan,127000000,226277068,614202315,88411916.0,Action,Logan,James Mangold,"Hugh Jackman, Patrick Stewart, Dafne Keen, Boyd Holbrook",$226.28M,Action
+Night at the Museum: Secret of the Tomb,127000000,113746621,353756621,17100520.0,Adventure,Night at the Museum: Secret of the Tomb,Shawn Levy,"Ben Stiller, Robin Williams, Owen Wilson, Dick Van Dyke",$113.75M,Adventure
+The Hunger Games: Mockingjay - Part 1,125000000,337135885,766575131,121897634.0,Thriller/Suspense,The Hunger Games: Mockingjay - Part 1,Francis Lawrence,"Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth, Woody Harrelson",$337.14M,Action
+Jumanji: The Next Level,125000000,316831246,798332900,59251543.0,Adventure,Jumanji: The Next Level,Jake Kasdan,"Dwayne Johnson, Jack Black, Kevin Hart, Karen Gillan",$316.83M,Action
+The Da Vinci Code,125000000,217536138,767820459,77073388.0,Thriller/Suspense,The Da Vinci Code,Ron Howard,"Tom Hanks, Audrey Tautou, Jean Reno, Ian McKellen",$217.54M,Mystery
+Fast Five,125000000,210031325,630163454,86198765.0,Action,Fast Five,Justin Lin,"Vin Diesel, Paul Walker, Dwayne Johnson, Jordana Brewster",$209.84M,Action
+Teenage Mutant Ninja Turtles,125000000,191204754,485004754,65575105.0,Adventure,Teenage Mutant Ninja Turtles,Steve Barron,"Judith Hoag, Elias Koteas, Josh Pais, David Forman",$135.27M,Action
+Teenage Mutant Ninja Turtles,125000000,191204754,485004754,65575105.0,Adventure,Teenage Mutant Ninja Turtles,Jonathan Liebesman,"Megan Fox, Will Arnett, William Fichtner, Noel Fisher",$191.20M,Action
+Sherlock Holmes: A Game of Shadows,125000000,186848418,535663443,39637079.0,Action,Sherlock Holmes: A Game of Shadows,Guy Ritchie,"Robert Downey Jr., Jude Law, Jared Harris, Rachel McAdams",$186.85M,Action
+The Day After Tomorrow,125000000,186740799,555840117,68743584.0,Adventure,The Day After Tomorrow,Roland Emmerich,"Dennis Quaid, Jake Gyllenhaal, Emmy Rossum, Dash Mihok",$186.74M,Action
+The Boss Baby,125000000,175003033,527965936,50198902.0,Adventure,The Boss Baby,Tom McGrath,"Alec Baldwin, Steve Buscemi, Jimmy Kimmel, Lisa Kudrow",$175.00M,Animation
+Clash of the Titans,125000000,163214888,493214888,61235105.0,Action,Clash of the Titans,Desmond Davis,"Laurence Olivier, Harry Hamlin, Claire Bloom, Maggie Smith",$41.09M,Action
+Clash of the Titans,125000000,163214888,493214888,61235105.0,Action,Clash of the Titans,Louis Leterrier,"Sam Worthington, Liam Neeson, Ralph Fiennes, Jason Flemyng",$163.21M,Action
+Trolls,125000000,153707064,343242613,46581142.0,Adventure,Trolls,"Directors:Mike Mitchell, Walt Dohrn","Anna Kendrick, Justin Timberlake, Zooey Deschanel, Christopher Mintz-Plasse",$153.71M,Animation
+Prometheus,125000000,126477084,402448265,51050101.0,Thriller/Suspense,Prometheus,Ridley Scott,"Noomi Rapace, Logan Marshall-Green, Michael Fassbender, Charlize Theron",$126.48M,Adventure
+The Bourne Legacy,125000000,113203870,280355920,38142825.0,Thriller/Suspense,The Bourne Legacy,Tony Gilroy,"Jeremy Renner, Rachel Weisz, Edward Norton, Scott Glenn",$113.20M,Action
+Skyscraper,125000000,68420120,304868961,24905015.0,Action,Skyscraper,Rawson Marshall Thurber,"Dwayne Johnson, Neve Campbell, Chin Han, Roland Møller",$68.42M,Action
+The Call of the Wild,125000000,62342368,107360936,24791624.0,Adventure,The Call of the Wild,Chris Sanders,"Harrison Ford, Omar Sy, Cara Gee, Dan Stevens",$62.34M,Adventure
+Total Recall,125000000,58877969,211856088,25577758.0,Action,Total Recall,Paul Verhoeven,"Arnold Schwarzenegger, Sharon Stone, Michael Ironside, Rachel Ticotin",$119.39M,Action
+Total Recall,125000000,58877969,211856088,25577758.0,Action,Total Recall,Len Wiseman,"Colin Farrell, Bokeem Woodbine, Bryan Cranston, Kate Beckinsale",$58.88M,Action
+The 13th Warrior,125000000,32698899,61698899,10267756.0,Action,The 13th Warrior,"Directors:John McTiernan, Michael Crichton","Antonio Banderas, Diane Venora, Dennis Storhøi, Vladimir Kulich",$32.70M,Action
+How the Grinch Stole Christmas,123000000,260348825,345445403,55820330.0,Adventure,How the Grinch Stole Christmas,Ron Howard,"Jim Carrey, Taylor Momsen, Kelley, Jeffrey Tambor",$260.04M,Comedy
+The Perfect Storm,120000000,182618434,328711434,41325042.0,Drama,The Perfect Storm,Wolfgang Petersen,"George Clooney, Mark Wahlberg, John C. Reilly, Diane Lane",$182.62M,Action
+Jason Bourne,120000000,162192920,416168316,59215365.0,Action,Jason Bourne,Paul Greengrass,"Matt Damon, Tommy Lee Jones, Alicia Vikander, Vincent Cassel",$162.43M,Action
+Uncharted,120000000,148648820,401748820,44010155.0,Adventure,Uncharted,Ruben Fleischer,"Tom Holland, Mark Wahlberg, Antonio Banderas, Sophia Ali",Gross Unkown,Action
+Life of Pi,120000000,124987022,619310368,22451514.0,Drama,Life of Pi,Ang Lee,"Suraj Sharma, Irrfan Khan, Adil Hussain, Tabu",$124.99M,Adventure
+Rampage,120000000,101028233,427947217,35753093.0,Action,Rampage,Brad Peyton,"Dwayne Johnson, Naomie Harris, Malin Akerman, Jeffrey Dean Morgan",$101.03M,Action
+Charlie's Angels: Full Throttle,120000000,100814328,227163273,37634221.0,Action,Charlie's Angels: Full Throttle,McG,"Drew Barrymore, Lucy Liu, Cameron Diaz, Bernie Mac",$100.83M,Action
+Elysium,120000000,93050117,286192091,29807393.0,Action,Elysium,Neill Blomkamp,"Matt Damon, Jodie Foster, Sharlto Copley, Alice Braga",$93.05M,Action
+Elysium,120000000,93050117,286192091,29807393.0,Action,Elysium,Neill Blomkamp,"Matt Damon, Jodie Foster, Sharlto Copley, Alice Braga",$93.05M,Action
+Oblivion,120000000,89107235,287916633,37054485.0,Thriller/Suspense,Oblivion,Joseph Kosinski,"Tom Cruise, Morgan Freeman, Andrea Riseborough, Olga Kurylenko",$89.02M,Action
+Power Rangers,120000000,85364450,142531552,40300288.0,Action,Power Rangers,Dean Israelite,"Dacre Montgomery, Naomi Scott, RJ Cyler, Ludi Lin",$85.36M,Action
+Stuart Little 2,120000000,64956806,166000000,15115152.0,Adventure,Stuart Little 2,Rob Minkoff,"Michael J. Fox, Geena Davis, Hugh Laurie, Jonathan Lipnicki",$64.96M,Animation
+RoboCop,120000000,58607007,242981799,21681430.0,Action,RoboCop,Paul Verhoeven,"Peter Weller, Nancy Allen, Dan O'Herlihy, Ronny Cox",$53.42M,Action
+RoboCop,120000000,58607007,242981799,21681430.0,Action,RoboCop,José Padilha,"Joel Kinnaman, Gary Oldman, Michael Keaton, Abbie Cornish",$58.61M,Action
+The Chronicles of Riddick,120000000,57712751,107212751,24289165.0,Adventure,The Chronicles of Riddick,David Twohy,"Vin Diesel, Judi Dench, Colm Feore, Thandiwe Newton",$57.76M,Action
+Speed Racer,120000000,43945766,93394462,18561337.0,Action,Speed Racer,"Directors:Lana Wachowski, Lilly Wachowski","Emile Hirsch, Matthew Fox, Christina Ricci, Nicholas Elia",$43.95M,Action
+The Island,120000000,35818913,163018913,12409070.0,Action,The Island,Michael Bay,"Scarlett Johansson, Ewan McGregor, Djimon Hounsou, Steve Buscemi",$35.82M,Action
+Outlaw King,120000000,0,0,,Action,Outlaw King,David Mackenzie,"Chris Pine, Stephen Dillane, Rebecca Robin, Billy Howle",Gross Unkown,Action
+Knight and Day,117000000,76423035,258751370,20139985.0,Action,Knight and Day,James Mangold,"Tom Cruise, Cameron Diaz, Peter Sarsgaard, Jordi Mollà",$76.42M,Action
+Venom,116000000,213511408,856081053,80255756.0,Action,Venom,Ruben Fleischer,"Tom Hardy, Michelle Williams, Riz Ahmed, Scott Haze",$213.52M,Action
+"Monsters, Inc.",115000000,290149425,560483719,62577067.0,Adventure,"Monsters, Inc.","Directors:Pete Docter, David Silverman, Lee Unkrich","Billy Crystal, John Goodman, Mary Gibbs, Steve Buscemi",$289.92M,Animation
+The Wolverine,115000000,132556852,416456852,53113752.0,Action,The Wolverine,James Mangold,"Hugh Jackman, Will Yun Lee, Tao Okamoto, Rila Fukushima",$132.56M,Action
+Windtalkers,115000000,40914068,77628265,14520412.0,Action,Windtalkers,John Woo,"Nicolas Cage, Adam Beach, Peter Stormare, Noah Emmerich",$40.91M,Action
+Triple Frontier,115000000,0,0,,Action,Triple Frontier,J.C. Chandor,"Ben Affleck, Oscar Isaac, Charlie Hunnam, Garrett Hedlund",Gross Unkown,Action
+Gulliver's Travels,112000000,42779261,232017848,6307691.0,Adventure,Gulliver's Travels,Rob Letterman,"Jack Black, Emily Blunt, Jason Segel, Amanda Peet",$42.78M,Adventure
+Ferdinand,111000000,84410380,288510892,13401586.0,Adventure,Ferdinand,Carlos Saldanha,"John Cena, Kate McKinnon, Bobby Cannavale, Jack Gore",$84.41M,Animation
+Deadpool 2,110000000,324591735,786362370,125507153.0,Action,Deadpool 2,David Leitch,"Ryan Reynolds, Josh Brolin, Morena Baccarin, Julian Dennison",$324.59M,Action
+Gravity,110000000,274092705,688214291,55785112.0,Thriller/Suspense,Gravity,Alfonso Cuarón,"Sandra Bullock, George Clooney, Ed Harris, Orto Ignatiussen",$274.09M,Drama
+Night at the Museum,110000000,250863268,579446407,30433781.0,Adventure,Night at the Museum,Shawn Levy,"Ben Stiller, Carla Gugino, Ricky Gervais, Dick Van Dyke",$250.86M,Adventure
+San Andreas,110000000,155190832,456258539,54588173.0,Adventure,San Andreas,Brad Peyton,"Dwayne Johnson, Carla Gugino, Alexandra Daddario, Colton Haynes",$155.19M,Action
+The Smurfs,110000000,142614158,563749323,35611637.0,Adventure,The Smurfs,Raja Gosnell,"Hank Azaria, Katy Perry, Jonathan Winters, Neil Patrick Harris",$142.61M,Animation
+Live Free or Die Hard,110000000,134529403,382288147,33369559.0,Action,Live Free or Die Hard,Len Wiseman,"Bruce Willis, Justin Long, Timothy Olyphant, Maggie Q",$134.53M,Action
+Ocean's Twelve,110000000,125531634,362989076,39153380.0,Adventure,Ocean's Twelve,Steven Soderbergh,"George Clooney, Brad Pitt, Julia Roberts, Catherine Zeta-Jones",$125.54M,Crime
+Tomorrow Never Dies,110000000,125304276,339504276,25143007.0,Action,Tomorrow Never Dies,Roger Spottiswoode,"Pierce Brosnan, Jonathan Pryce, Michelle Yeoh, Teri Hatcher",$125.33M,Action
+The Patriot,110000000,113330342,215300000,22413710.0,Drama,The Patriot,Roland Emmerich,"Mel Gibson, Heath Ledger, Joely Richardson, Jason Isaacs",$113.33M,Action
+300: Rise of an Empire,110000000,106580051,330780051,45038460.0,Action,300: Rise of an Empire,Noam Murro,"Sullivan Stapleton, Eva Green, Lena Headey, Hans Matheson",$106.58M,Action
+The Aviator,110000000,102608827,208370892,858021.0,Drama,The Aviator,Martin Scorsese,"Leonardo DiCaprio, Cate Blanchett, Kate Beckinsale, John C. Reilly",$102.61M,Biography
+Passengers,110000000,100014699,302239672,14869736.0,Thriller/Suspense,Passengers,Rodrigo García,"Anne Hathaway, Patrick Wilson, David Morse, Andre Braugher",$0.27M,Mystery
+Passengers,110000000,100014699,302239672,14869736.0,Thriller/Suspense,Passengers,Morten Tyldum,"Jennifer Lawrence, Chris Pratt, Michael Sheen, Laurence Fishburne",$100.01M,Drama
+The Green Hornet,110000000,98780042,229155503,33526876.0,Action,The Green Hornet,Michel Gondry,"Seth Rogen, Jay Chou, Christoph Waltz, Cameron Diaz",$98.78M,Action
+Real Steel,110000000,85463309,263880341,27319677.0,Action,Real Steel,Shawn Levy,"Hugh Jackman, Evangeline Lilly, Dakota Goyo, Anthony Mackie",$85.47M,Action
+Men in Black: International,110000000,80001807,253020464,30035838.0,Adventure,Men in Black: International,F. Gary Gray,"Chris Hemsworth, Tessa Thompson, Kumail Nanjiani, Rebecca Ferguson",$80.00M,Action
+The A-Team,110000000,77222099,177241171,25669455.0,Action,The A-Team,Joe Carnahan,"Liam Neeson, Bradley Cooper, Sharlto Copley, Jessica Biel",$77.22M,Action
+The Smurfs 2,110000000,71017784,348547523,17548389.0,Adventure,The Smurfs 2,Raja Gosnell,"Neil Patrick Harris, Jayma Mays, Katy Perry, Hank Azaria",$71.02M,Animation
+The Taking of Pelham 123,110000000,65452312,152364370,23373102.0,Action,The Taking of Pelham 123,Tony Scott,"Denzel Washington, John Travolta, Luis Guzmán, Victor Gojcaj",$65.45M,Action
+Ender's Game,110000000,61737191,127983283,27017351.0,Adventure,Ender's Game,Gavin Hood,"Harrison Ford, Asa Butterfield, Hailee Steinfeld, Abigail Breslin",$61.74M,Action
+Speed 2: Cruise Control,110000000,48097081,150468000,16158942.0,Action,Speed 2: Cruise Control,Jan de Bont,"Sandra Bullock, Jason Patric, Willem Dafoe, Temuera Morrison",$48.61M,Action
+Kingdom of Heaven,110000000,47398413,218674938,19635996.0,Action,Kingdom of Heaven,Ridley Scott,"Orlando Bloom, Eva Green, Liam Neeson, Martin Hancock",$47.40M,Action
+Ghost in the Shell,110000000,40563557,167910690,18676033.0,Action,Ghost in the Shell,Rupert Sanders,"Scarlett Johansson, Pilou Asbæk, Takeshi Kitano, Juliette Binoche",$40.56M,Action
+Around the World in 80 Days,110000000,24004159,72004159,7576132.0,Adventure,Around the World in 80 Days,Frank Coraci,"Jackie Chan, Steve Coogan, Jim Broadbent, Kathy Bates",$24.01M,Action
+Around the World in 80 Days,110000000,24004159,72004159,7576132.0,Adventure,Around the World in 80 Days,"Directors:Michael Anderson, John Farrow","David Niven, Cantinflas, Finlay Currie, Robert Morley",$42.00M,Adventure
+Ali,109000000,58183966,87683966,14710892.0,Drama,Ali,Michael Mann,"Will Smith, Jamie Foxx, Jon Voight, Mario Van Peebles",$58.20M,Biography
+The Martian,108000000,228433663,653609107,54308575.0,Thriller/Suspense,The Martian,Ridley Scott,"Matt Damon, Jessica Chastain, Kristen Wiig, Kate Mara",$228.43M,Adventure
+Allied,106000000,40098064,119266661,12701743.0,Drama,Allied,Robert Zemeckis,"Brad Pitt, Marion Cotillard, Jared Harris, Vincent Ebrahim",$40.10M,Action
+"I, Robot",105000000,144801023,348629585,52179887.0,Action,"I, Robot",Alex Proyas,"Will Smith, Bridget Moynahan, Bruce Greenwood, Alan Tudyk",$144.80M,Action
+Stuart Little,105000000,140015224,298815224,15018223.0,Adventure,Stuart Little,Rob Minkoff,"Michael J. Fox, Geena Davis, Hugh Laurie, Jonathan Lipnicki",$140.04M,Adventure
+The Princess and the Frog,105000000,104400899,270997378,786190.0,Adventure,The Princess and the Frog,"Directors:Ron Clements, John Musker","Anika Noni Rose, Keith David, Oprah Winfrey, Bruno Campos",$104.40M,Animation
+Ice Age: Collision Course,105000000,64063008,402156682,21373064.0,Adventure,Ice Age: Collision Course,"Directors:Michael Thurmeier, Galen T. Chu","Ray Romano, Denis Leary, John Leguizamo, Chris Wedge",$64.06M,Animation
+Starship Troopers,105000000,54768952,121100000,22058773.0,Action,Starship Troopers,Paul Verhoeven,"Casper Van Dien, Denise Richards, Dina Meyer, Jake Busey",$54.81M,Action
+Kingsman: The Golden Circle,104000000,100234838,408803696,39023010.0,Action,Kingsman: The Golden Circle,Matthew Vaughn,"Taron Egerton, Colin Firth, Mark Strong, Channing Tatum",$100.23M,Action
+Gladiator,103000000,187683805,456435588,34819017.0,Action,Gladiator,Ridley Scott,"Russell Crowe, Joaquin Phoenix, Connie Nielsen, Oliver Reed",$187.71M,Action
+Public Enemies,102500000,97104620,212282709,25271675.0,Drama,Public Enemies,Michael Mann,"Christian Bale, Johnny Depp, Christian Stolte, Jason Clarke",$97.10M,Action
+Casino Royale,102000000,167365000,594420283,40833156.0,Action,Casino Royale,Martin Campbell,"Daniel Craig, Eva Green, Judi Dench, Jeffrey Wright",$167.45M,Action
+Casino Royale,102000000,167365000,594420283,40833156.0,Action,Casino Royale,"Directors:Val Guest, Ken Hughes, John Huston, Joseph McGrath, Robert Parrish, Richard Talmadge","David Niven, Peter Sellers, Ursula Andress, Orson Welles",Gross Unkown,Comedy
+Minority Report,102000000,132024714,358824714,35677125.0,Action,Minority Report,Steven Spielberg,"Tom Cruise, Colin Farrell, Samantha Morton, Max von Sydow",$132.07M,Action
+Bumblebee,102000000,127195589,465195589,21654047.0,Adventure,Bumblebee,Travis Knight,"Hailee Steinfeld, Jorge Lendeborg Jr., John Cena, Jason Drucker",$127.20M,Action
+Cloud Atlas,102000000,27108272,130673154,9612247.0,Drama,Cloud Atlas,"Directors:Tom Tykwer, Lana Wachowski, Lilly Wachowski","Tom Hanks, Halle Berry, Hugh Grant, Hugo Weaving",$27.11M,Drama
+Harry Potter and the Chamber of Secrets,100000000,262233381,875262553,88357488.0,Adventure,Harry Potter and the Chamber of Secrets,Chris Columbus,"Daniel Radcliffe, Rupert Grint, Emma Watson, Richard Harris",$261.99M,Adventure
+Terminator 2: Judgment Day,100000000,203464105,515376182,31765506.0,Action,Terminator 2: Judgment Day,James Cameron,"Arnold Schwarzenegger, Linda Hamilton, Edward Furlong, Robert Patrick",$204.84M,Action
+Batman Forever,100000000,184031112,336529144,52784433.0,Action,Batman Forever,Joel Schumacher,"Val Kilmer, Tommy Lee Jones, Jim Carrey, Nicole Kidman",$184.03M,Action
+Planet of the Apes,100000000,180011740,362211740,68532960.0,Adventure,Planet of the Apes,Tim Burton,"Mark Wahlberg, Helena Bonham Carter, Tim Roth, Michael Clarke Duncan",$180.01M,Action
+National Treasure,100000000,173005002,331323410,35142554.0,Adventure,National Treasure,Jon Turteltaub,"Nicolas Cage, Diane Kruger, Justin Bartha, Sean Bean",$173.01M,Action
+Django Unchained,100000000,162805434,449841566,30122888.0,Western,Django Unchained,Quentin Tarantino,"Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington",$162.81M,Drama
+1917,100000000,159227644,370603379,576216.0,Thriller/Suspense,1917,Sam Mendes,"Dean-Charles Chapman, George MacKay, Daniel Mays, Colin Firth",$159.23M,Action
+Little Fockers,100000000,148438600,310650574,30833665.0,Comedy,Little Fockers,Paul Weitz,"Ben Stiller, Teri Polo, Robert De Niro, Owen Wilson",$148.38M,Comedy
+True Lies,100000000,146282411,365300000,25869770.0,Action,True Lies,James Cameron,"Arnold Schwarzenegger, Jamie Lee Curtis, Tom Arnold, Bill Paxton",$146.28M,Action
+American Gangster,100000000,130164645,267985456,43565135.0,Drama,American Gangster,Ridley Scott,"Denzel Washington, Russell Crowe, Chiwetel Ejiofor, Josh Brolin",$130.16M,Biography
+Cloudy with a Chance of Meatballs,100000000,124870275,236827677,30304648.0,Adventure,Cloudy with a Chance of Meatballs,"Directors:Phil Lord, Christopher Miller","Anna Faris, Bill Hader, Bruce Campbell, James Caan",$124.87M,Animation
+The Other Guys,100000000,119219978,170936470,35543162.0,Comedy,The Other Guys,Adam McKay,"Will Ferrell, Mark Wahlberg, Derek Jeter, Eva Mendes",$119.22M,Action
+The Wolf of Wall Street,100000000,116949183,389918903,18410067.0,Black Comedy,The Wolf of Wall Street,Martin Scorsese,"Leonardo DiCaprio, Jonah Hill, Margot Robbie, Matthew McConaughey",$116.90M,Biography
+Epic,100000000,107518682,262794441,33531068.0,Adventure,Epic,Chris Wedge,"Amanda Seyfried, Josh Hutcherson, Beyoncé, Colin Farrell",$107.52M,Animation
+Eraser,100000000,101295562,234400000,24566446.0,Action,Eraser,Chuck Russell,"Arnold Schwarzenegger, Vanessa Williams, James Caan, James Coburn",$101.30M,Action
+The Hunchback of Notre Dame,100000000,100138851,325500000,21037414.0,Adventure,The Hunchback of Notre Dame,"Directors:Gary Trousdale, Kirk Wise","Demi Moore, Jason Alexander, Mary Kay Bergman, Corey Burton",$100.14M,Animation
+The Emperor's New Groove,100000000,89630573,169630573,9812302.0,Adventure,The Emperor's New Groove,Mark Dindal,"David Spade, John Goodman, Eartha Kitt, Patrick Warburton",$89.30M,Animation
+The Expendables 2,100000000,85028192,311979256,28591370.0,Action,The Expendables 2,Simon West,"Sylvester Stallone, Liam Hemsworth, Randy Couture, Jean-Claude Van Damme",$85.02M,Action
+Where the Wild Things Are,100000000,77233467,99123656,32695407.0,Adventure,Where the Wild Things Are,Spike Jonze,"Max Records, Catherine O'Hara, Forest Whitaker, Pepita Emmerichs",$77.23M,Adventure
+Hercules,100000000,72688614,243388614,29800263.0,Adventure,Hercules,Brett Ratner,"Dwayne Johnson, John Hurt, Ian McShane, Joseph Fiennes",$72.69M,Action
+Hercules,100000000,72688614,243388614,29800263.0,Adventure,Hercules,"Directors:Ron Clements, John Musker","Tate Donovan, Susan Egan, James Woods, Barbara Barrie",$99.05M,Animation
+The Tourist,100000000,67631157,278731369,16472458.0,Thriller/Suspense,The Tourist,Florian Henckel von Donnersmarck,"Johnny Depp, Angelina Jolie, Paul Bettany, Timothy Dalton",$67.63M,Action
+End of Days,100000000,66889043,212026975,20523595.0,Action,End of Days,Peter Hyams,"Arnold Schwarzenegger, Gabriel Byrne, Robin Tunney, Kevin Pollak",$66.89M,Action
+Spies in Disguise,100000000,66757013,165138481,13354798.0,Adventure,Spies in Disguise,"Directors:Nick Bruno, Troy Quane","Rachel Brosnahan, Jarrett Bruno, Claire Crosby, Toru Uchikado",$66.76M,Animation
+The Stepford Wives,100000000,59475623,96150482,21406781.0,Black Comedy,The Stepford Wives,Frank Oz,"Nicole Kidman, Bette Midler, Matthew Broderick, Glenn Close",$59.48M,Comedy
+Blood Diamond,100000000,57377916,171377916,8648324.0,Action,Blood Diamond,Edward Zwick,"Leonardo DiCaprio, Djimon Hounsou, Jennifer Connelly, Kagiso Kuypers",$57.37M,Adventure
+Midway,100000000,56846802,126829063,17897419.0,Action,Midway,Roland Emmerich,"Ed Skrein, Patrick Wilson, Woody Harrelson, Luke Evans",$56.85M,Action
+Legend of the Guardians: The Owls of Ga'Hoole,100000000,55675313,139716717,16112211.0,Adventure,Legend of the Guardians: The Owls of Ga'Hoole,Zack Snyder,"Jim Sturgess, Hugo Weaving, David Wenham, Emily Barclay",$55.68M,Animation
+Land of the Lost,100000000,49438370,69548641,18837350.0,Comedy,Land of the Lost,Brad Silberling,"Will Ferrell, Danny McBride, Anna Friel, Jorma Taccone",$49.44M,Action
+Peter Pan,100000000,48417850,95255485,11139495.0,Adventure,Peter Pan,"Directors:Clyde Geronimi, Wilfred Jackson, Hamilton Luske, Jack Kinney","Bobby Driscoll, Kathryn Beaumont, Hans Conried, Bill Thompson",$87.40M,Animation
+Catwoman,100000000,40202379,82078046,16728411.0,Action,Catwoman,Pitof,"Halle Berry, Sharon Stone, Benjamin Bratt, Lambert Wilson",$40.20M,Action
+The Expendables 3,100000000,39322544,209461378,15879645.0,Action,The Expendables 3,Patrick Hughes,"Sylvester Stallone, Jason Statham, Jet Li, Antonio Banderas",$39.32M,Action
+West Side Story,100000000,38530322,75011257,10574618.0,Musical,West Side Story,"Directors:Jerome Robbins, Robert Wise","Natalie Wood, George Chakiris, Richard Beymer, Russ Tamblyn",$43.66M,Crime
+West Side Story,100000000,38530322,75011257,10574618.0,Musical,West Side Story,Steven Spielberg,"Ansel Elgort, Rachel Zegler, Ariana DeBose, David Alvarez",Gross Unkown,Crime
+Treasure Planet,100000000,38120554,91800000,12083248.0,Adventure,Treasure Planet,"Directors:Ron Clements, John Musker","Joseph Gordon-Levitt, Emma Thompson, Martin Short, Roscoe Lee Browne",$38.18M,Animation
+Green Zone,100000000,35497337,97523020,14309295.0,Drama,Green Zone,Paul Greengrass,"Matt Damon, Jason Isaacs, Greg Kinnear, Igal Naor",$35.05M,Action
+Geostorm,100000000,33700160,220796009,13707376.0,Thriller/Suspense,Geostorm,Dean Devlin,"Gerard Butler, Jim Sturgess, Abbie Cornish, Alexandra Maria Lara",$33.70M,Action
+Point Break,100000000,28782481,126704591,9800252.0,Action,Point Break,Kathryn Bigelow,"Patrick Swayze, Keanu Reeves, Gary Busey, Lori Petty",$43.22M,Action
+Point Break,100000000,28782481,126704591,9800252.0,Action,Point Break,Ericson Core,"Edgar Ramírez, Luke Bracey, Ray Winstone, Teresa Palmer",$28.78M,Action
+Cats,100000000,27166770,75558925,6619870.0,Musical,Cats,Tom Hooper,"James Corden, Judi Dench, Jason Derulo, Idris Elba",Gross Unkown,Comedy
+In the Heart of the Sea,100000000,25020758,89693309,11053366.0,Adventure,In the Heart of the Sea,Ron Howard,"Chris Hemsworth, Cillian Murphy, Brendan Gleeson, Ben Whishaw",$25.02M,Action
+Transcendence,100000000,23022309,103039258,10886386.0,Thriller/Suspense,Transcendence,Wally Pfister,"Johnny Depp, Rebecca Hall, Morgan Freeman, Cillian Murphy",$23.02M,Action
+Son of the Mask,100000000,17018422,59918422,7511675.0,Adventure,Son of the Mask,Lawrence Guterman,"Jamie Kennedy, Traylor Howard, Alan Cumming, Liam Falconer",$17.02M,Comedy
+Mortal Engines,100000000,15951040,85480271,7559850.0,Action,Mortal Engines,Christian Rivers,"Hera Hilmar, Robert Sheehan, Hugo Weaving, Jihae",$15.95M,Action
+Chaos Walking,100000000,13287908,27075660,3775350.0,Action,Chaos Walking,Doug Liman,"Tom Holland, Daisy Ridley, Demián Bichir, David Oyelowo",$13.29M,Action
+The Last Duel,100000000,10853945,30055233,4759151.0,Drama,The Last Duel,Ridley Scott,"Matt Damon, Adam Driver, Jodie Comer, Harriet Walter",Gross Unkown,Action
+The Adventures of Pluto Nash,100000000,4411102,7094995,2182900.0,Comedy,The Adventures of Pluto Nash,Ron Underwood,"Eddie Murphy, Jay Mohr, Randy Quaid, Rosario Dawson",$4.42M,Action
+The Midnight Sky,100000000,0,75615,,Adventure,The Midnight Sky,George Clooney,"George Clooney, Felicity Jones, David Oyelowo, Caoilinn Springall",Gross Unkown,Adventure
+The Peanuts Movie,99000000,130178411,250091610,44213073.0,Adventure,The Peanuts Movie,Steve Martino,"Noah Schnapp, Bill Melendez, Hadley Belle Miller, Francesca Capaldi",$130.18M,Animation
+The Mummy Returns,98000000,202007640,435040395,68139035.0,Adventure,The Mummy Returns,Stephen Sommers,"Brendan Fraser, Rachel Weisz, John Hannah, Arnold Vosloo",$202.02M,Action
+Gangs of New York,97000000,77730500,183124621,9496870.0,Drama,Gangs of New York,Martin Scorsese,"Leonardo DiCaprio, Cameron Diaz, Daniel Day-Lewis, Jim Broadbent",$77.81M,Crime
+Cinderella,95000000,201151353,542351353,67877361.0,Drama,Cinderella,"Directors:Clyde Geronimi, Wilfred Jackson, Hamilton Luske","Ilene Woods, James MacDonald, Eleanor Audley, Verna Felton",$85.00M,Animation
+Cinderella,95000000,201151353,542351353,67877361.0,Drama,Cinderella,Kenneth Branagh,"Lily James, Cate Blanchett, Richard Madden, Helena Bonham Carter",$201.15M,Adventure
+Cinderella,95000000,201151353,542351353,67877361.0,Drama,Cinderella,Kay Cannon,"Camila Cabello, Billy Porter, Nicholas Galitzine, Idina Menzel",Gross Unkown,Comedy
+Ice Age: Continental Drift,95000000,161321843,879765137,46629259.0,Adventure,Ice Age: Continental Drift,"Directors:Steve Martino, Michael Thurmeier","Ray Romano, Denis Leary, John Leguizamo, Aziz Ansari",$161.32M,Animation
+Black Hawk Down,95000000,108638745,159691085,179823.0,Action,Black Hawk Down,Ridley Scott,"Josh Hartnett, Ewan McGregor, Tom Sizemore, Eric Bana",$108.64M,Action
+Sex and the City 2,95000000,95347692,294680778,31001870.0,Comedy,Sex and the City 2,Michael Patrick King,"Sarah Jessica Parker, Kim Cattrall, Kristin Davis, Cynthia Nixon",$95.35M,Comedy
+The Campaign,95000000,86907746,104907746,26588460.0,Comedy,The Campaign,Jay Roach,"Will Ferrell, Zach Galifianakis, Jason Sudeikis, Dylan McDermott",$86.91M,Comedy
+Unstoppable,95000000,81562942,165720921,22688457.0,Action,Unstoppable,Tony Scott,"Denzel Washington, Chris Pine, Rosario Dawson, Ethan Suplee",$81.56M,Action
+The Fifth Element,95000000,63570862,263893838,17031345.0,Action,The Fifth Element,Luc Besson,"Bruce Willis, Milla Jovovich, Gary Oldman, Ian Holm",$63.54M,Action
+The Road to El Dorado,95000000,50802661,65700000,12846652.0,Adventure,The Road to El Dorado,"Directors:Bibo Bergeron, Don Paul, Jeffrey Katzenberg","Kevin Kline, Kenneth Branagh, Rosie Perez, Armand Assante",$50.86M,Animation
+The Lovely Bones,95000000,44114232,94894448,116616.0,Drama,The Lovely Bones,Peter Jackson,"Rachel Weisz, Mark Wahlberg, Saoirse Ronan, Susan Sarandon",$43.82M,Drama
+Ben-Hur,95000000,26410477,91669648,11203815.0,Adventure,Ben-Hur,Timur Bekmambetov,"Jack Huston, Toby Kebbell, Rodrigo Santoro, Nazanin Boniadi",$26.41M,Action
+Ben-Hur,95000000,26410477,91669648,11203815.0,Adventure,Ben-Hur,William Wyler,"Charlton Heston, Jack Hawkins, Stephen Boyd, Haya Harareet",$74.70M,Adventure
+Seventh Son,95000000,17725785,108874967,7217640.0,Adventure,Seventh Son,Sergei Bodrov,"Ben Barnes, Julianne Moore, Jeff Bridges, Alicia Vikander",$17.22M,Action
+Finding Nemo,94000000,380529370,936094852,70251710.0,Adventure,Finding Nemo,"Directors:Andrew Stanton, Lee Unkrich","Albert Brooks, Ellen DeGeneres, Alexander Gould, Willem Dafoe",$380.84M,Animation
+The Lord of the Rings: The Return of the King,94000000,377845905,1120214046,72629713.0,Adventure,The Lord of the Rings: The Return of the King,Peter Jackson,"Elijah Wood, Viggo Mortensen, Ian McKellen, Orlando Bloom",$377.85M,Action
+The Lord of the Rings: The Two Towers,94000000,342548984,919148764,62007528.0,Adventure,The Lord of the Rings: The Two Towers,Peter Jackson,"Elijah Wood, Ian McKellen, Viggo Mortensen, Orlando Bloom",$342.55M,Action
+Lara Croft: Tomb Raider,94000000,131144183,273330185,47735743.0,Adventure,Lara Croft: Tomb Raider,Simon West,"Angelina Jolie, Jon Voight, Iain Glen, Noah Taylor",$131.14M,Action
+Kingsman: The Secret Service,94000000,128261724,404561724,36206331.0,Action,Kingsman: The Secret Service,Matthew Vaughn,"Colin Firth, Taron Egerton, Samuel L. Jackson, Michael Caine",$128.26M,Action
+The Lord of the Rings: The Fellowship of the Ring,93000000,315544750,891216824,47211490.0,Adventure,The Lord of the Rings: The Fellowship of the Ring,Peter Jackson,"Elijah Wood, Ian McKellen, Orlando Bloom, Sean Bean",$315.54M,Action
+Jurassic Park III,93000000,181166115,365900000,50771645.0,Action,Jurassic Park III,Joe Johnston,"Sam Neill, William H. Macy, Téa Leoni, Alessandro Nivola",$181.17M,Action
+Rise of the Planet of the Apes,93000000,176760185,470986200,54806191.0,Adventure,Rise of the Planet of the Apes,Rupert Wyatt,"James Franco, Andy Serkis, Freida Pinto, Karin Konoval",$176.76M,Action
+The Spiderwick Chronicles,92500000,71195053,162839667,19004058.0,Adventure,The Spiderwick Chronicles,Mark Waters,"Freddie Highmore, Sarah Bolger, David Strathairn, Mary-Louise Parker",$71.20M,Action
+The Incredibles,92000000,261441092,631441092,70467623.0,Adventure,The Incredibles,Brad Bird,"Craig T. Nelson, Samuel L. Jackson, Holly Hunter, Jason Lee",$261.44M,Animation
+A Good Day to Die Hard,92000000,67349198,304249198,24834845.0,Action,A Good Day to Die Hard,John Moore,"Bruce Willis, Jai Courtney, Sebastian Koch, Mary Elizabeth Winstead",$67.35M,Action
+Cutthroat Island,92000000,10017322,18517322,2371415.0,Adventure,Cutthroat Island,Renny Harlin,"Geena Davis, Matthew Modine, Frank Langella, Maury Chaykin",$10.02M,Action
+The Secret Life of Walter Mitty,91000000,58236838,187861183,12765508.0,Adventure,The Secret Life of Walter Mitty,Ben Stiller,"Ben Stiller, Kristen Wiig, Jon Daly, Kathryn Hahn",$58.24M,Adventure
