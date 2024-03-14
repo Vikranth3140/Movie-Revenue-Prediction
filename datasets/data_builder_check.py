@@ -96,11 +96,11 @@ def count_budget_filled_rows(df):
     return df[pd.to_numeric(df['budget'], errors='coerce').notnull()].shape[0]
 
 def main():
-    df1 = pd.read_csv('SML-Project-1\datasets\movies.csv')
-    df2 = pd.read_csv('SML-Project-1\datasets\movie_metadata.csv')
-    df3 = pd.read_csv('SML-Project-1\datasets\IMDb 5000+.csv')
-    df4 = pd.read_csv('SML-Project-1\datasets\Top-500-movies.csv')
-    df5 = pd.read_csv('SML-Project-1\datasets\movie_data_tmbd.csv')
+    df1 = pd.read_csv('SML-Project-1\datasets\Kaggle\movies.csv') ## Find where
+    df2 = pd.read_csv('SML-Project-1\datasets\Kaggle\movie_metadata.csv')
+    df3 = pd.read_csv('SML-Project-1\datasets\Kaggle\IMDb 5000+.csv')
+    df4 = pd.read_csv('SML-Project-1\datasets\Kaggle\Top-500-movies.csv')
+    df5 = pd.read_csv('SML-Project-1\datasets\Kaggle\movie_data_tmbd.csv')
 
     # 1) Initial Exploration and Cleaning
     cleaned_df1=remove_unnecessary_df1(df1)
