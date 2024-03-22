@@ -9,7 +9,7 @@ from sklearn.impute import SimpleImputer
 from tqdm import tqdm
 
 # Load the dataset
-df = pd.read_csv('updated_masti.csv')
+df = pd.read_csv('oldd_dataset.csv')
 
 # Separate numeric and non-numeric columns
 numeric_cols = df.select_dtypes(include=['number']).columns
@@ -94,3 +94,6 @@ test_predictions = ensemble_model.predict(X_test)
 
 train_accuracy = r2_score(y_train, train_predictions)
 test_accuracy = r2_score(y_test, test_predictions)
+
+print(f'Final Training R^2 Score: {train_accuracy*100:.2f}%')
+print(f'Final Test R^2 Score: {test_accuracy*100:.2f}%')
