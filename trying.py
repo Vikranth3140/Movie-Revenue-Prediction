@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, VotingRegressor
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import r2_score
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
@@ -60,7 +60,7 @@ gb_pipeline = Pipeline([
     ('gb', GradientBoostingRegressor(random_state=42))
 ])
 
-# Hyperparameter tuning
+# Hyperparameter tuning with tqdm progress bar
 rf_param_grid = {
     'rf__n_estimators': [50, 100, 150],
     'rf__max_depth': [None, 5],
@@ -77,8 +77,13 @@ gb_param_grid = {
 rf_gridsearch = GridSearchCV(rf_pipeline, param_grid=rf_param_grid, cv=3, scoring='r2', n_jobs=-1)
 gb_gridsearch = GridSearchCV(gb_pipeline, param_grid=gb_param_grid, cv=3, scoring='r2', n_jobs=-1)
 
-rf_gridsearch.fit(X_train, y_train)
-gb_gridsearch.fit(X_train, y_train)
+# TQDM progress bar for grid search
+with tqdm(total=len(rf_param_grid) * len(gb_param_grid)) as pbar:
+    rf_gridsearch.fit(X_train, y_train)
+    pbar.update()
+
+    gb_gridsearch.fit(X_train, y_train)
+    pbar.update()
 
 # Ensemble model
 ensemble_model = VotingRegressor([
