@@ -1,4 +1,5 @@
-import pandas asom sklearn.model_selection import train_test_split, GridSearchCV
+import pandas as pd
+from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 from sklearn.preprocessing import LabelEncoder
@@ -6,7 +7,7 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 
 # Load the dataset
-df = pd.read_csv('final_dataset.csv')
+df = pd.read_csv('../new_updated_less-than-1b-dataset.csv')
 
 # Encode categorical features
 le = LabelEncoder()
