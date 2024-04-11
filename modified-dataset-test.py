@@ -9,7 +9,7 @@ from sklearn.impute import SimpleImputer
 from tqdm import tqdm
 
 # Load the dataset
-df = pd.read_csv('new_updated_less-than-350m-dataset.csv')
+df = pd.read_csv('output.csv')
 
 # Separate numeric and non-numeric columns
 numeric_cols = df.select_dtypes(include=['number']).columns

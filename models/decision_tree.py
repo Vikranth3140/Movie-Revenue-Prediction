@@ -5,16 +5,16 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('new_updated_less-than-350m-dataset.csv')
+df = pd.read_csv('..\output.csv')
 
 le = LabelEncoder()
 
-categorical_features = ['name', 'genre', 'director', 'actor_2_name', 'actor_1_name']
+categorical_features = ['name', 'genre', 'director', 'star', 'country', 'company']
 
 for feature in categorical_features:
     df[feature] = le.fit_transform(df[feature])
 
-features = df[['name', 'genre', 'score', 'director', 'actor_2_name', 'actor_1_name', 'budget']]
+features = df[['name', 'genre', 'director', 'star', 'country', 'company', 'genre', 'runtime', 'score', 'budget', 'year', 'votes']]
 target = df['gross']
 
 X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)

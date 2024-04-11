@@ -6,16 +6,16 @@ from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
 
 # Load the dataset
-df = pd.read_csv('new_updated_less-than-350m-dataset.csv')
+df = pd.read_csv('..\output.csv')
 
 # Encode categorical features
 le = LabelEncoder()
-categorical_features = ['name', 'genre', 'director', 'actor_2_name', 'actor_1_name']
+categorical_features = ['name', 'genre', 'director', 'star', 'country', 'company']
 for feature in categorical_features:
     df[feature] = le.fit_transform(df[feature])
 
 # Define features and target
-features = df[['name', 'genre', 'score', 'director', 'actor_2_name', 'actor_1_name', 'budget']]
+features = df[['name', 'genre', 'director', 'star', 'country', 'company', 'genre', 'runtime', 'score', 'budget', 'year', 'votes']]
 target = df['gross']
 
 # Split the data into train and test sets
