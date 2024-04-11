@@ -1,30 +1,45 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import LabelEncoder
-import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
 
 df = pd.read_csv('..\output.csv')
 
 le = LabelEncoder()
 
 categorical_features = ['name', 'genre', 'director', 'star', 'country', 'company']
+# categorical_features = ['name', 'genre', 'director', 'star']
 
 for feature in categorical_features:
     df[feature] = le.fit_transform(df[feature])
 
+# features = df[['name', 'genre', 'director', 'star', 'genre', 'score', 'budget', 'year']]
 features = df[['name', 'genre', 'director', 'star', 'country', 'company', 'genre', 'runtime', 'score', 'budget', 'year', 'votes']]
+
 target = df['gross']
 
 X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
 
-model = RandomForestRegressor(n_estimators=100, max_depth=10, min_samples_split=10, min_samples_leaf=5, random_state=42)
+# Apply PCA for dimensionality reduction
+pca = PCA(n_components=8)  # You can adjust the number of components as needed
+X_train_pca = pca.fit_transform(X_train)
+X_test_pca = pca.transform(X_test)
 
-model.fit(X_train, y_train)
+model = LinearRegression()
 
-train_predictions = model.predict(X_train)
-test_predictions = model.predict(X_test)
+model.fit(X_train_pca, y_train)
+
+predictions = model.predict(X_test_pca)
+
+mse = mean_squared_error(y_test, predictions)
+
+print(f'Mean Squared Error: {mse}')
+
+train_predictions = model.predict(X_train_pca)
+test_predictions = model.predict(X_test_pca)
 
 train_accuracy = r2_score(y_train, train_predictions)
 test_accuracy = r2_score(y_test, test_predictions)

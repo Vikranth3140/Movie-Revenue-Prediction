@@ -96,11 +96,11 @@ def count_budget_filled_rows(df):
     return df[pd.to_numeric(df['budget'], errors='coerce').notnull()].shape[0]
 
 def main():
-    df1 = pd.read_csv('SML-Project-1\datasets\movies.csv')
-    df2 = pd.read_csv('SML-Project-1\datasets\movie_metadata.csv')
-    df3 = pd.read_csv('SML-Project-1\datasets\IMDb 5000+.csv')
-    df4 = pd.read_csv('SML-Project-1\datasets\Top-500-movies.csv')
-    df5 = pd.read_csv('SML-Project-1\datasets\movie_data_tmbd.csv')
+    df1 = pd.read_csv('SML-Project-1\datasets\Kaggle\movies.csv') ## Find where
+    df2 = pd.read_csv('SML-Project-1\datasets\Kaggle\movie_metadata.csv')
+    df3 = pd.read_csv('SML-Project-1\datasets\Kaggle\IMDb 5000+.csv')
+    df4 = pd.read_csv('SML-Project-1\datasets\Kaggle\Top-500-movies.csv')
+    df5 = pd.read_csv('SML-Project-1\datasets\Kaggle\movie_data_tmbd.csv')
 
     # 1) Initial Exploration and Cleaning
     cleaned_df1=remove_unnecessary_df1(df1)
@@ -109,13 +109,13 @@ def main():
 
     print(f"Number of rows with numeric 'budget': {num_rows_with_budget}")
     initial_dataset=merge_datasets_initial(cleaned_df1, cleaned_df2)
-    # write_to_csv(initial_dataset, 'SML-Project-1\datasets\initial_dataset.csv')
+    # write_to_csv(initial_dataset, 'SML-Project-1\datasets\Initial\initial_dataset.csv')
 
     # 2) Thirst for More data
     cleaned_df3=remove_unnecessary_df3(df3)
     cleaned_df4=remove_unnecessary_df4(df4)
     intermediate_dataset=merge_datasets_intermediate(cleaned_df4, cleaned_df3)
-    # write_to_csv(intermediate_dataset, 'SML-Project-1\datasets\intermediate_dataset.csv')
+    # write_to_csv(intermediate_dataset, 'SML-Project-1\datasets\Intermediate\intermediate_dataset.csv')
    
     cleaned_df5=remove_unnecessary_df5(df5)
     dataset=merge_datasets_finalized(cleaned_df3,cleaned_df5)
