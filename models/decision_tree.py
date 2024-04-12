@@ -1,11 +1,12 @@
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('..\output.csv')
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.metrics import r2_score
+from sklearn.preprocessing import LabelEncoder
+
+df = pd.read_csv('output.csv')
 
 le = LabelEncoder()
 

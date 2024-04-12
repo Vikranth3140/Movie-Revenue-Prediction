@@ -1,13 +1,14 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import BaggingRegressor
 from sklearn.metrics import r2_score
 from sklearn.preprocessing import LabelEncoder
-import matplotlib.pyplot as plt
 
 # Load the dataset
-df = pd.read_csv('..\output.csv')
+df = pd.read_csv('output.csv')
 
 # Initialize LabelEncoder
 le = LabelEncoder()

@@ -1,12 +1,13 @@
 import pandas as pd
-from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.ensemble import GradientBoostingRegressor
-from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
 
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.metrics import r2_score
+from sklearn.preprocessing import LabelEncoder
+
 # Load the dataset
-df = pd.read_csv('..\output.csv')
+df = pd.read_csv('output.csv')
 
 # Encode categorical features
 le = LabelEncoder()
