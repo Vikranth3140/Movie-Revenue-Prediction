@@ -7,7 +7,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import LabelEncoder
 from sklearn.decomposition import PCA
 
-df = pd.read_csv('..\output.csv')
+df = pd.read_csv('../revised datasets\output.csv')
 
 le = LabelEncoder()
 

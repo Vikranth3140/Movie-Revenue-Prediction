@@ -8,7 +8,7 @@ from sklearn.metrics import r2_score
 from sklearn.preprocessing import LabelEncoder
 
 # Load the dataset
-df = pd.read_csv('output.csv')
+df = pd.read_csv('../revised datasets\output.csv')
 
 # Initialize LabelEncoder
 le = LabelEncoder()

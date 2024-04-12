@@ -7,7 +7,7 @@ from sklearn.metrics import r2_score
 from sklearn.preprocessing import LabelEncoder
 
 # Load the dataset
-df = pd.read_csv('..\cleaned_movies_bbeww.csv')
+df = pd.read_csv('../revised datasets\output.csv')
 
 # Encode categorical features
 le = LabelEncoder()

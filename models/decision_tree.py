@@ -6,7 +6,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import r2_score
 from sklearn.preprocessing import LabelEncoder
 
-df = pd.read_csv('output.csv')
+df = pd.read_csv('../revised datasets\output.csv')
 
 le = LabelEncoder()
 

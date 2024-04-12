@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import LabelEncoder
 
-df = pd.read_csv('output.csv')
+df = pd.read_csv('../revised datasets\output.csv')
 
 le = LabelEncoder()
 

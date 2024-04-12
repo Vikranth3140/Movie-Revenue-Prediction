@@ -1,13 +1,13 @@
 import pandas as pd
 import xgboost as xgb
+
 from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import r2_score
 from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
 
 # Load the dataset
-df = pd.read_csv('output.csv')
-#df = pd.read_csv('movies_handlegross.csv')
+df = pd.read_csv('../revised datasets\output.csv')
 
 # Encode categorical features
 le = LabelEncoder()
