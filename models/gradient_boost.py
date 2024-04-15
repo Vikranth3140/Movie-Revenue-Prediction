@@ -12,11 +12,14 @@ df = pd.read_csv('../revised datasets\output.csv')
 # Encode categorical features
 le = LabelEncoder()
 categorical_features = ['name', 'genre', 'director', 'star', 'country', 'company']
+
 for feature in categorical_features:
     df[feature] = le.fit_transform(df[feature])
 
 # Define features and target
-features = df[['name', 'genre', 'director', 'star', 'country', 'company', 'genre', 'runtime', 'score', 'budget', 'year', 'votes']]
+features = df[['name', 'director', 'star', 'country', 'company', 'genre', 'runtime', 'score', 'budget', 'year', 'votes']]
+# features = df[['name', 'director', 'star', 'country', 'company', 'genre', 'runtime', 'budget', 'year']]
+
 target = df['gross']
 
 # Split the data into train and test sets

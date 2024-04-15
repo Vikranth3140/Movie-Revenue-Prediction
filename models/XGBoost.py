@@ -1,10 +1,10 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 import xgboost as xgb
 
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import r2_score
 from sklearn.preprocessing import LabelEncoder
-import matplotlib.pyplot as plt
 
 # Load the dataset
 df = pd.read_csv('../revised datasets\output.csv')
@@ -12,11 +12,13 @@ df = pd.read_csv('../revised datasets\output.csv')
 # Encode categorical features
 le = LabelEncoder()
 categorical_features = ['name', 'genre', 'director', 'star', 'country', 'company']
+
 for feature in categorical_features:
     df[feature] = le.fit_transform(df[feature])
 
 # Define features and target
 features = df[['name', 'director', 'star', 'country', 'company', 'genre', 'runtime', 'score', 'budget', 'year', 'votes']]
+# features = df[['name', 'director', 'star', 'country', 'company', 'genre', 'runtime', 'budget', 'year']]
 target = df['gross']
 
 # Split the data into train and test sets

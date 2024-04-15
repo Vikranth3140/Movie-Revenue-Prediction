@@ -12,10 +12,10 @@ def main():
     country = input("Enter country: ")
     company = input("Enter production company: ")
     runtime = int(input("Enter runtime in minutes: "))
-    score = float(input("Enter IMDb score: "))
+    # score = float(input("Enter IMDb score: "))
     budget = float(input("Enter budget in millions: "))
     year = int(input("Enter release year: "))
-    votes = int(input("Enter number of votes: "))
+    # votes = int(input("Enter number of votes: "))
 
     # Calculate gross
     gross = calculate_gross(name, genre, director, star, country, company, runtime, score, budget, year, votes)
