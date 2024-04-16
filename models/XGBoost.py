@@ -2,23 +2,24 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import xgboost as xgb
 
+from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import r2_score
-from sklearn.preprocessing import LabelEncoder
 
 # Load the dataset
 df = pd.read_csv('../revised datasets\output.csv')
 
-# Encode categorical features
+# Initialize LabelEncoder
 le = LabelEncoder()
+
+# Encode categorical features
 categorical_features = ['name', 'genre', 'director', 'star', 'country', 'company']
 
 for feature in categorical_features:
     df[feature] = le.fit_transform(df[feature])
 
 # Define features and target
-features = df[['name', 'director', 'star', 'country', 'company', 'genre', 'runtime', 'score', 'budget', 'year', 'votes']]
-# features = df[['name', 'director', 'star', 'country', 'company', 'genre', 'runtime', 'budget', 'year']]
+features = df[['name', 'genre', 'director', 'star', 'country', 'company', 'genre', 'runtime', 'score', 'budget', 'year', 'votes']]
 target = df['gross']
 
 # Split the data into train and test sets
@@ -50,13 +51,15 @@ print("Best R^2 Score:", best_score)
 
 # Use the best parameters to train the final model
 best_model = xgb.XGBRegressor(objective ='reg:squarederror', random_state=42, **best_params)
+
+# Fit the model
 best_model.fit(X_train, y_train)
 
 # Predictions
 train_predictions = best_model.predict(X_train)
 test_predictions = best_model.predict(X_test)
 
-# Evaluation
+# Calculate R2 scores
 train_accuracy = r2_score(y_train, train_predictions)
 test_accuracy = r2_score(y_test, test_predictions)
 
@@ -64,6 +67,7 @@ print(f'Final Training Accuracy: {train_accuracy*100:.2f}%')
 print(f'Final Test Accuracy: {test_accuracy*100:.2f}%')
 
 # Visualization
+# Plot actual vs predicted values
 plt.figure(figsize=(10, 6))
 plt.scatter(y_train, train_predictions, color='blue', label='Train')
 plt.scatter(y_test, test_predictions, color='red', label='Test')

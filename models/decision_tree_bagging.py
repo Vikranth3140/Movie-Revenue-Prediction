@@ -1,11 +1,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import BaggingRegressor
 from sklearn.metrics import r2_score
-from sklearn.preprocessing import LabelEncoder
 
 # Load the dataset
 df = pd.read_csv('../revised datasets\output.csv')
@@ -15,6 +15,7 @@ le = LabelEncoder()
 
 # Encode categorical features
 categorical_features = ['name', 'genre', 'director', 'star', 'country', 'company']
+
 for feature in categorical_features:
     df[feature] = le.fit_transform(df[feature])
 
@@ -22,7 +23,7 @@ for feature in categorical_features:
 features = df[['name', 'genre', 'director', 'star', 'country', 'company', 'genre', 'runtime', 'score', 'budget', 'year', 'votes']]
 target = df['gross']
 
-# Split the data into training and testing sets
+# Split the data into train and test sets
 X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
 
 # Initialize DecisionTreeRegressor as the base estimator
@@ -34,7 +35,7 @@ model = BaggingRegressor(base_estimator=base_estimator, n_estimators=10, random_
 # Fit the model
 model.fit(X_train, y_train)
 
-# Make predictions
+# Predictions
 train_predictions = model.predict(X_train)
 test_predictions = model.predict(X_test)
 
@@ -42,10 +43,10 @@ test_predictions = model.predict(X_test)
 train_accuracy = r2_score(y_train, train_predictions)
 test_accuracy = r2_score(y_test, test_predictions)
 
-# Print the results
-print(f'Training R2 Score: {train_accuracy*100:.2f}%')
-print(f'Test R2 Score: {test_accuracy*100:.2f}%')
+print(f'Final Training Accuracy: {train_accuracy*100:.2f}%')
+print(f'Final Test Accuracy: {test_accuracy*100:.2f}%')
 
+# Visualization
 # Plot actual vs predicted values
 plt.figure(figsize=(10, 6))
 plt.scatter(y_train, train_predictions, color='blue', label='Train')
