@@ -1,15 +1,17 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, VotingRegressor
-from sklearn.metrics import r2_score
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
+from sklearn.metrics import r2_score, mean_squared_error
 from tqdm import tqdm
 
 # Load the dataset
-df = pd.read_csv('output.csv')
+df = pd.read_csv('revised datasets\output.csv')
 
 # Separate numeric and non-numeric columns
 numeric_cols = df.select_dtypes(include=['number']).columns
@@ -22,9 +24,13 @@ categorical_imputer = SimpleImputer(strategy='most_frequent')
 df[numeric_cols] = numeric_imputer.fit_transform(df[numeric_cols])
 df[categorical_cols] = categorical_imputer.fit_transform(df[categorical_cols])
 
-# Encode categorical features
+# Initialize LabelEncoder
 le = LabelEncoder()
-for feature in categorical_cols:
+
+# Encode categorical features
+categorical_features = ['name', 'genre', 'director', 'star', 'country', 'company']
+
+for feature in categorical_features:
     df[feature] = le.fit_transform(df[feature])
 
 # Feature engineering
@@ -60,7 +66,7 @@ gb_pipeline = Pipeline([
     ('gb', GradientBoostingRegressor(random_state=42))
 ])
 
-# Hyperparameter tuning with tqdm progress bar
+# Hyperparameter tuning
 rf_param_grid = {
     'rf__n_estimators': [50, 100, 150],
     'rf__max_depth': [None, 5],
@@ -93,12 +99,33 @@ ensemble_model = VotingRegressor([
 
 ensemble_model.fit(X_train, y_train)
 
-# Evaluation
+# Predictions
 train_predictions = ensemble_model.predict(X_train)
 test_predictions = ensemble_model.predict(X_test)
 
+# Calculate R2 scores
 train_accuracy = r2_score(y_train, train_predictions)
 test_accuracy = r2_score(y_test, test_predictions)
 
-print(f'Final Training R^2 Score: {train_accuracy*100:.2f}%')
-print(f'Final Test R^2 Score: {test_accuracy*100:.2f}%')
+print()
+print(f'Final Training Accuracy: {train_accuracy*100:.2f}%')
+print(f'Final Test Accuracy: {test_accuracy*100:.2f}%')
+
+print()
+
+# Calculate Mean Squared Error
+mse = mean_squared_error(y_test, test_predictions)
+
+print(f'Mean Squared Error: {mse}')
+print()
+
+# Visualization
+# Plot actual vs predicted values
+plt.figure(figsize=(10, 6))
+plt.scatter(y_train, train_predictions, color='blue', label='Train')
+plt.scatter(y_test, test_predictions, color='red', label='Test')
+plt.title('Actual vs Predicted Values')
+plt.xlabel('Actual Values')
+plt.ylabel('Predicted Values')
+plt.legend()
+plt.show()
