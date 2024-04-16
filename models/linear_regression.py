@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import r2_score, mean_squared_error
 
 # Load the dataset
 df = pd.read_csv('../revised datasets\output.csv')
@@ -39,8 +39,17 @@ test_predictions = model.predict(X_test)
 train_accuracy = r2_score(y_train, train_predictions)
 test_accuracy = r2_score(y_test, test_predictions)
 
+print()
 print(f'Training Accuracy: {train_accuracy*100:.2f}%')
 print(f'Test Accuracy: {test_accuracy*100:.2f}%')
+
+print()
+
+# Calculate Mean Squared Error
+mse = mean_squared_error(y_test, test_predictions)
+
+print(f'Mean Squared Error: {mse}')
+print()
 
 # Visualization
 # Plot actual vs predicted values
@@ -52,14 +61,3 @@ plt.xlabel('Actual Values')
 plt.ylabel('Predicted Values')
 plt.legend()
 plt.show()
-
-
-
-
-
-
-# predictions = model.predict(X_test)
-
-# mse = mean_squared_error(y_test, predictions)
-
-# print(f'Mean Squared Error: {mse}')
