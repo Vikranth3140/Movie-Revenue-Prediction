@@ -1,16 +1,17 @@
 import pandas as pd
+
 from sklearn.feature_selection import SelectKBest, f_regression
 from sklearn.preprocessing import OneHotEncoder
 
 # Read the CSV file
 df = pd.read_csv('../../revised datasets\output.csv')
 
-# Selecting relevant features and target
+# Select relevant features and target
 numerical_features = df[['year', 'score', 'votes', 'budget', 'runtime']]
 categorical_features = df[['rating', 'genre', 'director', 'writer', 'star', 'country', 'company']]
 target = df['gross']
 
-# One-hot encoding categorical features
+# Perform one-hot encoding on categorical features
 encoder = OneHotEncoder(sparse=False, handle_unknown='ignore')
 encoded_categorical = encoder.fit_transform(categorical_features)
 
@@ -21,7 +22,7 @@ feature_names = categorical_feature_names + list(numerical_features.columns)
 
 # Combining numerical and encoded categorical features
 features = pd.concat([pd.DataFrame(encoded_categorical), numerical_features], axis=1)
-features.columns = feature_names  # Assigning the correct feature names
+features.columns = feature_names
 
 # Initialize SelectKBest with f_regression scoring function
 kbest = SelectKBest(score_func=f_regression, k='all')
@@ -35,5 +36,5 @@ feature_scores = pd.DataFrame({'Feature': feature_names, 'Score': kbest.scores_}
 # Print both the features and their corresponding scores
 print(feature_scores)
 
-# Write feature_scores to a text file
+# Write features and their scores to a text file
 feature_scores.to_csv('feature_scores.txt', index=False)
