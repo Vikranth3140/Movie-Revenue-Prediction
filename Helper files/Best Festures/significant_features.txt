@@ -1,0 +1,23 @@
+Feature,Score
+rating_PG-13,194.40224992737063
+rating_R,337.9594435929721
+genre_Action,239.21062312037745
+genre_Animation,276.65790880438277
+genre_Comedy,116.78619530073767
+director_Anthony Russo,238.51505068816687
+director_James Cameron,127.38727434769426
+writer_Christopher Markus,199.15755055485013
+writer_James Cameron,108.33724651186772
+star_Chris Pratt,105.22368645405011
+star_Daisy Ridley,120.60523164345821
+star_Daniel Radcliffe,102.61311894728286
+star_Robert Downey Jr.,151.48549965609695
+company_Lucasfilm,110.29760557638713
+company_Marvel Studios,496.7641524404193
+company_Pixar Animation Studios,107.26391382828189
+company_Walt Disney Pictures,172.25901180470296
+year,440.97553224600654
+score,282.3977277512949
+votes,3292.085413061012
+budget,6569.008340307783
+runtime,446.1212787856494
