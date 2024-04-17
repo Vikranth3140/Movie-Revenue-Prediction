@@ -37,7 +37,7 @@ feature_scores = pd.DataFrame({'Feature': feature_names, 'Score': kbest.scores_}
 significant_features = feature_scores[feature_scores['Score'] > 100]
 
 # Print both the features and their corresponding scores
-print(feature_scores)
+print(significant_features)
 
 # Write significant features and their scores to a text file
 significant_features.to_csv('significant_features.txt', index=False)
