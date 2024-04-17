@@ -1,18 +1,17 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 
-# Read the data from the file
-data = pd.read_csv('revised datasets\output.csv')
+# Read the CSV file
+df = pd.read_csv('../revised datasets\output.csv')
 
 # Set the seaborn style
-sns.set_style('darkgrid')
+plt.style.use('seaborn-v0_8-darkgrid')
 
 # Create a figure with a larger size
 fig, ax = plt.subplots(figsize=(10, 6))
 
 # Plot the curve joining the top of the 'gross' values
-ax.plot(data.index, data['gross'], label='Gross', linewidth=2)
+ax.plot(df.index, df['gross'], label='Gross', linewidth=2)
 
 # Set the title and labels with increased font size
 ax.set_title('Index vs Gross', fontsize=16)
