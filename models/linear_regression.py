@@ -19,7 +19,7 @@ for feature in categorical_features:
     df[feature] = le.fit_transform(df[feature])
 
 # Define features and target
-features = df[['name', 'genre', 'director', 'star', 'country', 'company', 'genre', 'runtime', 'score', 'budget', 'year', 'votes']]
+features = df[['name', 'genre', 'director', 'star', 'country', 'company', 'runtime', 'score', 'budget', 'year', 'votes']]
 target = df['gross']
 
 # Split the data into train and test sets
