@@ -31,7 +31,7 @@ X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=
 base_estimator = DecisionTreeRegressor(max_depth=10, min_samples_split=10, min_samples_leaf=5, random_state=42)
 
 # Initialize BaggingRegressor with bagging parameters
-model = BaggingRegressor(base_estimator=base_estimator, n_estimators=10, random_state=42)
+model = BaggingRegressor(estimator=base_estimator, n_estimators=10, random_state=42)
 
 # Fit the model
 model.fit(X_train, y_train)
