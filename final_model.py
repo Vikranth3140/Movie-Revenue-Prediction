@@ -28,7 +28,7 @@ df[categorical_cols] = categorical_imputer.fit_transform(df[categorical_cols])
 le = LabelEncoder()
 
 # Encode categorical features
-categorical_features = ['name', 'genre', 'director', 'star', 'country', 'company']
+categorical_features = ['released','writer','rating','name', 'genre', 'director', 'star', 'country', 'company']
 
 for feature in categorical_features:
     df[feature] = le.fit_transform(df[feature])
