@@ -10,7 +10,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.metrics import r2_score, mean_squared_error
 from tqdm import tqdm
 
-df = pd.read_csv('revised datasets\output.csv')
+df = pd.read_csv('../revised datasets\output.csv')
 
 numeric_cols = df.select_dtypes(include=['number']).columns
 categorical_cols = df.select_dtypes(exclude=['number']).columns

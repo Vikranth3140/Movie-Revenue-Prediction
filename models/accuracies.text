@@ -1,21 +1,3 @@
-decision_tree_bagging.py
-Final Training Accuracy: 85.83%
-Final Test Accuracy: 77.19%
-
-
-
-decision_tree.py
-Training Accuracy: 86.64%
-Test Accuracy: 69.47%
-
-
-
-gradient_boost.py
-Final Training Accuracy: 91.58%
-Final Test Accuracy: 82.42%
-
-
-
 linear_regression_pca.py
 Training Accuracy: 64.81%
 Test Accuracy: 66.49%
@@ -28,6 +10,18 @@ Test Accuracy: 67.06%
 
 
 
+decision_tree.py
+Training Accuracy: 86.64%
+Test Accuracy: 69.47%
+
+
+
+decision_tree_bagging.py
+Final Training Accuracy: 85.83%
+Final Test Accuracy: 77.19%
+
+
+
 random_forest.py
 Final Training Accuracy: 87.28%
 Final Test Accuracy: 77.86%
@@ -37,3 +31,9 @@ Final Test Accuracy: 77.86%
 XGBoost.py
 Final Training Accuracy: 90.79%
 Final Test Accuracy: 81.02%
+
+
+
+gradient_boost.py
+Final Training Accuracy: 91.58%
+Final Test Accuracy: 82.42%
