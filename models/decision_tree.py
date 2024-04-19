@@ -29,7 +29,7 @@ model.fit(X_train, y_train)
 train_predictions = model.predict(X_train)
 test_predictions = model.predict(X_test)
 
-#R2 scores
+# R2 scores
 train_accuracy = r2_score(y_train, train_predictions)
 test_accuracy = r2_score(y_test, test_predictions)
 

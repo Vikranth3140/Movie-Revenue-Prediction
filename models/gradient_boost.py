@@ -4,6 +4,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.metrics import r2_score
+import numpy as np
 
 # Loading our dataset
 df = pd.read_csv('../revised datasets\output.csv')
@@ -49,7 +50,7 @@ best_model.fit(X_train, y_train)
 train_predictions = best_model.predict(X_train)
 test_predictions = best_model.predict(X_test)
 
-#R2 scores
+# R2 scores
 train_accuracy = r2_score(y_train, train_predictions)
 test_accuracy = r2_score(y_test, test_predictions)
 
@@ -60,12 +61,22 @@ print(f'Final Test Accuracy: {test_accuracy*100:.2f}%')
 print()
 
 
-# Plot actual vs predicted values
-plt.figure(figsize=(10, 6))
-plt.scatter(y_train, train_predictions, color='blue', label='Train')
-plt.scatter(y_test, test_predictions, color='red', label='Test')
-plt.title('Actual vs Predicted Values')
-plt.xlabel('Actual Values')
-plt.ylabel('Predicted Values')
+# Plot actual vs predicted values with enhancements
+plt.figure(figsize=(12, 8))
+plt.scatter(y_train, train_predictions, color='blue', alpha=0.5, label=f'Train (R² = {train_accuracy:.2f})')
+plt.scatter(y_test, test_predictions, color='red', alpha=0.5, label=f'Test (R² = {test_accuracy:.2f})')
+
+z = np.polyfit(y_test, test_predictions, 1)
+p = np.poly1d(z)
+plt.plot(y_test, p(y_test), color='green', linestyle='--')
+
+plt.title('Actual vs Predicted Values with Model Accuracy')
+plt.xlabel('Actual Gross Values')
+plt.ylabel('Predicted Gross Values')
+plt.grid(True)
 plt.legend()
+plt.tight_layout()
+
+# plt.savefig('model_accuracy_plot.png', dpi=300)
+
 plt.show()
