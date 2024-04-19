@@ -13,7 +13,7 @@ We have embarked on a data-driven odyssey to create a robust and tailored movie 
 
 - **Still Hungry**: Our hunger for data persisted. We needed more movies to enrich our dataset.
 - **Top 500 Movies**: We scoured the budget of top 400-500 movies in "IMDb 5000+ Movies & Multiple Genres Dataset" (`IMDb 5000+.csv`) from the "Top 500 Movies by Production Budget" (`Top-500-movies.csv`) to uncover an additional 400-500 movies.
-- **The Movies Dataset**: We turned  to the "The Movies Dataset" (`movie_data_tmbd.csv`) and comparing it with "IMDb 5000+ Movies & Multiple Genres Dataset" to find more movies and found about 2500 movies without duplicates . So in total we had about 6200 movies.
+- **The Movies Dataset**: We turned back to the "Movies Dataset" (`movies.csv`) and comparing it with "IMDb 5000+ Movies & Multiple Genres Dataset" to find more movies and found about 2500 movies without duplicates . So in total we had about 6200 movies.
 - **Manual Sleuthing**: Further finalizing incomplete data(not having gross or budget) by manual scouring the web and using our datasets we reached our final dataset.
 
 ### 3. **The Final Dataset Emerges: Introducing 'final_dataset'**
