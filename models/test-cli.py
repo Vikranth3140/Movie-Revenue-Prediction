@@ -57,22 +57,6 @@ test_accuracy = r2_score(y_test, test_predictions)
 print(f'\nFinal Training Accuracy: {train_accuracy*100:.2f}%')
 print(f'Final Test Accuracy: {test_accuracy*100:.2f}%')
 
-# Plot actual vs predicted values with enhancements
-plt.figure(figsize=(12, 8))
-plt.scatter(y_train, train_predictions, color='blue', alpha=0.5, label=f'Train (R² = {train_accuracy:.2f})')
-plt.scatter(y_test, test_predictions, color='red', alpha=0.5, label=f'Test (R² = {test_accuracy:.2f})')
-
-z = np.polyfit(y_test, test_predictions, 1)
-p = np.poly1d(z)
-plt.plot(y_test, p(y_test), color='green', linestyle='--')
-
-plt.title('Actual vs Predicted Values with Model Accuracy')
-plt.xlabel('Actual Gross Values')
-plt.ylabel('Predicted Gross Values')
-plt.grid(True)
-plt.legend()
-plt.tight_layout()
-
 
 # Encode categorical features
 def encode_features(df):
