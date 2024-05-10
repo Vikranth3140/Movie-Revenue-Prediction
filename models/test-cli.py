@@ -67,11 +67,13 @@ def encode_features(df):
     return df
 
 # CLI for predicting movie revenue
-def predict_revenue(model, input_df):
+def predict_revenue_with_range(model, input_df, tolerance=10):
     input_df = input_df.reindex(columns=features.columns, fill_value=0)
     input_df = encode_features(input_df)
     prediction = model.predict(input_df)
-    return prediction[0]
+    lower_bound = prediction - tolerance
+    upper_bound = prediction + tolerance
+    return lower_bound[0], upper_bound[0]
 
 def main():
     # Get user input
@@ -112,9 +114,12 @@ def main():
     model = best_model  # Use the previously trained model
 
     # Predict revenue
-    predicted_revenue = predict_revenue(model, user_input)
+    # predicted_revenue = predict_revenue(model, user_input)
+    # print(f"Predicted revenue for the movie: ${predicted_revenue:.2f} million")
 
-    print(f"Predicted revenue for the movie: ${predicted_revenue:.2f} million")
+    lower_bound, upper_bound = predict_revenue_with_range(model, user_input)
+
+    print(f"Predicted revenue range for the movie: ${lower_bound:.2f} million to ${upper_bound:.2f} million")
 
 if __name__ == "__main__":
     main()
