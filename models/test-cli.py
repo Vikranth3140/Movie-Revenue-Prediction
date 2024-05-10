@@ -84,6 +84,7 @@ def encode_features(df):
 
 # CLI for predicting movie revenue
 def predict_revenue(model, input_df):
+    input_df = input_df.reindex(columns=features.columns, fill_value=0)
     input_df = encode_features(input_df)
     prediction = model.predict(input_df)
     return prediction[0]
