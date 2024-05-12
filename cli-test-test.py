@@ -40,6 +40,10 @@ def preprocess_input(released, writer, rating, name, genre, director, star, coun
 
     return input_data
 
+# Define a function to fit the model
+def fit_model(features, target):
+    best_model.fit(features, target)
+
 # Define a function to predict the gross
 def predict_gross(input_data):
     return best_model.predict(input_data)
@@ -64,6 +68,12 @@ if __name__ == "__main__":
 
     # Preprocess the input data
     input_data = preprocess_input(released, writer, rating, name, genre, director, star, country, company, runtime, score, budget, year, votes)
+
+    # Fit the model
+    features = pd.read_csv('../revised datasets/output.csv')
+    target = features['gross']
+    features = features[['released', 'writer', 'rating', 'name', 'genre', 'director', 'star', 'country', 'company', 'runtime', 'score', 'budget', 'year', 'votes']]
+    fit_model(features, target)
 
     # Predict the gross
     predicted_gross = predict_gross(input_data)
