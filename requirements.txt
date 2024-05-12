@@ -3,3 +3,4 @@ numpy
 matplotlib
 scikit-learn
 xgboost
+colorama
