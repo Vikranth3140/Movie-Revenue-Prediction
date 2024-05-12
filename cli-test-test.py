@@ -1,0 +1,71 @@
+import pandas as pd
+import numpy as np
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.preprocessing import LabelEncoder
+
+# Load the trained model and LabelEncoder
+best_model = GradientBoostingRegressor(loss='squared_error', random_state=42, n_estimators=500, max_depth=6, learning_rate=0.1)
+le = LabelEncoder()
+
+# Define the function to preprocess input data
+def preprocess_input(released, writer, rating, name, genre, director, star, country, company, runtime, score, budget, year, votes):
+    # Transform categorical features using LabelEncoder
+    released_encoded = le.fit_transform([released])
+    writer_encoded = le.fit_transform([writer])
+    rating_encoded = le.fit_transform([rating])
+    name_encoded = le.fit_transform([name])
+    genre_encoded = le.fit_transform([genre])
+    director_encoded = le.fit_transform([director])
+    star_encoded = le.fit_transform([star])
+    country_encoded = le.fit_transform([country])
+    company_encoded = le.fit_transform([company])
+
+    # Create a DataFrame with the preprocessed input
+    input_data = pd.DataFrame({
+        'released': released_encoded,
+        'writer': writer_encoded,
+        'rating': rating_encoded,
+        'name': name_encoded,
+        'genre': genre_encoded,
+        'director': director_encoded,
+        'star': star_encoded,
+        'country': country_encoded,
+        'company': company_encoded,
+        'runtime': [runtime],
+        'score': [score],
+        'budget': [budget],
+        'year': [year],
+        'votes': [votes],
+    })
+
+    return input_data
+
+# Define a function to predict the gross
+def predict_gross(input_data):
+    return best_model.predict(input_data)
+
+# Example usage
+if __name__ == "__main__":
+    # Take user input
+    released = input("Enter the release date: ")
+    writer = input("Enter the writer's name: ")
+    rating = input("Enter the rating: ")
+    name = input("Enter the movie name: ")
+    genre = input("Enter the genre: ")
+    director = input("Enter the director's name: ")
+    star = input("Enter the star's name: ")
+    country = input("Enter the country: ")
+    company = input("Enter the production company: ")
+    runtime = float(input("Enter the runtime in minutes: "))
+    score = float(input("Enter the score: "))
+    budget = float(input("Enter the budget: "))
+    year = int(input("Enter the year: "))
+    votes = float(input("Enter the number of votes: "))
+
+    # Preprocess the input data
+    input_data = preprocess_input(released, writer, rating, name, genre, director, star, country, company, runtime, score, budget, year, votes)
+
+    # Predict the gross
+    predicted_gross = predict_gross(input_data)
+
+    print(f'Predicted Gross for "{name}": ${predicted_gross[0]:,.2f}')
