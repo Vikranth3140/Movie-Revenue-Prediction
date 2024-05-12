@@ -53,12 +53,6 @@ best_model.fit(X_train, y_train)
 train_predictions = best_model.predict(X_train)
 test_predictions = best_model.predict(X_test)
 
-# Write test_predictions with movie names to a text file
-with open('test_predictions_with_names.txt', 'w') as file:
-    for idx, prediction in enumerate(test_predictions):
-        movie_name = df.iloc[X_test.index[idx]]['name']
-        file.write(f"{movie_name}: {prediction}\n")
-
 # R2 scores
 train_accuracy = r2_score(y_train, train_predictions)
 test_accuracy = r2_score(y_test, test_predictions)
@@ -66,6 +60,27 @@ test_accuracy = r2_score(y_test, test_predictions)
 print(f'\nFinal Training Accuracy: {train_accuracy*100:.2f}%')
 print(f'Final Test Accuracy: {test_accuracy*100:.2f}%')
 
+# Define the test movie
+test_movie = pd.DataFrame([{
+    'released': le.fit_transform(["August 14, 1998 (United States)"]),
+    'writer': le.fit_transform(['Sydney Newman']),
+    'rating': le.fit_transform(['PG-13']),
+    'name': le.fit_transform(['The Avengers']),
+    'genre': le.fit_transform(['Action']),
+    'director': le.fit_transform(['Jeremiah S. Chechik']),
+    'star': le.fit_transform(['Ralph Fiennes']),
+    'country': le.fit_transform(['United States']),
+    'company': le.fit_transform(['Warner Bros.']),
+    'runtime': 89.0,
+    'score': 3.8,
+    'budget': 60000000.0,
+    'year': 1998,
+    'votes': 41000.0,
+}])
+
+test_prediction = best_model.predict(test_movie)
+
+print(f'Predicted Gross for "The Shining": {test_prediction[0]}')
 # Plot actual vs predicted values with enhancements
 plt.figure(figsize=(12, 8))
 plt.scatter(y_train, train_predictions, color='blue', alpha=0.5, label=f'Train (R² = {train_accuracy:.2f})')
