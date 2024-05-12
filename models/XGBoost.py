@@ -1,10 +1,10 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 import xgboost as xgb
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import r2_score
 import numpy as np
-import matplotlib.pyplot as plt
 
 # Loading our dataset
 df = pd.read_csv('../revised datasets\output.csv')

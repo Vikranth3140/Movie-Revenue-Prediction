@@ -1,25 +1,26 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 import xgboost as xgb
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import r2_score
 import numpy as np
-import matplotlib.pyplot as plt
 
 # Loading our dataset
 df = pd.read_csv('../revised datasets/output.csv')
+
 le = LabelEncoder()
+
 categorical_features = ['released', 'writer', 'rating', 'name', 'genre', 'director', 'star', 'country', 'company']
 
-# Encode categorical features
 for feature in categorical_features:
     df[feature] = le.fit_transform(df[feature])
 
 # Our features and target
 features = df[['released', 'writer', 'rating', 'name', 'genre', 'director', 'star', 'country', 'company', 'runtime', 'score', 'budget', 'year', 'votes']]
+
 target = df['gross']
 
-# Split data into train and test sets
 X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
 
 # Define a custom callback class to track the training R-squared score
@@ -38,7 +39,6 @@ param_grid = {
     'learning_rate': [0.05, 0.1]
 }
 
-# Implementing GridSearchCV
 grid_search = GridSearchCV(estimator=xgb.XGBRegressor(objective='reg:squarederror', random_state=42, callbacks=[TrackR2Score()]), param_grid=param_grid, cv=5, scoring='r2', n_jobs=-1)
 grid_search.fit(features, target)
 best_params = grid_search.best_params_

@@ -25,7 +25,7 @@ def begin_cli():
     )
     print(title)
 
-# Define the function to preprocess input data
+# Function to preprocess the input
 def preprocess_input(released, writer, rating, name, genre, director, star, country, company, runtime, score, budget, year, votes):
     # Transform categorical features using LabelEncoder
     released_encoded = le.fit_transform([released])
@@ -38,7 +38,6 @@ def preprocess_input(released, writer, rating, name, genre, director, star, coun
     country_encoded = le.fit_transform([country])
     company_encoded = le.fit_transform([company])
 
-    # Create a DataFrame with the preprocessed input
     input_data = pd.DataFrame({
         'released': released_encoded,
         'writer': writer_encoded,
@@ -74,10 +73,8 @@ def predict_gross_range(input_data):
 
 # Example usage
 if __name__ == "__main__":
-    # Initialize the CLI
     begin_cli()
 
-    # Take user input
     print(f'\n{Fore.YELLOW}Welcome Producer!!!{Style.RESET_ALL}\n')
     print(f'\n{Fore.YELLOW}Please enter the parameters to predict the revenue range for your upcoming movie{Style.RESET_ALL}\n')
     
@@ -96,7 +93,6 @@ if __name__ == "__main__":
     year = int(input("Which year is the movie shot: "))
     votes = float(input("What is the total number of votes for the movie in the initial survey: "))
 
-    # Preprocess the input data
     input_data = preprocess_input(released, writer, rating, name, genre, director, star, country, company, runtime, score, budget, year, votes)
 
     # Predict the revenue range
