@@ -1,11 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.ensemble import GradientBoostingRegressor
-from sklearn.preprocessing import LabelEncoder
-
-# Load the trained model and LabelEncoder
-best_model = GradientBoostingRegressor(loss='squared_error', random_state=42, n_estimators=500, max_depth=6, learning_rate=0.1)
-le = LabelEncoder()
+from models.gradient_boost import best_model, le  # Importing directly from models.gradient_boost
 
 # Define the function to preprocess input data
 def preprocess_input(released, writer, rating, name, genre, director, star, country, company, runtime, score, budget, year, votes):
@@ -31,18 +26,14 @@ def preprocess_input(released, writer, rating, name, genre, director, star, coun
         'star': star_encoded,
         'country': country_encoded,
         'company': company_encoded,
-        'runtime': [runtime],
-        'score': [score],
-        'budget': [budget],
-        'year': [year],
-        'votes': [votes],
+        'runtime': runtime,
+        'score': score,
+        'budget': budget,
+        'year': year,
+        'votes': votes,
     })
 
     return input_data
-
-# Define a function to fit the model
-def fit_model(features, target):
-    best_model.fit(features, target)
 
 # Define a function to predict the gross
 def predict_gross(input_data):
@@ -68,12 +59,6 @@ if __name__ == "__main__":
 
     # Preprocess the input data
     input_data = preprocess_input(released, writer, rating, name, genre, director, star, country, company, runtime, score, budget, year, votes)
-
-    # Fit the model
-    features = pd.read_csv('../revised datasets/output.csv')
-    target = features['gross']
-    features = features[['released', 'writer', 'rating', 'name', 'genre', 'director', 'star', 'country', 'company', 'runtime', 'score', 'budget', 'year', 'votes']]
-    fit_model(features, target)
 
     # Predict the gross
     predicted_gross = predict_gross(input_data)
