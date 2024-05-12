@@ -1,10 +1,10 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 import xgboost as xgb
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import r2_score
 import numpy as np
+import matplotlib.pyplot as plt
 
 # Loading our dataset
 df = pd.read_csv('../revised datasets\output.csv')
@@ -69,8 +69,6 @@ test_mape = mean_absolute_percentage_error(y_test, test_predictions)
 
 print(f'Train MAPE: {train_mape:.2f}%')
 print(f'Test MAPE: {test_mape:.2f}%')
-
-
 
 # Plot actual vs predicted values
 plt.figure(figsize=(10, 6))
