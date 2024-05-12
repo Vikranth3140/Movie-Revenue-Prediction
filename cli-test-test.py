@@ -35,9 +35,23 @@ def preprocess_input(released, writer, rating, name, genre, director, star, coun
 
     return input_data
 
-# Define a function to predict the gross
-def predict_gross(input_data):
-    return best_model.predict(input_data)
+# Function to predict the gross
+# def predict_gross(input_data):
+#     return best_model.predict(input_data)
+
+# Function to predict the gross range
+def predict_gross_range(input_data):
+    predicted_gross = best_model.predict(input_data)
+    if predicted_gross <= 5000000:
+        return "Low Revenue (<= $5M)"
+    elif predicted_gross <= 25000000:
+        return "Medium-Low Revenue ($5M - $25M)"
+    elif predicted_gross <= 50000000:
+        return "Medium Revenue ($25M - $50M)"
+    elif predicted_gross <= 80000000:
+        return "Medium Revenue ($50M - $80M)"
+    else:
+        return "High Revenue ($25M - $50M)"
 
 # Example usage
 if __name__ == "__main__":
@@ -60,7 +74,8 @@ if __name__ == "__main__":
     # Preprocess the input data
     input_data = preprocess_input(released, writer, rating, name, genre, director, star, country, company, runtime, score, budget, year, votes)
 
-    # Predict the gross
-    predicted_gross = predict_gross(input_data)
-
-    print(f'Predicted Gross for "{name}": ${predicted_gross[0]:,.2f}')
+    # # Predict the gross
+    predicted_gross_range = predict_gross_range(input_data)
+    print(f'Predicted Revenue Range for "{name}": {predicted_gross_range}')
+    # predicted_gross = predict_gross(input_data)
+    # print(f'Predicted Gross for "{name}": ${predicted_gross[0]:,.2f}')
