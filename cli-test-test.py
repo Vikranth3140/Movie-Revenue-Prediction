@@ -1,9 +1,6 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import GradientBoostingRegressor
-from sklearn.metrics import r2_score
-import numpy as np
 
 # Loading our dataset
 df = pd.read_csv('revised datasets/output.csv')
@@ -26,9 +23,10 @@ model.fit(features, target)
 
 # Function to predict gross for a given movie
 def predict_gross(movie_data):
-    # Transform the input data using LabelEncoder
+    # Transform the input data using LabelEncoder if the feature is present in categorical_features
     for feature in categorical_features:
-        movie_data[feature] = le.transform([movie_data[feature]])[0]
+        if feature in movie_data:
+            movie_data[feature] = le.transform([movie_data[feature]])[0]
     
     # Predict the gross for the given movie data
     gross_prediction = model.predict([movie_data.values.tolist()])[0]
