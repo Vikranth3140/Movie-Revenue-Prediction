@@ -1,39 +1,47 @@
 linear_regression_pca.py
 Training Accuracy: 64.81%
 Test Accuracy: 66.49%
-
+Train MAPE: 26.19%
+Test MAPE: 15.57%
 
 
 linear_regression.py
 Training Accuracy: 65.53%
 Test Accuracy: 67.06%
-
+Train MAPE: 35.23%
+Test MAPE: 18.49%
 
 
 decision_tree.py
 Training Accuracy: 86.64%
 Test Accuracy: 69.47%
-
+Train MAPE: 13.00%
+Test MAPE: 4.60%
 
 
 decision_tree_bagging.py
 Final Training Accuracy: 85.83%
 Final Test Accuracy: 77.19%
-
+Train MAPE: 13.32%
+Test MAPE: 5.67%
 
 
 random_forest.py
 Final Training Accuracy: 87.28%
 Final Test Accuracy: 77.86%
-
+Train MAPE: 14.29%
+Test MAPE: 5.33%
 
 
 XGBoost.py
 Final Training Accuracy: 90.79%
 Final Test Accuracy: 81.02%
-
+Train MAPE: 9.70%
+Test MAPE: 5.53%
 
 
 gradient_boost.py
 Final Training Accuracy: 91.58%
 Final Test Accuracy: 82.42%
+Train MAPE: 10.57%
+Test MAPE: 5.69%
