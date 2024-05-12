@@ -53,10 +53,11 @@ best_model.fit(X_train, y_train)
 train_predictions = best_model.predict(X_train)
 test_predictions = best_model.predict(X_test)
 
-# Write test_predictions to a text file
-with open('test_predictions.txt', 'w') as file:
-    for prediction in test_predictions:
-        file.write(str(prediction) + '\n')
+# Write test_predictions with movie names to a text file
+with open('test_predictions_with_names.txt', 'w') as file:
+    for idx, prediction in enumerate(test_predictions):
+        movie_name = df.iloc[X_test.index[idx]]['name']
+        file.write(f"{movie_name}: {prediction}\n")
 
 # R2 scores
 train_accuracy = r2_score(y_train, train_predictions)
