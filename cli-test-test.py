@@ -32,7 +32,7 @@ def predict_gross(movie_data):
             movie_data[feature] = le.transform([movie_data[feature]])[0]
     
     # Predict the gross for the given movie data
-    gross_prediction = model.predict([movie_data.values.tolist()])[0]
+    gross_prediction = model.predict([list(movie_data.values())])[0]
     return gross_prediction
 
 # Get input from the user for testing data
