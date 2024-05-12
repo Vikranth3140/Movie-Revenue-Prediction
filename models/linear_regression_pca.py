@@ -5,6 +5,7 @@ from sklearn.decomposition import PCA
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
+import numpy as np
 
 # Loading our dataset
 df = pd.read_csv('../revised datasets\output.csv')
@@ -37,12 +38,24 @@ model.fit(X_train_pca, y_train)
 train_predictions = model.predict(X_train_pca)
 test_predictions = model.predict(X_test_pca)
 
-# R2 scores
+# R2 scores and MAPE Calculation
 train_accuracy = r2_score(y_train, train_predictions)
 test_accuracy = r2_score(y_test, test_predictions)
 
-print(f'\nTraining Accuracy: {train_accuracy*100:.2f}%')
-print(f'Test Accuracy: {test_accuracy*100:.2f}%')
+print(f'\nFinal Training Accuracy: {train_accuracy*100:.2f}%')
+print(f'Final Test Accuracy: {test_accuracy*100:.2f}%')
+
+def mean_absolute_percentage_error(y_true, y_pred): 
+    y_true, y_pred = np.array(y_true), np.array(y_pred)
+    return np.mean(np.abs((y_true - y_pred) / y_true))
+
+train_mape = mean_absolute_percentage_error(y_train, train_predictions)
+test_mape = mean_absolute_percentage_error(y_test, test_predictions)
+
+print(f'Train MAPE: {train_mape:.2f}%')
+print(f'Test MAPE: {test_mape:.2f}%')
+
+
 
 # Plot actual vs predicted values
 plt.figure(figsize=(10, 6))
