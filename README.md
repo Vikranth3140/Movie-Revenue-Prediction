@@ -7,7 +7,7 @@
 
 Accurately predicting a movie’s earnings is crucial for maximizing profitability in the contemporary film industry. This project aims to develop a machine learning model for predicting movie earnings based on input features like the movie name, MPAA rating, genre, year of release, IMDb rating, votes, director, writer, leading cast, country of production, budget, production company, and runtime. Using a structured methodology involving data collection, preprocessing, analysis, model selection, evaluation, and improvement, a robust predictive model is constructed. Various models, including Linear Regression, Decision Trees, Random Forest Regression, Bagging, XGBoosting, and Gradient Boosting, are trained and tested.
 
-![Movie Revenue Prediction diagram](fig\intro.png)
+![Movie Revenue Prediction diagram](fig/intro.png)
 
 
 ## Getting Started
