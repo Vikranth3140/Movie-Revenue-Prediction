@@ -42,15 +42,15 @@ Detailed instructions on how to set up our datasets are provided in [old dataset
 ```
 Movie-Revenue-Prediction/
 │
+├── fig
+│   └─ intro.png
+│
 ├── Helper Files
-│   │
 │   ├── Best Features
-│   │   │
 │   │   ├── feature_scores.py
 │   │   ├── feature_scores.txt
 │   │   ├── significant_features.py
 │   │   └── significant_features.txt
-│   │
 │   ├── budgetxgross.py
 │   ├── data_visualization.py
 │   ├── gross_histogram.py
@@ -58,44 +58,40 @@ Movie-Revenue-Prediction/
 │   └── pie_chart.py
 │
 ├── Misc
-│   │
-│   └── initial_try.py
+│   └─ initial_try.py
 │
 ├── models
-│   │
 │   ├── accuracies.txt
 │   ├── decision_tree_bagging.py
 │   ├── decision_tree.py
 │   ├── gradient_boost.py
+│   ├── linear_regression_pca.py
 │   ├── linear_regression.py
 │   ├── random_forest.py
-│   ├── tracking.py
+│   ├── tracking_XGBoost.py
 │   └── XGBoost.py
 │
 ├── old datasets
-│   │
 │   ├── finalised dataset
-│   │   │
-│   │   └── dataset_modified.py
+│   │   ├── dataset_modified.py
+│   │   ├── masti.csv
+│   │   ├── new_updated_less-than-1b-dataset.csv
+│   │   ├── new_updated_less-than-350m-dataset.csv
+│   │   ├── old_data.csv
+│   │   └── updated_masti.csv
+│   ├── initial
+│   │   ├── initial_dataset.csv
+│   │   └── initial_merge.csv
+│   ├── Intermediate
+│   │   ├── intermediate_dataset.csv
+│   │   └── intermediate_merge.csv
+│   │   └── intermediate1_dataset.csv
+│   ├── Kaggle
+│   │   ├── IMDb 5000+.csv
+│   │   ├── movie_data_imdb.csv
+│   │   ├── movie_metadata.csv
+│   │   └── top_500_movies.csv
 │   │
-│   ├── mav.csv
-│   ├── new_updated_less-than-1b-dataset.csv
-│   ├── new_updated_less-than-350m-dataset.csv
-│   ├── old_data.csv
-│   └── updated_max.csv
-│
-├── initial
-│   ├── initial_dataset.csv
-│   ├── intermediate.csv
-│   ├── intermediate_dataset.csv
-│   ├── intermediate_merge.csv
-│   └── intermediate_merged.csv
-│
-├── kaggle
-│   ├── 500mb.csv
-│   ├── movie_data_imdb.csv
-│   ├── movie_metadata.csv
-│   ├── top-500-movies.csv
 │   ├── data_builder_check.py
 │   ├── dataset.csv
 │   ├── dataset2.csv
@@ -104,55 +100,49 @@ Movie-Revenue-Prediction/
 │   └── README.md
 │
 ├── Reports
+│   ├── Proposal
+│   │   ├── proposal.pdf
+│   │   └── proposal.tex
 │   ├── 1st Project Report
-│   │   ├── 1st Project_Report.pdf
+│   │   ├── 1st_Project_Report.pdf
 │   │   ├── 1st_Project_Report.tex
-│   │   │
-│   ├── pics
-│   │   ├── girls_histogram.png
-│   │   ├── k-best.png
-│   │   ├── model_accuracy_plot.png
-│   │   ├── null_values.png
-│   │   └── pie_chart.png
-│   │
+│   │   └── pics
+│   │       ├── gross_histogram.png
+│   │       ├── k_best.png
+│   │       ├── model_accuracy_plot.png
+│   │       ├── null_values.png
 │   └── Final Report
-│       │
 │       ├── Final_Report.pdf
-│       ├── Final_Report.txt
-│       ├── pics
-│       │   ├── girls_histogram.png
-│       │   ├── k-best.png
-│       │   ├── model_accuracy_plot.png
-│       │   ├── null_values.png
-│       │   └── pie_chart.png
-├── Proposal
-│   ├── proposal.pdf
-│   └── proposal.txt
-├── processed datasets
+│       ├── Final_Report.tex
+│       └── pics
+│           ├── gross_histogram.png
+│           ├── k_best.png
+│           ├── model_accuracy_plot.png
+│           ├── null_values.png
+│           ├── pie_chart.png
+│           └── R2_score_tracking.png
+│
+├── revised datasets
 │   ├── movies.csv
-│   ├── out.csv
-│   └── top.csv
+│   └── output.csv
+│
 ├── .gitignore
 ├── LICENSE
-└── README.md
+├── main.py
+├── README.md
+└── requirements.txt
+```
 
 
 ## Running the Models
 
-### Training the Models
+You can run the models using:
 
-You can train the models using:
 ```bash
-python train_model.py --model <model_name> --dataset <dataset_path>
+python <model_name>.py
 ```
-The `model_name` parameter can be one of [`linear_regression`, `decision_tree`, `random_forest`, `bagging`, `gradient_boost`, `xgboost`].
 
-### Evaluating the Models
-
-You can evaluate the trained models using:
-```bash
-python evaluate_model.py --model <model_name> --dataset <dataset_path>
-```
+The `model_name` parameter can be one of [`linear_regression`, `decision_tree`, `random_forest`, `decision_tree_bagging`, `gradient_boost`, `XGBoost`].
 
 ## Data Preprocessing
 
@@ -162,7 +152,7 @@ We provide scripts for data preprocessing, including handling missing values, en
 
 Missing values are handled using the `data_preprocessing.py` script:
 ```bash
-python data_preprocessing.py --dataset <dataset_path> --output <output_path>
+python data_preprocessing.py
 ```
 
 ### Encoding Categorical Variables
@@ -227,17 +217,14 @@ The developed Gradient Boosting model demonstrates promising accuracy and genera
 
 If you found this work useful, please consider citing it as:
 ```
-@inproceedings{udandarao2023movie-revenue,
+@misc{udandarao2024movie-revenue,
   title={Movie Revenue Prediction},
   author={Udandarao, Vikranth and Gupta, Pratyush},
-  booktitle={IIIT-Delhi},
-  year={2023}
+  year={2024},
+  howpublished={\url{https://github.com/Vikranth3140/Movie-Revenue-Prediction}}
 }
 ```
 
-## Acknowledgements
-
-The authors would like to extend their sincerest gratitude to Dr. A V Subramanyam (Computer Science & Engineering Dept., IIIT-Delhi) for their invaluable guidance throughout the project.
 
 ## Contact
 
