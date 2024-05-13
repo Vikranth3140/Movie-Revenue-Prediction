@@ -1,20 +1,19 @@
 # Movie Revenue Prediction
 
-[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/release/python-360/) [![sk-learn](https://img.shields.io/badge/scikit-learn-grey.svg?logo=scikit-learn)](https://scikit-learn.org/stable/whats_new.html)
 
-Official code for the movie revenue prediction project. Authors: [Vikranth Udandarao](mailto:vikranth22570@iiitd.ac.in) and [Pratyush Gupta](mailto:pratyush22375@iiitd.ac.in).
 
 ## Introduction
 
 Accurately predicting a movie’s earnings is crucial for maximizing profitability in the contemporary film industry. This project aims to develop a machine learning model for predicting movie earnings based on input features like the movie name, MPAA rating, genre, year of release, IMDb rating, votes, director, writer, leading cast, country of production, budget, production company, and runtime. Using a structured methodology involving data collection, preprocessing, analysis, model selection, evaluation, and improvement, a robust predictive model is constructed. Various models, including Linear Regression, Decision Trees, Random Forest Regression, Bagging, XGBoosting, and Gradient Boosting, are trained and tested.
 
-![](https://github.com/Vikranth3140/Movie-Revenue-Prediction/blob/main/figs/movie-revenue-prediction-diagram.png)
+![Movie Revenue Prediction diagram](fig\intro.png)
 
-![Movie Revenue Prediction diagram](image.png)
 
 ## Getting Started
 
-All our code was tested on Python 3.6.8 with Pytorch 1.9.0+cu111. Ideally, our scripts require access to a single GPU (uses `.cuda()` for inference). Inference can also be done on CPUs with minimal changes to the scripts.
+All our code was tested on Python 3.6.8 with scikit-learn 1.3.2. Ideally, our scripts require access to a single GPU (uses `.cuda()` for inference). Inference can also be done on CPUs with minimal changes to the scripts.
+
 
 ### Setting up the Environment
 
@@ -30,26 +29,113 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
+
 ### Setting up Datasets
 
-Detailed instructions on how to set up our datasets are provided in [`data/DATA.md`](https://github.com/Vikranth3140/Movie-Revenue-Prediction/blob/main/data/DATA.md).
+The datasets have been taken from [Movie Industry](https://www.kaggle.com/datasets/danielgrijalvas/movies) dataset.
+\
+Detailed instructions on how to set up our datasets are provided in [old datasets\README.md](old%20datasets/README.md).
+
 
 ### Directory Structure
 
-After setting up the datasets and the environment, the project root folder should look like this:
 ```
 Movie-Revenue-Prediction/
-|–– data
-|–––– movies
-|–––– ... other datasets
-|–– features
-|–– README.md
-|–– data_preprocessing.py
-|–– train_model.py
-|–– evaluate_model.py
-|–– main.py
-|–– ... all other provided python scripts
-```
+│
+├── Helper Files
+│   │
+│   ├── Best Features
+│   │   │
+│   │   ├── feature_scores.py
+│   │   ├── feature_scores.txt
+│   │   ├── significant_features.py
+│   │   └── significant_features.txt
+│   │
+│   ├── budgetxgross.py
+│   ├── data_visualization.py
+│   ├── gross_histogram.py
+│   ├── null_values_check.py
+│   └── pie_chart.py
+│
+├── Misc
+│   │
+│   └── initial_try.py
+│
+├── models
+│   │
+│   ├── accuracies.txt
+│   ├── decision_tree_bagging.py
+│   ├── decision_tree.py
+│   ├── gradient_boost.py
+│   ├── linear_regression.py
+│   ├── random_forest.py
+│   ├── tracking.py
+│   └── XGBoost.py
+│
+├── old datasets
+│   │
+│   ├── finalised dataset
+│   │   │
+│   │   └── dataset_modified.py
+│   │
+│   ├── mav.csv
+│   ├── new_updated_less-than-1b-dataset.csv
+│   ├── new_updated_less-than-350m-dataset.csv
+│   ├── old_data.csv
+│   └── updated_max.csv
+│
+├── initial
+│   ├── initial_dataset.csv
+│   ├── intermediate.csv
+│   ├── intermediate_dataset.csv
+│   ├── intermediate_merge.csv
+│   └── intermediate_merged.csv
+│
+├── kaggle
+│   ├── 500mb.csv
+│   ├── movie_data_imdb.csv
+│   ├── movie_metadata.csv
+│   ├── top-500-movies.csv
+│   ├── data_builder_check.py
+│   ├── dataset.csv
+│   ├── dataset2.csv
+│   ├── final_dataset.csv
+│   ├── final_merge.csv
+│   └── README.md
+│
+├── Reports
+│   ├── 1st Project Report
+│   │   ├── 1st Project_Report.pdf
+│   │   ├── 1st_Project_Report.tex
+│   │   │
+│   ├── pics
+│   │   ├── girls_histogram.png
+│   │   ├── k-best.png
+│   │   ├── model_accuracy_plot.png
+│   │   ├── null_values.png
+│   │   └── pie_chart.png
+│   │
+│   └── Final Report
+│       │
+│       ├── Final_Report.pdf
+│       ├── Final_Report.txt
+│       ├── pics
+│       │   ├── girls_histogram.png
+│       │   ├── k-best.png
+│       │   ├── model_accuracy_plot.png
+│       │   ├── null_values.png
+│       │   └── pie_chart.png
+├── Proposal
+│   ├── proposal.pdf
+│   └── proposal.txt
+├── processed datasets
+│   ├── movies.csv
+│   ├── out.csv
+│   └── top.csv
+├── .gitignore
+├── LICENSE
+└── README.md
+
 
 ## Running the Models
 
@@ -155,8 +241,9 @@ The authors would like to extend their sincerest gratitude to Dr. A V Subramanya
 
 ## Contact
 
-Please feel free to open an issue or email us at [vikranth22570@iiitd.ac.in](mailto:vikranth22570@iiitd.ac.in) or [pratyush22375@iiitd.ac.in](mailto:pratyush22375@iiitd.ac.in).
+Please feel free to open an issue or email me at [vikranth22570@iiitd.ac.in](mailto:vikranth22570@iiitd.ac.in).
 
----
 
-Let me know if you need any additional visual elements such as pie charts or bar graphs, or if you have any other requests!
+## License
+
+This project is licensed under the [MIT License](LICENSE).
