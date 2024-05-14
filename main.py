@@ -61,17 +61,16 @@ def preprocess_input(released, writer, rating, name, genre, director, star, coun
 def predict_gross_range(input_data):
     predicted_gross = best_model.predict(input_data)
     if predicted_gross <= 5000000:
-        return f"Low Revenue (\u2264 $5M)"
+        return f"Low Revenue (<= $5M)"
     elif predicted_gross <= 25000000:
         return f"Medium-Low Revenue ($5M - $25M)"
     elif predicted_gross <= 50000000:
         return f"Medium Revenue ($25M - $50M)"
     elif predicted_gross <= 80000000:
-        return f"Medium Revenue ($50M - $80M)"
+        return f"High Revenue ($50M - $80M)"
     else:
-        return f"High Revenue ($25M - $50M)"
+        return f"Ultra High Revenue (>= $80M)"
 
-# Example usage
 if __name__ == "__main__":
     begin_cli()
 
