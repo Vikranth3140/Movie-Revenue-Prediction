@@ -2,6 +2,7 @@
 
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/release/python-360/) [![sk-learn](https://img.shields.io/badge/scikit-learn-grey.svg?logo=scikit-learn)](https://scikit-learn.org/stable/whats_new.html)
 
+[Academia Paper](https://www.academia.edu/119091410/Movie_Revenue_Prediction)
 
 ## Introduction
 
