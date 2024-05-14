@@ -5,39 +5,18 @@
 
 ## Introduction
 
-Accurately predicting a movie’s earnings is crucial for maximizing profitability in the contemporary film industry. This project aims to develop a machine learning model for predicting movie earnings based on input features like the movie name, MPAA rating, genre, year of release, IMDb rating, votes, director, writer, leading cast, country of production, budget, production company, and runtime. Using a structured methodology involving data collection, preprocessing, analysis, model selection, evaluation, and improvement, a robust predictive model is constructed. Various models, including Linear Regression, Decision Trees, Random Forest Regression, Bagging, XGBoosting, and Gradient Boosting, are trained and tested.
+In the contemporary film industry, accurately predicting a movie's earnings is paramount for maximizing profitability. This project aims to develop a sophisticated machine learning model to forecast movie earnings based on a comprehensive set of input features, including the movie name, MPAA rating, genre, year of release, IMDb rating, votes by the watchers, director, writer, leading cast, country of production, budget, production company, and runtime.
+
+Numerous factors influence a movie's earnings, and the optimal combination of these factors remains elusive. Our machine learning model seeks to uncover the most significant factors for box office success by analyzing real data from a diverse array of movies produced globally.
+
+We hypothesize that certain parameters, such as the director's track record and the genre of the film, hold more significance in predicting movie revenue than others. Observations suggest that despite lower IMDb ratings, action-oriented films often perform well at the box office, while genres such as comedy or emotional dramas, despite potentially higher IMDb ratings, may not achieve comparable revenue outcomes. These insights highlight the complex interplay between film attributes and audience preferences.
+
+By leveraging these diverse attributes, our goal is to construct a robust predictive model that can offer valuable insights and aid decision-making in the film industry. Ultimately, this will help filmmakers optimize their movie production strategies for maximum profit and popularity.
 
 ![Movie Revenue Prediction diagram](fig/intro.png)
 
 
-## Getting Started
-
-All our code was tested on Python 3.6.8 with scikit-learn 1.3.2. Ideally, our scripts require access to a single GPU (uses `.cuda()` for inference). Inference can also be done on CPUs with minimal changes to the scripts.
-
-
-### Setting up the Environment
-
-We recommend setting up a Python virtual environment and installing all the requirements. Please follow these steps to set up the project folder correctly:
-
-```bash
-git clone https://github.com/Vikranth3140/Movie-Revenue-Prediction.git
-cd Movie-Revenue-Prediction
-
-python3 -m venv ./env
-source env/bin/activate
-
-pip install -r requirements.txt
-```
-
-
-### Setting up Datasets
-
-The datasets have been taken from [Movie Industry](https://www.kaggle.com/datasets/danielgrijalvas/movies) dataset.
-\
-Detailed instructions on how to set up our datasets are provided in [old datasets\README.md](old%20datasets/README.md).
-
-
-### Directory Structure
+## Directory Structure
 
 ```
 Movie-Revenue-Prediction/
@@ -134,6 +113,32 @@ Movie-Revenue-Prediction/
 ```
 
 
+## Getting Started
+
+All our code was tested on Python 3.6.8 with scikit-learn 1.3.2. Ideally, our scripts require access to a single GPU (uses `.cuda()` for inference). Inference can also be done on CPUs with minimal changes to the scripts.
+
+
+### Setting up the Environment
+
+We recommend setting up a Python virtual environment and installing all the requirements. Please follow these steps to set up the project folder correctly:
+
+```bash
+git clone https://github.com/Vikranth3140/Movie-Revenue-Prediction.git
+cd Movie-Revenue-Prediction
+
+python3 -m venv ./env
+source env/bin/activate
+
+pip install -r requirements.txt
+```
+
+
+### Setting up Datasets
+
+The datasets have been taken from [Movie Industry](https://www.kaggle.com/datasets/danielgrijalvas/movies) dataset.
+\
+Detailed instructions on how to set up our datasets are provided in [old datasets\README.md](old%20datasets/README.md).
+
 ## Running the Models
 
 You can run the models using:
@@ -163,6 +168,7 @@ Categorical variables are encoded using Label Encoding. This is implemented in t
 
 We use SelectKBest for feature selection, as implemented in the `data_preprocessing.py` script.
 
+
 ## Model Improvement
 
 We employ several strategies for model improvement, including standardizing data, applying logarithmic transformations, and hyperparameter tuning using GridSearchCV.
@@ -178,6 +184,7 @@ Logarithmic transformations are applied to skewed data (e.g., budget and gross r
 ### Hyperparameter Tuning
 
 Hyperparameter tuning is performed using GridSearchCV to optimize model parameters.
+
 
 ## Command Line Interface (CLI)
 
