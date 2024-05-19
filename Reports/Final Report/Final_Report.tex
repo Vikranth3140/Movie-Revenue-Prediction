@@ -3,22 +3,22 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{amsmath}
-\usepackage{hyperref}
 \usepackage{caption}
-\usepackage{booktabs}
 \usepackage{float}
+\usepackage{array}
+\usepackage{hyperref}
 
-\ifCLASSINFOpdf
+% \ifCLASSINFOpdf
 
-\else
+% \else
 
-\fi
+% \fi
 
 \hyphenation{op-tical net-works semi-conduc-tor}
 
 \begin{document}
 
-\title{Movie Revenue Prediction\\ SML Project}
+\title{Movie Revenue Prediction\\ Using Machine Learning Models}
 
 \author{
     \IEEEauthorblockN{Vikranth Udandarao} \vspace*{3.0pt}
@@ -39,7 +39,7 @@
 \maketitle
 
 \begin{abstract}
-    In the contemporary film industry, accurately predicting a movie's earnings is paramount for maximizing profitability. This project aims to develop a machine learning model for predicting movie earnings based on input features like the movie name, the MPAA rating of the movie, the genre of the movie, year of release of the movie, IMDb Rating, the votes by the watchers, the director, writer and the leading cast, the country of production of the movie, the budget of the movie , the production company and the runtime of the movie. Through a structured methodology involving data collection, preprocessing, analysis, model selection, evaluation, and improvement, a robust predictive model is constructed. Linear Regression, Decision Trees, Random Forest Regression, Bagging, XGBoosting and Gradient Boosting have been trained and tested. Model improvement strategies include hyperparameter tuning and cross validation. The resulting model offers promising accuracy and generalization, facilitating informed decision-making in the film industry to maximize profits.
+    In the contemporary film industry, accurately predicting a movie's earnings is paramount for maximizing profitability. This project aims to develop a machine learning model for predicting movie earnings based on input features like the movie name, the MPAA rating of the movie, the genre of the movie, the year of release of the movie, the IMDb Rating, the votes by the watchers, the director, the writer and the leading cast, the country of production of the movie, the budget of the movie, the production company and the runtime of the movie. Through a structured methodology involving data collection, preprocessing, analysis, model selection, evaluation, and improvement, a robust predictive model is constructed. Linear Regression, Decision Trees, Random Forest Regression, Bagging, XGBoosting and Gradient Boosting have been trained and tested. Model improvement strategies include hyperparameter tuning and cross-validation. The resulting model offers promising accuracy and generalization, facilitating informed decision-making in the film industry to maximize profits.
 \end{abstract}
 
 \IEEEpeerreviewmaketitle
@@ -138,7 +138,7 @@
     \caption{Description of Movie Dataset Features}
     \label{tab:movie_dataset_features}
     \renewcommand{\arraystretch}{1.5}
-        \begin{tabular}{>{\centering\arraybackslash}m{1cm} >{\centering\arraybackslash}m{6cm}}
+    \begin{tabular}{>{\centering\arraybackslash}m{1cm} >{\centering\arraybackslash}m{6cm}}
         \toprule
         \textbf{Feature Name} & \textbf{Description} \\
         \midrule
@@ -168,22 +168,21 @@
     \subsection{Inferential Statistics}
         We will conduct statistical tests to analyze relationships between different features and the target variable. For example, we may use correlation analysis to examine the strength and direction of linear relationships between numerical features and earnings.
     
-    \subsection{Data Visualization}
-        Visualization is a powerful tool for understanding complex datasets. We created various plots and charts using Matplotlib. This includes histograms, scatter plots and pie charts to visualize distributions, trends, outliers and correlations in the data.
-        
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.3\textwidth]{pie_chart.png}
-            \caption{Distribution of Movies by Country}
-            \label{fig:country-pie-chart}
-        \end{figure}
-        
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.5\textwidth]{gross-histogram.png}
-            \caption{Histogram of Gross Categories}
-            \label{fig:gross-histogram}
-        \end{figure}
+    \section{Data Visualization}
+    % Adjusted figure commands with exact file names
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.3\textwidth]{pie_chart.png}
+        \caption{Distribution of Movies by Country}
+        \label{fig:country-pie-chart}
+    \end{figure}
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{gross_histogram.png}
+        \caption{Histogram of Gross Categories}
+        \label{fig:gross-histogram}
+    \end{figure}
 
 \section{Preprocessing}
     \subsection{Dataset Parameters}
@@ -229,7 +228,7 @@
             Since budget and gross are our main parameter and output, we dropped those datasets and we were left with 5422 datasets.
             
             \begin{figure}
-                \centering \includegraphics[width=0.4\linewidth]{null-values.png}
+                \centering \includegraphics[width=0.4\linewidth]{null_values.png}
                 \caption{Null Values}
                 \label{fig:null-values}
             \end{figure}
@@ -249,7 +248,7 @@
             
             \begin{figure}[H]
                 \centering
-                \includegraphics[width=0.5\linewidth]{k-best.png}
+                \includegraphics[width=0.5\linewidth]{k_best.png}
                 \caption{K Best Features}
                 \label{fig:k-best}
             \end{figure}
@@ -329,7 +328,7 @@
     The following plot shows the training R² score curve, which illustrates the model's gradual improvement during the training process:
     \begin{figure}[h]
         \centering
-        \includegraphics[width=1\linewidth]{R2 score tracking.png}
+        \includegraphics[width=1\linewidth]{R2_score_tracking.png}
         \caption{Training R² Score Curve}
         \label{fig:xg_boost_track}
     \end{figure}
@@ -434,29 +433,46 @@
     Their insightful feedback and expertise have been instrumental in shaping this project into its final form.
 
 \begin{thebibliography}{1}
-    \bibitem{models} Models
-    \begin{enumerate}
-        \item \href{https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html}{\textbf{Linear Regression}}
-        \item \href{https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeRegressor.html}{\textbf{DecisionTreeRegressor}}
-        \item \href{https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingRegressor.html}{\textbf{BaggingRegressor}}
-        \item \href{https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html}{\textbf{RandomForestRegressor}}
-        \item \href{https://xgboost.readthedocs.io/}{\textbf{XGBoost}}
-        \item \href{https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html}{\textbf{GradientBoostingRegressor}}
-    \end{enumerate}
+    \bibitem{ref1}
+    Vr, Nithin \& Pranav, M \& Babu, PB \& Lijiya, A.. (2014). Predicting Movie Success Based on IMDB Data. International Journal of Business Intelligents. 003. 34-36. 10.20894/IJBI.105.003.002.004. 
     
-    \bibitem{scikit-learn-metrics} Evaluation Metrics
-    \begin{enumerate}
-        \item \href{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html}{\textbf{r2\_score}}
-        \item \href{https://stephenallwright.com/interpret-mape/}{\textbf{mean\_absolute\_percentage\_error}}
-    \end{enumerate}
+    \bibitem{ref2}
+    Pradeep, Kavya \& TintuRosmin, C \& Durom, Sherly \& Anisha, G. (2020). Decision Tree Algorithms for Accurate Prediction of Movie Rating. 853-858. 10.1109/ICCMC48092.2020.ICCMC-000158. 
+    
+    \bibitem{ref3}
+    Garima Verma and Hemraj Verma, "Predicting Bollywood Movies Success Using Machine Learning Technique," IEEE, 2019.
+    
+    \bibitem{ref4}
+    Rijul Dhir and Anand Raj, "Movie Success Predictions using Machine Learning and their Comparison," IEEE International Conference on Secure Cyber Computing and Communication, 2018.
+    
+    \bibitem{ref5}
+    Ashutosh Kanitar, "Bollywood Movie Success Prediction using Machine Learning Algorithms," IEEE Third International Conference on Circuits, Control, Communication and Computing, 2018.
+    
+    \bibitem{ref6}
+    Wales, Lorene. (2017). The Complete Guide to Film and Digital Production: The People and the Process. 10.4324/9781315294896. 
+    
+    \bibitem{ref7}
+    Beyza Çizmeci and Sule Gündüz Öğüdücü, "Predicting IMDb Rating of Pre-release Movies with Factorization Machines Using Social Media," IEEE 3rd International Conference on Computer Science and Engineering, 2018.
+    
+    \bibitem{ref8}
+    Steve Shim and Mohammad Pourhomayoun, "Predicting Movie Market Revenues Using Social Media Data," IEEE International Conference on Information Reuse and Integration, 2017.
+    
+    \bibitem{ref9}
+    Nahid Quader and Md. Osman Gani, "A Machine Learning Approach to Predict Movie Box-office," Information Technology (ICCIT), December 2017.
+    
+    \bibitem{ref10}
+    Beyza Çizmeci and Sule Gündüz Öğüdücü, "Predicting IMDb Ratings of Pre-release Movies with Factorization Machines Using Social Media," International Conference of Computer and Information Technology (ICCIT), 2017.
+    
+    \bibitem{ref11}
+    Subramaniyaswamy V., and Vignesh Vaibhav M., "Predicting Movie Box Office Success using Multiple Regression and SVM," International Conference of Computer and Information Technology (ICCIT), 2017.
+    
+    \bibitem{ref12}
+    M.H. Latif, H. Afzal, "Prediction of Movies Popularity Using Machine Learning Techniques," National University of Sciences and Technology, H-12, ISB, vol. 16, no. 8, pp. 127–131, 2016.
+    
+    \bibitem{ref13}
+    D.A., Olubukola \& O.M., Stephen \& A.K., Funmilayo \& Omotunde, Ayokunle \& A., Oyebola \& Oduroye, Ayorinde \& Ajayi, Wumi \& Yaw, Mensah. (2021). Movie Success Prediction Using Data Mining. British Journal of Computer, Networking and Information Technology. 4. 22-30. 10.52589/BJCNIT-CQOCIREC. 
 
-    \bibitem{kaggle} Kaggle Datasets
-    \begin{enumerate}
-        \item \href{https://www.kaggle.com/datasets/danielgrijalvas/movies}{\textbf{Movie Industry Dataset}}
-        \item \href{https://www.kaggle.com/datasets/rakkesharv/imdb-5000-movies-multiple-genres-dataset}{\textbf{IMDb 5000 Movies Multiple Genres Dataset}}
-        \item \href{https://www.kaggle.com/datasets/carolzhangdc/imdb-5000-movie-dataset}{\textbf{IMDb 5000 Movies Dataset}}
-        \item \href{https://www.kaggle.com/datasets/mitchellharrison/top-500-movies-budget}{\textbf{Top 500 Movies Budget Dataset}}
-    \end{enumerate}
 \end{thebibliography}
+
 
 \end{document}
