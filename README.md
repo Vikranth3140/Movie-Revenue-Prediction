@@ -2,6 +2,7 @@
 
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/release/python-360/) [![sk-learn](https://img.shields.io/badge/scikit-learn-grey.svg?logo=scikit-learn)](https://scikit-learn.org/stable/whats_new.html)
 
+[arXiv Paper](http://arxiv.org/abs/2405.11651)
 [Academia Paper](https://www.academia.edu/119091410/Movie_Revenue_Prediction)
 
 ## Introduction
@@ -225,11 +226,13 @@ The developed Gradient Boosting model demonstrates promising accuracy and genera
 
 If you found this work useful, please consider citing it as:
 ```
-@misc{udandarao2024movie-revenue,
-  title={Movie Revenue Prediction},
-  author={Udandarao, Vikranth and Gupta, Pratyush},
-  year={2024},
-  howpublished={\url{https://github.com/Vikranth3140/Movie-Revenue-Prediction}}
+@misc{udandarao2024movie,
+      title={Movie Revenue Prediction using Machine Learning Models}, 
+      author={Vikranth Udandarao and Pratyush Gupta},
+      year={2024},
+      eprint={2405.11651},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
 }
 ```
 
