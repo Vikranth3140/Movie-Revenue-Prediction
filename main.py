@@ -1,6 +1,5 @@
 import os
 import pandas as pd
-import numpy as np
 from models.gradient_boost import best_model, le
 from colorama import init, Fore, Style
 

@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 from models.gradient_boost import best_model, le
 
 # Function to preprocess the input
