@@ -200,6 +200,21 @@ A CLI is developed to allow users to input movie features and get revenue predic
    ```
 3. Follow the prompts to input the movie features and choose the prediction model.
 
+
+## Streamlit Web Interface
+
+Additionally a web interface is also developed using Streamlit to allow users to input movie features and get revenue predictions.
+
+### Running the Web Interface
+
+1. Navigate to the project directory.
+2. Run the Web Interface:
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+3. Follow the prompts to input the movie features and choose the prediction model.
+
+
 ## Results
 
 The Gradient Boosting model achieved the best performance with:
