@@ -1,13 +1,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import xgboost as xgb
 from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.decomposition import PCA
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 import numpy as np
 
 # Loading our dataset
-df = pd.read_csv('../revised datasets\output.csv')
+df = pd.read_csv('revised datasets\output.csv')
 
 le = LabelEncoder()
 
@@ -25,33 +26,17 @@ target = df['gross']
 
 X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
 
-param_grid = {
-    'n_estimators': [100, 500],
-    'max_depth': [3, 6],
-    'learning_rate': [0.05, 0.1]
-}
+# Apply PCA for dimensionality reduction
+pca = PCA(n_components=8)  
+X_train_pca = pca.fit_transform(X_train)
+X_test_pca = pca.transform(X_test)
 
-# Implementing GridSearchCV
-grid_search = GridSearchCV(estimator=xgb.XGBRegressor(objective ='reg:squarederror', random_state=42),
-                           param_grid=param_grid,
-                           cv=5,
-                           scoring='r2',
-                           n_jobs=-1)
+model = LinearRegression()
 
-grid_search.fit(features, target)
+model.fit(X_train_pca, y_train)
 
-best_params = grid_search.best_params_
-best_score = grid_search.best_score_
-
-print("Best Parameters:", best_params)
-print("Best R^2 Score:", best_score)
-
-best_model = xgb.XGBRegressor(objective ='reg:squarederror', random_state=42, **best_params)
-
-best_model.fit(X_train, y_train)
-
-train_predictions = best_model.predict(X_train)
-test_predictions = best_model.predict(X_test)
+train_predictions = model.predict(X_train_pca)
+test_predictions = model.predict(X_test_pca)
 
 # R2 scores and MAPE Calculation
 train_accuracy = r2_score(y_train, train_predictions)
@@ -69,6 +54,8 @@ test_mape = mean_absolute_percentage_error(y_test, test_predictions)
 
 print(f'Train MAPE: {train_mape:.2f}%')
 print(f'Test MAPE: {test_mape:.2f}%')
+
+
 
 # Plot actual vs predicted values
 plt.figure(figsize=(10, 6))
