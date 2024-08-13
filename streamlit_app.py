@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from models.Regression_Models.gradient_boost import best_model, le
+from models.Regression.gradient_boost import best_model, le
 
 # Function to preprocess the input
 def preprocess_input(released, writer, rating, name, genre, director, star, country, company, runtime, score, budget, year, votes):
