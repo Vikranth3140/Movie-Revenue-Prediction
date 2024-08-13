@@ -253,7 +253,7 @@ If you found this work useful, please consider citing it as:
 
 ## Contact
 
-Please feel free to open an issue or email me at [vikranth22570@iiitd.ac.in](mailto:vikranth22570@iiitd.ac.in).
+Please feel free to open an issue or email us at [vikranth22570@iiitd.ac.in](mailto:vikranth22570@iiitd.ac.in) or [pratyush22375@iiitd.ac.in](mailto:pratyush22375@iiitd.ac.in).
 
 
 ## License
