@@ -1,0 +1,39 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: trailing-whitespace  # Removes trailing whitespace from all file types
+      - id: end-of-file-fixer    # Ensures the file ends with a newline for all file types
+      - id: check-added-large-files  # Prevents adding large files to the repository
+
+  - repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+      - id: black
+        language_version: python3.8  # Formats Python code to adhere to the Black code style
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 5.0.4
+    hooks:
+      - id: flake8
+        additional_dependencies: [flake8-docstrings]
+        args: [--max-line-length=88]
+        language_version: python3.8  # Lints Python code for style and quality issues
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.5.1
+    hooks:
+      - id: prettier
+        files: \.(md|yaml|yml)$  # Formats Markdown, and YAML files
+
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.7.0
+    hooks:
+      - id: python-check-blanket-noqa  # Prevents blanket "noqa" comments in Python files
+      - id: python-no-eval             # Prevents the use of "eval" in Python files
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.910
+    hooks:
+      - id: mypy
+        language_version: python3.8  # Checks type annotations in Python files using MyPy
