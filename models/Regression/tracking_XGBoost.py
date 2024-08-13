@@ -1,27 +1,21 @@
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import xgboost as xgb
-from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.metrics import r2_score
-import numpy as np
+from sklearn.metrics import r2_score, mean_squared_error,mean_squared_log_error
+from models.Regression.feature_scaling import prepare_features
+#If you want to test the individual models by running them directly use below and remove above import line
+# from feature_scaling import prepare_features
 
 # Loading our dataset
-df = pd.read_csv('../revised datasets/output.csv')
+df = pd.read_csv('revised datasets\output.csv')
 
-le = LabelEncoder()
 
-categorical_features = ['released', 'writer', 'rating', 'name', 'genre', 'director', 'star', 'country', 'company']
+# Getting the Preprocessed and scaled data.
+X, y = prepare_features(df)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-for feature in categorical_features:
-    df[feature] = le.fit_transform(df[feature])
-
-# Our features and target
-features = df[['released', 'writer', 'rating', 'name', 'genre', 'director', 'star', 'country', 'company', 'runtime', 'score', 'budget', 'year', 'votes']]
-
-target = df['gross']
-
-X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=42)
 
 # Define a custom callback class to track the training R-squared score
 train_r2_scores = []
@@ -40,7 +34,7 @@ param_grid = {
 }
 
 grid_search = GridSearchCV(estimator=xgb.XGBRegressor(objective='reg:squarederror', random_state=42, callbacks=[TrackR2Score()]), param_grid=param_grid, cv=5, scoring='r2', n_jobs=-1)
-grid_search.fit(features, target)
+grid_search.fit(X, y)
 best_params = grid_search.best_params_
 best_score = grid_search.best_score_
 print("Best Parameters:", best_params)
@@ -51,20 +45,28 @@ best_model.fit(X_train, y_train)
 train_predictions = best_model.predict(X_train)
 test_predictions = best_model.predict(X_test)
 
-# R2 scores and MAPE Calculation
-train_accuracy = r2_score(y_train, train_predictions)
-test_accuracy = r2_score(y_test, test_predictions)
-print(f'\nFinal Training Accuracy: {train_accuracy*100:.2f}%')
-print(f'Final Test Accuracy: {test_accuracy*100:.2f}%')
 
-def mean_absolute_percentage_error(y_true, y_pred):
-    y_true, y_pred = np.array(y_true), np.array(y_pred)
-    return np.mean(np.abs((y_true - y_pred) / y_true))
+def calculate_metrics(y_true, y_pred):
+    r2 = r2_score(y_true, y_pred)
+    mse = mean_squared_error(y_true, y_pred)
+    msle = mean_squared_log_error(y_true, y_pred) 
+    mape = np.mean(np.abs((np.exp(y_true) - np.exp(y_pred)) / np.exp(y_true))) * 100
+    return r2, mse, msle, mape
 
-train_mape = mean_absolute_percentage_error(y_train, train_predictions)
-test_mape = mean_absolute_percentage_error(y_test, test_predictions)
-print(f'Train MAPE: {train_mape:.2f}%')
-print(f'Test MAPE: {test_mape:.2f}%')
+train_r2, train_mse, train_msle, train_mape = calculate_metrics(y_train, train_predictions)
+test_r2, test_mse, test_msle, test_mape = calculate_metrics(y_test, test_predictions)
+
+print(f'\nTraining Metrics:')
+print(f'R2 score: {train_r2:.4f}')
+print(f'MSE: {train_mse:.4f}')
+print(f'MLSE: {train_msle:.4f}')
+print(f'MAPE: {train_mape:.2f}%')
+
+print(f'\nTest Metrics:')
+print(f'R2 score: {test_r2:.4f}')
+print(f'MSE: {test_mse:.4f}')
+print(f'MSLE: {test_msle:.4f}')
+print(f'MAPE: {test_mape:.2f}%')
 
 # Plot actual vs predicted values
 plt.figure(figsize=(10, 6))
@@ -82,4 +84,18 @@ plt.plot(range(1, len(train_r2_scores)+1), train_r2_scores)
 plt.title('Training R-squared Score Curve')
 plt.xlabel('Iterations')
 plt.ylabel('R-squared Score')
+plt.show()
+
+
+# Feature importance
+feature_importance = best_model.feature_importances_
+sorted_idx = np.argsort(feature_importance)
+pos = np.arange(sorted_idx.shape[0]) + .5
+
+plt.figure(figsize=(12, 8))
+plt.barh(pos, feature_importance[sorted_idx], align='center')
+plt.yticks(pos, X.columns[sorted_idx])
+plt.xlabel('Feature Importance')
+plt.title('Variable Importance')
+plt.tight_layout()
 plt.show()

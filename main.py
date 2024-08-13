@@ -1,13 +1,13 @@
 import os
 import pandas as pd
-from models.gradient_boost import best_model, le
+import numpy as np
+from models.Regression.XGBoost import best_model
+from models.Regression.feature_scaling import preprocess_data
 from colorama import init, Fore, Style
 
 def begin_cli():
     init()
-
     os.system('cls' if os.name == 'nt' else 'clear')
-
     title = (
         f"{Fore.CYAN}{Style.BRIGHT}\n"
         " __  __            _        ____                                                   \n"
@@ -24,75 +24,70 @@ def begin_cli():
     )
     print(title)
 
-# Function to preprocess the input
-def preprocess_input(released, writer, rating, name, genre, director, star, country, company, runtime, score, budget, year, votes):
-    # Transform categorical features using LabelEncoder
-    released_encoded = le.fit_transform([released])
-    writer_encoded = le.fit_transform([writer])
-    rating_encoded = le.fit_transform([rating])
-    name_encoded = le.fit_transform([name])
-    genre_encoded = le.fit_transform([genre])
-    director_encoded = le.fit_transform([director])
-    star_encoded = le.fit_transform([star])
-    country_encoded = le.fit_transform([country])
-    company_encoded = le.fit_transform([company])
+def get_user_input():
+    print(f'\n{Fore.YELLOW}Please enter the parameters to predict the revenue for your upcoming movie{Style.RESET_ALL}\n')
+    
+    return {
+        'released': input("When is the movie going to be released: "),
+        'writer': input("Who is the writer of the movie: "),
+        'rating': input("What is the MPAA rating of the movie: "),
+        'name': input("What is the name of the movie: "),
+        'genre': input("What is the genre of the movie: "),
+        'director': input("Who is the director of the movie: "),
+        'star': input("Who is the star of the movie: "),
+        'country': input("Which country are you based: "),
+        'company': input("Which company is producing the movie: "),
+        'runtime': float(input("What is the runtime of the movie: ")),
+        'score': float(input("How are the critics rating the movie in the initial screening: ")),
+        'budget': float(input("What is the budget of the movie: ")),
+        'year': int(input("Which year is the movie shot: ")),
+        'votes': float(input("What is the total number of votes for the movie in the initial survey: "))
+    }
 
-    input_data = pd.DataFrame({
-        'released': released_encoded,
-        'writer': writer_encoded,
-        'rating': rating_encoded,
-        'name': name_encoded,
-        'genre': genre_encoded,
-        'director': director_encoded,
-        'star': star_encoded,
-        'country': country_encoded,
-        'company': company_encoded,
-        'runtime': runtime,
-        'score': score,
-        'budget': budget,
-        'year': year,
-        'votes': votes,
-    })
+def predict_gross(input_data):
+    processed_data = preprocess_data(pd.DataFrame([input_data]))
+    
+    expected_features = best_model.feature_names_in_
+    for feature in expected_features:
+        if feature not in processed_data.columns:
+            processed_data[feature] = 0  # or another appropriate default value
 
-    return input_data
+    processed_data = processed_data[expected_features]
 
-# Function to predict the gross range
-def predict_gross_range(input_data):
-    predicted_gross = best_model.predict(input_data)
-    if predicted_gross <= 5000000:
-        return f"Low Revenue (<= $5M)"
-    elif predicted_gross <= 25000000:
-        return f"Medium-Low Revenue ($5M - $25M)"
-    elif predicted_gross <= 50000000:
-        return f"Medium Revenue ($25M - $50M)"
-    elif predicted_gross <= 80000000:
-        return f"High Revenue ($50M - $80M)"
+    log_prediction = best_model.predict(processed_data)
+    
+    prediction = np.exp(log_prediction) - 1  
+    
+    return prediction[0]
+
+def predict_gross_range(gross):
+    if gross <= 10000000:
+        return f"Low Revenue (<= $10M)"
+    elif gross <= 40000000:
+        return f"Medium-Low Revenue ($10M - $40M)"
+    elif gross <= 70000000:
+        return f"Medium Revenue ($40M - $70M)"
+    elif gross <= 120000000:
+        return f"Medium-High Revenue ($70M - $120M)"
+    elif gross <= 200000000:
+        return f"Medium-High Revenue ($120M - $200M)"
     else:
-        return f"Ultra High Revenue (>= $80M)"
+        return f"Ultra High Revenue (>= $200M)"
 
 if __name__ == "__main__":
     begin_cli()
-
     print(f'\n{Fore.YELLOW}Welcome Producer!!!{Style.RESET_ALL}\n')
-    print(f'\n{Fore.YELLOW}Please enter the parameters to predict the revenue range for your upcoming movie{Style.RESET_ALL}\n')
     
-    released = input("When is the movie going to be released: ")
-    writer = input("Who is the writer of the movie: ")
-    rating = input("What is the MPAA rating of the movie: ")
-    name = input("What is the name of the movie: ")
-    genre = input("What is the genre of the movie: ")
-    director = input("Who is the director of the movie: ")
-    star = input("Who is the star of the movie: ")
-    country = input("Which country are you based: ")
-    company = input("Which company is producing the movie: ")
-    runtime = float(input("What is the runtime of the movie: "))
-    score = float(input("How are the critics rating the movie in the initial screening: "))
-    budget = float(input("What is the budget of the movie: "))
-    year = int(input("Which year is the movie shot: "))
-    votes = float(input("What is the total number of votes for the movie in the initial survey: "))
+    while True:
+        input_data = get_user_input()
+        predicted_gross = predict_gross(input_data)
+        predicted_gross_range = predict_gross_range(predicted_gross)
+        
+        print(f'\n{Fore.GREEN}Predicted Revenue{Style.RESET_ALL} for "{Fore.CYAN}{input_data["name"]}{Style.RESET_ALL}": ${predicted_gross:,.2f}')
+        print(f'{Fore.GREEN}Predicted Revenue Range{Style.RESET_ALL}: {predicted_gross_range}\n')
+        
+        another = input(f"{Fore.YELLOW}Would you like to predict another movie? (yes/no): {Style.RESET_ALL}").lower()
+        if another != 'yes':
+            break
 
-    input_data = preprocess_input(released, writer, rating, name, genre, director, star, country, company, runtime, score, budget, year, votes)
-
-    # Predict the revenue range
-    predicted_gross_range = predict_gross_range(input_data)
-    print(f'\n{Fore.GREEN}Predicted Revenue Range{Style.RESET_ALL} for "{Fore.CYAN}{name}{Style.RESET_ALL}": {predicted_gross_range}\n')
+    print(f"\n{Fore.YELLOW}Thank you for using the Movie Revenue Prediction System!{Style.RESET_ALL}")
