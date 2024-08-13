@@ -14,7 +14,7 @@ We hypothesize that certain parameters, such as the director's track record and 
 
 By leveraging these diverse attributes, our goal is to construct a robust predictive model that can offer valuable insights and aid decision-making in the film industry. Ultimately, this will help filmmakers optimize their movie production strategies for maximum profit and popularity.
 
-![Movie Revenue Prediction diagram](fig/intro.png)
+<img src="fig/intro.png" alt="Movie Revenue Prediction diagram" width="500" height="400">
 
 
 ## Directory Structure
