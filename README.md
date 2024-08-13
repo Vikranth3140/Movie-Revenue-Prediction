@@ -16,7 +16,6 @@ By leveraging these diverse attributes, our goal is to construct a robust predic
 
 <img src="fig/intro.png" alt="Movie Revenue Prediction diagram" width="500" height="400">
 
-
 ## Directory Structure
 
 ```
@@ -113,11 +112,9 @@ Movie-Revenue-Prediction/
 └── requirements.txt
 ```
 
-
 ## Getting Started
 
 All our code was tested on Python 3.6.8 with scikit-learn 1.3.2. Ideally, our scripts require access to a single GPU (uses `.cuda()` for inference). Inference can also be done on CPUs with minimal changes to the scripts.
-
 
 ### Setting up the Environment
 
@@ -132,7 +129,6 @@ source env/bin/activate
 
 pip install -r requirements.txt
 ```
-
 
 ### Setting up Datasets
 
@@ -157,6 +153,7 @@ We provide scripts for data preprocessing, including handling missing values, en
 ### Handling Missing Values
 
 Missing values are handled using the `data_preprocessing.py` script:
+
 ```bash
 python data_preprocessing.py
 ```
@@ -168,7 +165,6 @@ Categorical variables are encoded using Label Encoding. This is implemented in t
 ### Feature Selection
 
 We use SelectKBest for feature selection, as implemented in the `data_preprocessing.py` script.
-
 
 ## Model Improvement
 
@@ -186,7 +182,6 @@ Logarithmic transformations are applied to skewed data (e.g., budget and gross r
 
 Hyperparameter tuning is performed using GridSearchCV to optimize model parameters.
 
-
 ## Command Line Interface (CLI)
 
 A CLI is developed to allow users to input movie features and get revenue predictions. Users can select different models for prediction.
@@ -199,7 +194,6 @@ A CLI is developed to allow users to input movie features and get revenue predic
    python main.py
    ```
 3. Follow the prompts to input the movie features and choose the prediction model.
-
 
 ## Streamlit Web Interface
 
@@ -214,17 +208,17 @@ Additionally a web interface is also developed using Streamlit to allow users to
    ```
 3. Follow the prompts to input the movie features and choose the prediction model.
 
-
 ## Results
 
 The Gradient Boosting model achieved the best performance with:
+
 - **Training Accuracy:** 91.58%
 - **Testing Accuracy:** 82.42%
 
 The model evaluation results for all models are as follows:
 
-| Model           | Training R² | Training MAPE | Testing R² | Testing MAPE |
-|-----------------|-------------|---------------|------------|--------------|
+| Model             | Training R² | Training MAPE | Testing R² | Testing MAPE |
+| ----------------- | ----------- | ------------- | ---------- | ------------ |
 | Linear Regression | 0.6553      | 35.23%        | 0.6706     | 18.49%       |
 | Decision Tree     | 0.8664      | 13.00%        | 0.6947     | 4.60%        |
 | Bagging           | 0.8583      | 13.32%        | 0.7719     | 5.67%        |
@@ -239,9 +233,10 @@ The developed Gradient Boosting model demonstrates promising accuracy and genera
 ## Citation
 
 If you found this work useful, please consider citing it as:
+
 ```
 @misc{udandarao2024movie,
-      title={Movie Revenue Prediction using Machine Learning Models}, 
+      title={Movie Revenue Prediction using Machine Learning Models},
       author={Vikranth Udandarao and Pratyush Gupta},
       year={2024},
       eprint={2405.11651},
@@ -250,11 +245,9 @@ If you found this work useful, please consider citing it as:
 }
 ```
 
-
 ## Contact
 
 Please feel free to open an issue or email us at [vikranth22570@iiitd.ac.in](mailto:vikranth22570@iiitd.ac.in) or [pratyush22375@iiitd.ac.in](mailto:pratyush22375@iiitd.ac.in).
-
 
 ## License
 

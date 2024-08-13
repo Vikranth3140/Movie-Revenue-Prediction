@@ -4,21 +4,24 @@ import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import r2_score, mean_squared_error,mean_squared_log_error
+from sklearn.metrics import r2_score, mean_squared_error, mean_squared_log_error
 from models.Regression.feature_scaling import prepare_features
-#If you want to test the individual models by running them directly use below and remove above import line
+
+# If you want to test the individual models by running them directly use below and remove above import line
 # from feature_scaling import prepare_features
 
 
 # Loading our dataset
-df = pd.read_csv('revised datasets\output.csv')
+df = pd.read_csv("revised datasets\output.csv")
 
 # Getting the Preprocessed and scaled data.
 X, y = prepare_features(df)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
 
 # Apply PCA for dimensionality reduction
-pca = PCA(n_components=8)  
+pca = PCA(n_components=8)
 X_train_pca = pca.fit_transform(X_train)
 X_test_pca = pca.transform(X_test)
 
@@ -29,37 +32,40 @@ model.fit(X_train_pca, y_train)
 train_predictions = model.predict(X_train_pca)
 test_predictions = model.predict(X_test_pca)
 
+
 def calculate_metrics(y_true, y_pred):
     r2 = r2_score(y_true, y_pred)
     mse = mean_squared_error(y_true, y_pred)
-    msle = mean_squared_log_error(y_true, y_pred) 
+    msle = mean_squared_log_error(y_true, y_pred)
     mape = np.mean(np.abs((np.exp(y_true) - np.exp(y_pred)) / np.exp(y_true))) * 100
     return r2, mse, msle, mape
 
-train_r2, train_mse, train_msle, train_mape = calculate_metrics(y_train, train_predictions)
+
+train_r2, train_mse, train_msle, train_mape = calculate_metrics(
+    y_train, train_predictions
+)
 test_r2, test_mse, test_msle, test_mape = calculate_metrics(y_test, test_predictions)
 
-print(f'\nTraining Metrics:')
-print(f'R2 score: {train_r2:.4f}')
-print(f'MSE: {train_mse:.4f}')
-print(f'MLSE: {train_msle:.4f}')
-print(f'MAPE: {train_mape:.2f}%')
+print(f"\nTraining Metrics:")
+print(f"R2 score: {train_r2:.4f}")
+print(f"MSE: {train_mse:.4f}")
+print(f"MLSE: {train_msle:.4f}")
+print(f"MAPE: {train_mape:.2f}%")
 
-print(f'\nTest Metrics:')
-print(f'R2 score: {test_r2:.4f}')
-print(f'MSE: {test_mse:.4f}')
-print(f'MSLE: {test_msle:.4f}')
-print(f'MAPE: {test_mape:.2f}%')
-
+print(f"\nTest Metrics:")
+print(f"R2 score: {test_r2:.4f}")
+print(f"MSE: {test_mse:.4f}")
+print(f"MSLE: {test_msle:.4f}")
+print(f"MAPE: {test_mape:.2f}%")
 
 
 # Plot actual vs predicted values
 plt.figure(figsize=(10, 6))
-plt.scatter(y_train, train_predictions, color='blue', label='Train')
-plt.scatter(y_test, test_predictions, color='red', label='Test')
-plt.title('Actual vs Predicted Values')
-plt.xlabel('Actual Values')
-plt.ylabel('Predicted Values')
+plt.scatter(y_train, train_predictions, color="blue", label="Train")
+plt.scatter(y_test, test_predictions, color="red", label="Test")
+plt.title("Actual vs Predicted Values")
+plt.xlabel("Actual Values")
+plt.ylabel("Predicted Values")
 plt.legend()
 plt.show()
 
