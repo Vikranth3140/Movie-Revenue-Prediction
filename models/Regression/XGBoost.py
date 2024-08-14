@@ -4,10 +4,7 @@ import matplotlib.pyplot as plt
 import xgboost as xgb
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import r2_score, mean_squared_error, mean_squared_log_error
-from models.Regression.feature_scaling import prepare_features
-
-# If you want to test the individual models by running them directly use below and remove above import line
-# from feature_scaling import prepare_features
+from feature_scaling import prepare_features
 
 # Loading our dataset
 df = pd.read_csv("revised datasets\output.csv")
@@ -15,7 +12,7 @@ df = pd.read_csv("revised datasets\output.csv")
 # Getting the Preprocessed and scaled data.
 X, y = prepare_features(df)
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
+    X, y, test_size=0.15, random_state=42
 )
 
 param_grid = {
@@ -36,7 +33,7 @@ grid_search = GridSearchCV(
 grid_search.fit(X, y)
 
 best_params = grid_search.best_params_
-best_score = -grid_search.best_score_
+best_score = grid_search.best_score_
 
 print("Best Parameters:", best_params)
 print("Best R^2 Score:", best_score)

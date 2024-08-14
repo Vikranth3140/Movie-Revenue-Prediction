@@ -1,47 +1,36 @@
-linear_regression_pca.py
-Training R2 score: 0.6481
-Test R2 score: 0.6649
-Train MAPE: 26.19%
-Test MAPE: 15.57%
+Model Accuracies(80/20 split)
+
+Gradient Boosting:
+Training Metrics               Test Metrics
+R2 score: 0.8750               R2 score: 0.7350
+MLSE: 0.0016                   MSLE: 0.0040
 
 
-linear_regression.py
-Training R2 score: 0.6553
-Test R2 score: 0.6706
-Train MAPE: 35.23%
-Test MAPE: 18.49%
+XGBoost:
+Training Metrics               Test Metrics
+R2 score: 0.8633               R2 score: 0.7402
+MLSE: 0.0018                   MSLE: 0.0041
 
 
-decision_tree.py
-Training R2 score: 0.8664
-Test R2 score: 0.6947
-Train MAPE: 13.00%
-Test MAPE: 4.60%
+Random Forest:
+Training Metrics               Test Metrics
+R2 score: 0.8475               R2 score: 0.7235
+MLSE: 0.0022                   MSLE: 0.0041
 
 
-decision_tree_bagging.py
-Final Training R2 score: 0.8583
-Final Test R2 score: 0.7719
-Train MAPE: 13.32%
-Test MAPE: 5.67%
+Decision Tree Bagging:
+Training Metrics               Test Metrics
+R2 score: 0.8380               R2 score: 0.7105
+MLSE: 0.0023                   MSLE: 0.0042
 
 
-random_forest.py
-Final Training R2 score: 0.8728
-Final Test R2 score: 0.7786
-Train MAPE: 14.29%
-Test MAPE: 5.33%
+Decision Tree:
+Training Metrics               Test Metrics
+R2 score: 0.8310               R2 score: 0.5994
+MLSE: 0.0024                   MSLE: 0.0059
 
 
-XGBoost.py
-Final Training R2 score: 0.9079
-Final Test R2 score: 0.8102
-Train MAPE: 9.70%
-Test MAPE: 5.53%
-
-
-gradient_boost.py
-Final Training R2 score: 0.9158
-Final Test R2 score: 0.8242
-Train MAPE: 10.57%
-Test MAPE: 5.69%
+Linear Regrssion
+Training Metrics               Test Metrics
+R2 score: 0.6181               R2 score: 0.6520:
+MLSE: 0.0053                   MSLE: 0.0051
