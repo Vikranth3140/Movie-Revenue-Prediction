@@ -4,10 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import r2_score, mean_squared_error, mean_squared_log_error
-from models.Regression.feature_scaling import prepare_features
-
-# If you want to test the individual models by running them directly use below and remove above import line
-# from feature_scaling import prepare_features
+from feature_scaling import prepare_features
 
 # Loading our dataset
 df = pd.read_csv("revised datasets/output.csv")
@@ -34,7 +31,7 @@ grid_search = GridSearchCV(
 grid_search.fit(X, y)
 
 best_params = grid_search.best_params_
-best_score = -grid_search.best_score_  # Negative because GridSearchCV uses negative MSE
+best_score = grid_search.best_score_
 print("Best Parameters:", best_params)
 print("Best MSE Score:", best_score)
 

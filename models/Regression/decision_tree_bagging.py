@@ -5,10 +5,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import BaggingRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, mean_squared_error, mean_squared_log_error
-from models.Regression.feature_scaling import prepare_features
-
-# If you want to test the individual models by running them directly use below and remove above import line
-# from feature_scaling import prepare_features
+from feature_scaling import prepare_features
 
 
 # Loading our dataset

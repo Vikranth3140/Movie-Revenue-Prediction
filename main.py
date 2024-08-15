@@ -1,8 +1,9 @@
 import os
 import pandas as pd
 import numpy as np
-from models.Regression.XGBoost import best_model
-from models.Regression.feature_scaling import preprocess_data
+import xgboost as xgb
+from sklearn.model_selection import GridSearchCV
+from models.Regression.feature_scaling import preprocess_data, prepare_features
 from colorama import init, Fore, Style
 
 
@@ -55,13 +56,40 @@ def get_user_input():
     }
 
 
-def predict_gross(input_data):
+def run_model():
+    df = pd.read_csv("revised datasets\output.csv")
+
+    X, y = prepare_features(df)
+    param_grid = {
+        "n_estimators": [100, 500],
+        "max_depth": [3, 6],
+        "learning_rate": [0.05, 0.1],
+    }
+
+    grid_search = GridSearchCV(
+        estimator=xgb.XGBRegressor(objective="reg:squarederror", random_state=42),
+        param_grid=param_grid,
+        cv=5,
+        scoring="r2",
+        n_jobs=-1,
+    )
+    grid_search.fit(X, y)
+    best_params = grid_search.best_params_
+
+    best_model = xgb.XGBRegressor(
+        objective="reg:squarederror", random_state=42, **best_params
+    )
+    best_model.fit(X, y)
+    return best_model
+
+
+def predict_gross(input_data, best_model):
     processed_data = preprocess_data(pd.DataFrame([input_data]))
 
     expected_features = best_model.feature_names_in_
     for feature in expected_features:
         if feature not in processed_data.columns:
-            processed_data[feature] = 0  # or another appropriate default value
+            processed_data[feature] = 0
 
     processed_data = processed_data[expected_features]
 
@@ -93,7 +121,8 @@ if __name__ == "__main__":
 
     while True:
         input_data = get_user_input()
-        predicted_gross = predict_gross(input_data)
+        best_model = run_model()
+        predicted_gross = predict_gross(input_data, best_model)
         predicted_gross_range = predict_gross_range(predicted_gross)
 
         print(
