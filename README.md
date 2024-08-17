@@ -43,10 +43,11 @@ Movie-Revenue-Prediction/
 │   ├── accuracies.txt
 │   ├── decision_tree_bagging.py
 │   ├── decision_tree.py
+│   ├── feature_scaling.py
 │   ├── gradient_boost.py
 │   ├── linear_regression_pca.py
 │   ├── linear_regression.py
-│   ├── random_forest.py
+|   ├── random_forest.py
 │   ├── tracking_XGBoost.py
 │   └── XGBoost.py
 │
@@ -103,13 +104,15 @@ Movie-Revenue-Prediction/
 │
 ├── revised datasets
 │   ├── movies.csv
-│   └── output.csv
+|   ├── output.csv
+│   └── README.md
 │
 ├── .gitignore
 ├── LICENSE
 ├── main.py
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── streamlit_app.py
 ```
 
 ## Getting Started
@@ -134,7 +137,7 @@ pip install -r requirements.txt
 
 The datasets have been taken from [Movie Industry](https://www.kaggle.com/datasets/danielgrijalvas/movies) dataset.
 \
-Detailed instructions on how to set up our datasets are provided in [old datasets\README.md](old%20datasets/README.md).
+Detailed instructions on how to set up our revised datasets are provided in [revised datasets\README.md](revised%20datasets/README.md).
 
 ## Running the Models
 
@@ -148,35 +151,51 @@ The `model_name` parameter can be one of [`linear_regression`, `decision_tree`, 
 
 ## Data Preprocessing
 
-We provide scripts for data preprocessing, including handling missing values, encoding categorical variables, and feature selection.
+We provide scripts for data preprocessing, including handling missing values, encoding categorical variables, feature scaling, and feature engineering.
 
 ### Handling Missing Values
 
-Missing values are handled using the `data_preprocessing.py` script:
-
-```bash
-python data_preprocessing.py
-```
+Missing values are handled using the `SimpleImputer` with a median strategy in the `feature_scaling.py` script:
 
 ### Encoding Categorical Variables
 
-Categorical variables are encoded using Label Encoding. This is implemented in the `data_preprocessing.py` script.
+Categorical variables are encoded using Label Encoding. This is implemented in the `feature_scaling.py` script which is called before the training of every model
+
+### Feature Scaling
+
+Enhanced feature preprocessing is implemented in `feature_scaling.py`:
+
+Log transformation for skewed numerical features, particularly budget and revenue
+StandardScaler applied to normalize numerical features
+
+These preprocessing steps have resulted in substantially improved model performance, with significantly lower Mean Absolute Percantage Error(MAPE) and Mean Squared Logarithmic Error (MSLE).
+
+### Feature Engineering
+New features are created in our models:
+
+- vote_score_ratio
+- budget_year_ratio
+- vote_year_ratio
+- score_runtime_ratio
+- budget_per_minute
+- votes_per_year
+
+Binary features introduced:
+
+- is_recent
+- is_high_budget
+- is_high_votes
+- is_high_score
+
+These engineered features capture complex relationships and trends in the data, enhancing our model's ability to discover patterns. The combination of ratio-based and binary features provides a richer representation of the movie attributes, leading to improved predictive performance across our various models
 
 ### Feature Selection
 
-We use SelectKBest for feature selection, as implemented in the `data_preprocessing.py` script.
+We use SelectKBest for helping us know which features contribute the most towards our target variable, as implemented in the `significant_features.py` and `feature_scores.py` scripts.
 
 ## Model Improvement
 
-We employ several strategies for model improvement, including standardizing data, applying logarithmic transformations, and hyperparameter tuning using GridSearchCV.
-
-### Standardizing Data
-
-To ensure consistent scaling across features, we use Standard Scaler.
-
-### Logarithmic Transformations
-
-Logarithmic transformations are applied to skewed data (e.g., budget and gross revenue).
+We employed strategies such as hyperparameter tuning using GridSearchCV for model improvement.
 
 ### Hyperparameter Tuning
 
@@ -184,9 +203,16 @@ Hyperparameter tuning is performed using GridSearchCV to optimize model paramete
 
 ## Command Line Interface (CLI)
 
-A CLI is developed to allow users to input movie features and get revenue predictions. Users can select different models for prediction.
+We have developed a Command Line Interface (CLI) to allow users to input movie features and get revenue predictions. This tool provides an estimate of the inputted movie's revenue within specific ranges:
 
-### Running the CLI
+- Low Revenue: <= $10M
+- Medium-Low Revenue: $10M - $40M
+- Medium Revenue: $40M - $70M
+- Medium-High Revenue: $70M - $120M
+- High Revenue: $120M - $200M
+- Ultra High Revenue: >= $200M
+
+### Using the CLI
 
 1. Navigate to the project directory.
 2. Run the CLI:
@@ -208,27 +234,22 @@ Additionally a web interface is also developed using Streamlit to allow users to
    ```
 3. Follow the prompts to input the movie features and choose the prediction model.
 
-## Results
+## Model Evaluation Results
 
-The Gradient Boosting model achieved the best performance with:
+We evaluated our models using two key metrics: R² Score (Coefficient of Determination) and MSLE (Mean Squared Logarithmic Error). Here are the results for each model:
 
-- **Training Accuracy:** 91.58%
-- **Testing Accuracy:** 82.42%
-
-The model evaluation results for all models are as follows:
-
-| Model             | Training R² | Training MAPE | Testing R² | Testing MAPE |
-| ----------------- | ----------- | ------------- | ---------- | ------------ |
-| Linear Regression | 0.6553      | 35.23%        | 0.6706     | 18.49%       |
-| Decision Tree     | 0.8664      | 13.00%        | 0.6947     | 4.60%        |
-| Bagging           | 0.8583      | 13.32%        | 0.7719     | 5.67%        |
-| Gradient Boosting | 0.9158      | 10.57%        | 0.8242     | 5.69%        |
-| XGBoosting        | 0.9079      | 9.70%         | 0.8102     | 5.53%        |
-| Random Forest     | 0.8728      | 14.29%        | 0.7786     | 5.33%        |
+| Model             | Training R² | Training MSLE  | Testing R² | Testing MSLE  |
+| ----------------- | ----------- | -------------  | ---------- | ------------  |
+| Linear Regression | 0.6181      | 0.0053         | 0.6520     | 0.0051        |
+| Decision Tree     | 0.8310      | 0.0024         | 0.5994     | 0.0059        |
+| Bagging           | 0.8380      | 0.0023         | 0.7105     | 0.0042        |
+| Gradient Boosting | 0.8750      | 0.0016         | 0.7350     | 0.0040        |
+| XGBoosting        | 0.8633      | 0.0018         | 0.7402     | 0.0041        |
+| Random Forest     | 0.8475      | 0.0022         | 0.7235     | 0.0041        |
 
 ## Conclusion
 
-The developed Gradient Boosting model demonstrates promising accuracy and generalization capabilities, facilitating informed decision-making in the film industry to maximize profits.
+The developed Gradient Boosting and XGBoost models demonstrates promising accuracy and generalization capabilities, facilitating informed decision-making in the film industry to maximize profits.
 
 ## Citation
 

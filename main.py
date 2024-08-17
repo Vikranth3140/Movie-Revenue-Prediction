@@ -110,7 +110,7 @@ def predict_gross_range(gross):
     elif gross <= 120000000:
         return f"Medium-High Revenue ($70M - $120M)"
     elif gross <= 200000000:
-        return f"Medium-High Revenue ($120M - $200M)"
+        return f"High Revenue ($120M - $200M)"
     else:
         return f"Ultra High Revenue (>= $200M)"
 

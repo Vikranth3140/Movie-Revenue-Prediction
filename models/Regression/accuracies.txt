@@ -32,5 +32,5 @@ MLSE: 0.0024                   MSLE: 0.0059
 
 Linear Regrssion
 Training Metrics               Test Metrics
-R2 score: 0.6181               R2 score: 0.6520:
+R2 score: 0.6181               R2 score: 0.6520
 MLSE: 0.0053                   MSLE: 0.0051
