@@ -1,122 +1,109 @@
 import streamlit as st
 import pandas as pd
-from models.Regression.gradient_boost import best_model, le
+import numpy as np
+import xgboost as xgb
+from sklearn.model_selection import GridSearchCV
+from models.feature_scaling import preprocess_data, prepare_features
 
-
-# Function to preprocess the input
-def preprocess_input(
-    released,
-    writer,
-    rating,
-    name,
-    genre,
-    director,
-    star,
-    country,
-    company,
-    runtime,
-    score,
-    budget,
-    year,
-    votes,
-):
-    released_encoded = le.fit_transform([released])
-    writer_encoded = le.fit_transform([writer])
-    rating_encoded = le.fit_transform([rating])
-    name_encoded = le.fit_transform([name])
-    genre_encoded = le.fit_transform([genre])
-    director_encoded = le.fit_transform([director])
-    star_encoded = le.fit_transform([star])
-    country_encoded = le.fit_transform([country])
-    company_encoded = le.fit_transform([company])
-
-    input_data = pd.DataFrame(
-        {
-            "released": released_encoded,
-            "writer": writer_encoded,
-            "rating": rating_encoded,
-            "name": name_encoded,
-            "genre": genre_encoded,
-            "director": director_encoded,
-            "star": star_encoded,
-            "country": country_encoded,
-            "company": company_encoded,
-            "runtime": runtime,
-            "score": score,
-            "budget": budget,
-            "year": year,
-            "votes": votes,
-        }
+def run_model():
+    df = pd.read_csv("revised datasets/output.csv")
+    X, y = prepare_features(df)
+    param_grid = {
+        "n_estimators": [100, 500],
+        "max_depth": [3, 6],
+        "learning_rate": [0.05, 0.1],
+    }
+    grid_search = GridSearchCV(
+        estimator=xgb.XGBRegressor(objective="reg:squarederror", random_state=42),
+        param_grid=param_grid,
+        cv=5,
+        scoring="r2",
+        n_jobs=-1,
     )
+    grid_search.fit(X, y)
+    best_params = grid_search.best_params_
+    best_model = xgb.XGBRegressor(
+        objective="reg:squarederror", random_state=42, **best_params
+    )
+    best_model.fit(X, y)
+    return best_model
 
-    return input_data
+def predict_gross(input_data, best_model):
+    processed_data = preprocess_data(pd.DataFrame([input_data]))
+    expected_features = best_model.feature_names_in_
+    for feature in expected_features:
+        if feature not in processed_data.columns:
+            processed_data[feature] = 0
+    processed_data = processed_data[expected_features]
+    log_prediction = best_model.predict(processed_data)
+    prediction = np.exp(log_prediction) - 1
+    return prediction[0]
 
-
-# Function to predict the gross range
-def predict_gross_range(input_data):
-    predicted_gross = best_model.predict(input_data)
-    if predicted_gross <= 5000000:
-        return "Low Revenue (<= $5M)"
-    elif predicted_gross <= 25000000:
-        return "Medium-Low Revenue ($5M - $25M)"
-    elif predicted_gross <= 50000000:
-        return "Medium Revenue ($25M - $50M)"
-    elif predicted_gross <= 80000000:
-        return "High Revenue ($50M - $80M)"
+def predict_gross_range(gross):
+    if gross <= 10000000:
+        return f"Low Revenue (<= $10M)"
+    elif gross <= 40000000:
+        return f"Medium-Low Revenue ($10M - $40M)"
+    elif gross <= 70000000:
+        return f"Medium Revenue ($40M - $70M)"
+    elif gross <= 120000000:
+        return f"Medium-High Revenue ($70M - $120M)"
+    elif gross <= 200000000:
+        return f"High Revenue ($120M - $200M)"
     else:
-        return "Ultra High Revenue (>= $80M)"
+        return f"Ultra High Revenue (>= $200M)"
 
+st.set_page_config(page_title="Movie Revenue Prediction System", layout="wide")
 
-st.markdown(
-    """
-    <h1 style='text-align: center; color: cyan;'>Movie Revenue Prediction</h1>
-    """,
-    unsafe_allow_html=True,
-)
+st.title("Movie Revenue Prediction System")
 
-st.markdown(
-    """
-    <h2 style='text-align: center; color: white;'>Movie Details</h2>
-    """,
-    unsafe_allow_html=True,
-)
+st.markdown("## Enter Movie Details")
 
 with st.form(key="movie_form"):
-    released = st.text_input("Release Date")
-    writer = st.text_input("Writer")
-    rating = st.selectbox("MPAA Rating", ["G", "PG", "PG-13", "R", "NC-17"])
-    name = st.text_input("Movie Name")
-    genre = st.text_input("Genre")
-    director = st.text_input("Director")
-    star = st.text_input("Leading Star")
-    country = st.text_input("Country of Production")
-    company = st.text_input("Production Company")
-    runtime = st.number_input("Runtime (minutes)", min_value=0.0)
-    score = st.number_input("IMDb Score", min_value=0.0, max_value=10.0)
-    budget = st.number_input("Budget", min_value=0.0)
-    year = st.number_input("Year of Release", min_value=1900, max_value=2100)
-    votes = st.number_input("Initial Votes", min_value=0)
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        released = st.text_input("Release Date")
+        writer = st.text_input("Writer")
+        rating = st.selectbox("MPAA Rating", ["G", "PG", "PG-13", "R", "NC-17"])
+        name = st.text_input("Movie Name")
+        genre = st.text_input("Genre")
+        director = st.text_input("Director")
+        star = st.text_input("Leading Star")
+    
+    with col2:
+        country = st.text_input("Country of Production")
+        company = st.text_input("Production Company")
+        runtime = st.number_input("Runtime (minutes)", min_value=0.0)
+        score = st.number_input("IMDb Score", min_value=0.0, max_value=10.0)
+        budget = st.number_input("Budget", min_value=0.0)
+        year = st.number_input("Year of Release", min_value=1900, max_value=2100)
+        votes = st.number_input("Initial Votes", min_value=0)
+
     submit_button = st.form_submit_button(label="Predict Revenue")
 
 if submit_button:
-    input_data = preprocess_input(
-        released,
-        writer,
-        rating,
-        name,
-        genre,
-        director,
-        star,
-        country,
-        company,
-        runtime,
-        score,
-        budget,
-        year,
-        votes,
-    )
+    input_data = {
+        "released": released,
+        "writer": writer,
+        "rating": rating,
+        "name": name,
+        "genre": genre,
+        "director": director,
+        "star": star,
+        "country": country,
+        "company": company,
+        "runtime": runtime,
+        "score": score,
+        "budget": budget,
+        "year": year,
+        "votes": votes,
+    }
+    
+    best_model = run_model()
+    predicted_gross = predict_gross(input_data, best_model)
+    predicted_gross_range = predict_gross_range(predicted_gross)
 
-    # Predict the revenue range
-    predicted_gross_range = predict_gross_range(input_data)
-    st.markdown("### Prediction Result")
-    st.success(f'Predicted Revenue Range for "{name}": {predicted_gross_range}')
+    st.markdown("## Prediction Result")
+    st.success(f'Predicted Revenue for "{name}": ${predicted_gross:,.2f}')
+    st.success(f'Predicted Revenue Range: {predicted_gross_range}')
