@@ -132,17 +132,17 @@ def predict_gross(input_data, best_model):
 
 def predict_gross_range(gross):
     if gross <= 10000000:
-        return f"Low Revenue (<= $10M)"
+        return f"Low Revenue (<= 10M)"
     elif gross <= 40000000:
-        return f"Medium-Low Revenue ($10M - $40M)"
+        return f"Medium-Low Revenue (10M - 40M)"
     elif gross <= 70000000:
-        return f"Medium Revenue ($40M - $70M)"
+        return f"Medium Revenue (40M - 70M)"
     elif gross <= 120000000:
-        return f"Medium-High Revenue ($70M - $120M)"
+        return f"Medium-High Revenue (70M - 120M)"
     elif gross <= 200000000:
-        return f"High Revenue ($120M - $200M)"
+        return f"High Revenue (120M - 200M)"
     else:
-        return f"Ultra High Revenue (>= $200M)"
+        return f"Ultra High Revenue (>= 200M)"
 
 st.markdown(
     """
@@ -205,4 +205,4 @@ if submit_button:
 
     st.markdown("## Prediction Result")
     st.success(f'Predicted Revenue for "{name}": ${predicted_gross:,.2f}')
-    st.success(f'Predicted Revenue Range: {predicted_gross_range}')
+    st.success(f'Predicted Revenue Range: ${predicted_gross_range}')
