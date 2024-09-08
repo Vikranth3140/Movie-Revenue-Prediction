@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import xgboost as xgb
 from sklearn.model_selection import GridSearchCV
-from models.Regression.feature_scaling import preprocess_data, prepare_features
+from models.feature_scaling import preprocess_data, prepare_features
 from colorama import init, Fore, Style
 
 
