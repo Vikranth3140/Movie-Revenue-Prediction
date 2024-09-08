@@ -205,4 +205,4 @@ if submit_button:
 
     st.markdown("## Prediction Result")
     st.success(f'Predicted Revenue for "{name}": ${predicted_gross:,.2f}')
-    st.success(f'Predicted Revenue Range: ${predicted_gross_range}')
+    st.success(f'Predicted Revenue Range: {predicted_gross_range}')
