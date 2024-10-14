@@ -6,6 +6,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.impute import SimpleImputer
 
+
 def prepare_features(df):
     processed_df = preprocess_data(df)
 
@@ -119,6 +120,7 @@ def run_model():
     best_model.fit(X, y)
     return best_model
 
+
 def predict_gross(input_data, best_model):
     processed_data = preprocess_data(pd.DataFrame([input_data]))
     expected_features = best_model.feature_names_in_
@@ -129,6 +131,7 @@ def predict_gross(input_data, best_model):
     log_prediction = best_model.predict(processed_data)
     prediction = np.exp(log_prediction) - 1
     return prediction[0]
+
 
 def predict_gross_range(gross):
     if gross <= 10000000:
@@ -143,6 +146,7 @@ def predict_gross_range(gross):
         return f"High Revenue (120M - 200M)"
     else:
         return f"Ultra High Revenue (>= 200M)"
+
 
 st.markdown(
     """
@@ -160,7 +164,7 @@ st.markdown(
 
 with st.form(key="movie_form"):
     col1, col2 = st.columns(2)
-    
+
     with col1:
         released = st.text_input("Release Date")
         writer = st.text_input("Writer")
@@ -169,7 +173,7 @@ with st.form(key="movie_form"):
         genre = st.text_input("Genre")
         director = st.text_input("Director")
         star = st.text_input("Leading Star")
-    
+
     with col2:
         country = st.text_input("Country of Production")
         company = st.text_input("Production Company")
@@ -198,11 +202,11 @@ if submit_button:
         "year": year,
         "votes": votes,
     }
-    
+
     best_model = run_model()
     predicted_gross = predict_gross(input_data, best_model)
     predicted_gross_range = predict_gross_range(predicted_gross)
 
     st.markdown("## Prediction Result")
     st.success(f'Predicted Revenue for "{name}": ${predicted_gross:,.2f}')
-    st.success(f'Predicted Revenue Range: {predicted_gross_range}')
+    st.success(f"Predicted Revenue Range: {predicted_gross_range}")

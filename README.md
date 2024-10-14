@@ -171,6 +171,7 @@ StandardScaler applied to normalize numerical features
 These preprocessing steps have resulted in substantially improved model performance, with significantly lower Mean Absolute Percantage Error(MAPE) and Mean Squared Logarithmic Error (MSLE).
 
 ### Feature Engineering
+
 New features are created in our models:
 
 - vote_score_ratio
@@ -238,14 +239,14 @@ Additionally a web interface is also developed using Streamlit to allow users to
 
 We evaluated our models using two key metrics: R² Score (Coefficient of Determination) and MSLE (Mean Squared Logarithmic Error). Here are the results for each model:
 
-| Model             | Training R² | Training MSLE  | Testing R² | Testing MSLE  |
-| ----------------- | ----------- | -------------  | ---------- | ------------  |
-| Linear Regression | 0.6181      | 0.0053         | 0.6520     | 0.0051        |
-| Decision Tree     | 0.8310      | 0.0024         | 0.5994     | 0.0059        |
-| Bagging           | 0.8380      | 0.0023         | 0.7105     | 0.0042        |
-| Gradient Boosting | 0.8750      | 0.0016         | 0.7350     | 0.0040        |
-| XGBoosting        | 0.8633      | 0.0018         | 0.7402     | 0.0041        |
-| Random Forest     | 0.8475      | 0.0022         | 0.7235     | 0.0041        |
+| Model             | Training R² | Training MSLE | Testing R² | Testing MSLE |
+| ----------------- | ----------- | ------------- | ---------- | ------------ |
+| Linear Regression | 0.6181      | 0.0053        | 0.6520     | 0.0051       |
+| Decision Tree     | 0.8310      | 0.0024        | 0.5994     | 0.0059       |
+| Bagging           | 0.8380      | 0.0023        | 0.7105     | 0.0042       |
+| Gradient Boosting | 0.8750      | 0.0016        | 0.7350     | 0.0040       |
+| XGBoosting        | 0.8633      | 0.0018        | 0.7402     | 0.0041       |
+| Random Forest     | 0.8475      | 0.0022        | 0.7235     | 0.0041       |
 
 ## Conclusion
 
