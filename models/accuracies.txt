@@ -1,36 +1,43 @@
 Model Accuracies (80/20 split):
 
-Gradient Boosting:
-Training Metrics               Test Metrics
-R2 score: 0.8750               R2 score: 0.7350
-MLSE: 0.0016                   MSLE: 0.0040
-
-
+1.
 XGBoost:
+
 Training Metrics               Test Metrics
 R2 score: 0.8633               R2 score: 0.7402
-MLSE: 0.0018                   MSLE: 0.0041
+MSLE: 0.0018                   MSLE: 0.0041
 
+2.
+Gradient Boosting:
 
+Training Metrics               Test Metrics
+R2 score: 0.8750               R2 score: 0.7350
+MSLE: 0.0016                   MSLE: 0.0040
+
+3.
 Random Forest:
+
 Training Metrics               Test Metrics
 R2 score: 0.8475               R2 score: 0.7235
-MLSE: 0.0022                   MSLE: 0.0041
+MSLE: 0.0022                   MSLE: 0.0041
 
-
+4.
 Decision Tree Bagging:
+
 Training Metrics               Test Metrics
 R2 score: 0.8380               R2 score: 0.7105
-MLSE: 0.0023                   MSLE: 0.0042
+MSLE: 0.0023                   MSLE: 0.0042
 
-
+5.
 Decision Tree:
+
 Training Metrics               Test Metrics
 R2 score: 0.8310               R2 score: 0.5994
-MLSE: 0.0024                   MSLE: 0.0059
+MSLE: 0.0024                   MSLE: 0.0059
 
+6.
+Linear Regrssion:
 
-Linear Regrssion
 Training Metrics               Test Metrics
 R2 score: 0.6181               R2 score: 0.6520
-MLSE: 0.0053                   MSLE: 0.0051
+MSLE: 0.0053                   MSLE: 0.0051
