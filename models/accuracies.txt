@@ -1,4 +1,4 @@
-Model Accuracies(80/20 split)
+Model Accuracies (80/20 split):
 
 Gradient Boosting:
 Training Metrics               Test Metrics
