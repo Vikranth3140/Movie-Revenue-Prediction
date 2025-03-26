@@ -1,8 +1,11 @@
 # Movie Revenue Prediction
 
-[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/release/python-360/) [![sk-learn](https://img.shields.io/badge/scikit-learn-grey.svg?logo=scikit-learn)](https://scikit-learn.org/stable/whats_new.html)
+[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![sk-learn](https://img.shields.io/badge/scikit-learn-grey.svg?logo=scikit-learn)](https://scikit-learn.org/stable/whats_new.html)
+[![arXiv](https://img.shields.io/badge/arXiv-2405.11651-b31b1b.svg)](https://arxiv.org/abs/2405.11651)
+[![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-brightgreen.svg)](https://movie-revenue-prediction.streamlit.app)
 
-[arXiv Paper](http://arxiv.org/abs/2405.11651) | [Academia Paper](https://www.academia.edu/119091410/Movie_Revenue_Prediction) | [Streamlit WebApp](https://movie-revenue-prediction.streamlit.app)
+[Academia Paper](https://www.academia.edu/119091410/Movie_Revenue_Prediction)
 
 ## Introduction
 
